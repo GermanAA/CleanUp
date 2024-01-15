@@ -16,6 +16,8 @@
 
   <script src="https://use.fontawesome.com/603f27fb7e.js"></script>
   <link rel="stylesheet" type="text/css" href="css\estilos.css">
+  <link rel="stylesheet" type="text/css" href="fontello-a540fdbf\css\fontello.css">
+
   <script type="text/javascript" src="js/index.js"></script>
 
   <title>Clean-Up, Servicio de Limpieza!</title>
@@ -273,7 +275,9 @@
     <h5 class="Black-text">Pregunta por nuestras promociones, Contáctanos por WhatsApp:</h5>
     <br>
 
-    <a class="btn btn-success" href="https://wa.me/524611130928?text=Buen%20día...%20Tengo%20la%20siguiente%20duda%20:">Contacto - WhatsApp</a>
+    <a class="btn-wsp" target="_blank" href="https://wa.me/524611130928?text=Buen%20día...%20Tengo%20la%20siguiente%20duda%20:">
+      <i class="icon-whatsapp"></i>
+    </a>
 
     <h5 class="Black-text">Contáctanos por Email:</h5>
     <br>
