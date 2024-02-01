@@ -200,7 +200,7 @@
 
       <div class="col text-center">
         <figure class="figure">
-          <img src="img\L_Sala.jpg" class="figure-img img-fluid rounded" alt="...">
+          <img src="img\Sala1.jpg" class="img-thumbnail" alt="...">
           <figcaption class="figure-caption"></figcaption>
         </figure>
 
@@ -211,7 +211,7 @@
     <div class="row">
       <div class="col text-center">
         <figure class="figure">
-          <img src="img\L_Asiento.jpg" class="figure-img img-fluid rounded" alt="...">
+          <img src="img\Vestiduras.jpg" class="img-thumbnail" alt="...">
           <figcaption class="figure-caption"></figcaption>
         </figure>
 
@@ -245,7 +245,7 @@
       <div class="col text-center">
 
         <figure class="figure">
-          <img src="img\L_Colchon.jpg" class="figure-img img-fluid rounded" alt="...">
+          <img src="img\Colchon_C.jpg" class="img-thumbnail" alt="...">
           <figcaption class="figure-caption"></figcaption>
         </figure>
 
@@ -256,7 +256,7 @@
     <br>
     <div class="row">
 
-      <div class="card" style="">
+      <div class="card">
         <div class="card-body">
           <h5 class="card-title">Aceptamos tarjetas de Crédito & Debito</h5>
           <p class="card-text"></p>
@@ -275,7 +275,7 @@
     <h5 class="Black-text">Pregunta por nuestras promociones, Contáctanos por WhatsApp:</h5>
     <br>
 
-    <a class="btn-wsp" target="_blank" href="https://wa.me/524611130928?text=Buen%20día...%20Tengo%20la%20siguiente%20duda%20:">
+    <a class="btn-wsp" target="_blank" href="https://wa.me/524611130928?text=Buen%20día...">
       <i class="icon-whatsapp"></i>
     </a>
 
