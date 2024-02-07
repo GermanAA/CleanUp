@@ -48,10 +48,10 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
 
       <img src="img\Logo_Clean.jpg" alt="Logo" width="" height="" class="d-inline-block align-text-top logo">
-      
-      <a class="navbar-brand" href="#">Servicios</a>
 
-     
+      <a class="navbar-brand" href="#">Servicios Comercial & Residencial</a>
+
+
 
       <div class="" id="navbarNav">
         <ul class="navbar-nav">
@@ -171,10 +171,8 @@
 
 
     <div class="row">
-      <div class="col text-center">
-        <img src="img\L_Alfombra.jpg" class="img-fluid rounded" alt="...">
-      </div>
-      <div class="col card">
+
+      <div class="col-sm-12 col-md-6 card">
 
         <div class="row">
           <h5 class="card-body center" id="scrollspyHeading1">Limpieza de Alfombras</h5>
@@ -182,41 +180,81 @@
           <li class="h5">Medidas 2.30 X 1.60 desde <del>$900 mxn</del> $700</li>
         </div>
       </div>
+
+      <div class="col-sm-12 col-md-6 text-center">
+        <img src="img\L_Alfombra.jpg" class="img-fluid rounded" alt="...">
+      </div>
+
+
     </div>
+
+   
 
     <div class="row">
 
-      <div class="col card">
+      <div class="col-sm-12 col-md-6 card">
 
         <div class="row">
-          <h5 class="card-body center" id="scrollspyHeading2">Limpieza de Salas</h5>
-          <p class="card-text">Lavado y Desinfectado de Salas de Tela desde <del>$1,250.00 mxn</del>$900 MXN</p>
-          <li class="h5">Sillón Individual desde <del>$250.00 mxn</del> $200.00 MXN</li>
-          <li class="h5">Sillón Doble desde <del>$450.00 mxn</del> $300 MXN</li>
-          <li class="h5">Sillón Triple desde <del>$550.00 mxn</del> $400 MXN</li>
+          <h5 class="card-body center" id="scrollspyHeading2">Limpieza de Salas & Sillas</h5>
+          <p class="card-text">Lavado y Desinfectado de Salas de Tela desde <del>$1,400.00 mxn</del>$1,150 MXN</p>
+          <li class="h5">Sillón Individual desde <del>$300.00 mxn</del> $250.00 MXN</li>
+          <li class="h5">Sillón Doble desde <del>$500.00 mxn</del> $400 MXN</li>
+          <li class="h5">Sillón Triple desde <del>$600.00 mxn</del> $500 MXN</li>
         </div>
 
       </div>
 
-      <div class="col text-center">
-        <figure class="figure">
-          <img src="img\Sala1.jpg" class="img-thumbnail" alt="...">
-          <figcaption class="figure-caption"></figcaption>
-        </figure>
+      <div class="col-sm-12 col-md-6">
+
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img\Salas\Sala0.JPG" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="img\Salas\Sala1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="img\Salas\Sala2.JPG" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="img\Salas\Sala3.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="img\Salas\Sala4.JPG" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="img\Salas\Sala5.JPG" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="img\Salas\Sala6.JPG" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="img\Salas\Sala7.JPG" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="img\Salas\Sala8.JPG" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="img\Salas\Sala9.JPG" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="img\Salas\Sala10.JPG" class="d-block w-100" alt="...">
+            </div>
+          </div>
+        </div>
 
       </div>
+
+
+
     </div>
 
 
-    <div class="row">
-      <div class="col text-center">
-        <figure class="figure">
-          <img src="img\Vestiduras.jpg" class="img-thumbnail" alt="...">
-          <figcaption class="figure-caption"></figcaption>
-        </figure>
 
-      </div>
-      <div class="col card">
+    <div class="row">
+
+      <div class="col-sm-12 col-md-6 card">
         <div class="row">
           <h5 class="card-body center" id="scrollspyHeading3">Limpieza de Vestiduras de Autos</h5>
           <p class="card-text">Lavado y Desinfectado de Asientos & Alfombras desde <del>$1,250.00 mxn</del>$1000</p>
@@ -225,12 +263,25 @@
           <li class="h5">Vans desde <del>$1650.00 mxn</del>$1,400 MXN</li>
         </div>
       </div>
+
+      <div class="col-sm-12 col-md-6 card">
+        <figure class="figure">
+          <img src="img\Vestiduras\Vestiduras.jpg" class="img-thumbnail" alt="...">
+          <figcaption class="figure-caption"></figcaption>
+        </figure>
+
+      </div>
+
+
+
     </div>
+
+
 
 
     <div class="row">
 
-      <div class="col card">
+      <div class="col-sm-12 col-md-6 card">
         <div class="row">
           <h5 class="card-body center" id="scrollspyHeading4">Limpieza de Colchones</h5>
           <p class="card-text">Lavado y Desinfectado de Colchones desde <del>$900.00 mxn</del>$700 MXN</p>
@@ -241,19 +292,25 @@
         </div>
       </div>
 
-
-      <div class="col text-center">
+      <div class="col-sm-12 col-md-6  text-center">
 
         <figure class="figure">
-          <img src="img\Colchon_C.jpg" class="img-thumbnail" alt="...">
+          <img src="img\Colchones\Colchon_C.jpg" class="img-thumbnail" alt="...">
           <figcaption class="figure-caption"></figcaption>
         </figure>
 
       </div>
+
     </div>
 
 
+
+
     <br>
+
+
+
+
     <div class="row">
 
       <div class="card">
@@ -331,31 +388,31 @@
   </div>
 
   <div class="container">
-  <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
-    <div class="col mb-3">
-      <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">        
-        <img src="img\Logo_Clean.jpg" alt="Logo" width="" height="" class="d-inline-block align-text-top logo">
-      </a>
-      <p class="text-body-secondary">© 2023</p>
-    </div>
+    <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+      <div class="col mb-3">
+        <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+          <img src="img\Logo_Clean.jpg" alt="Logo" width="" height="" class="d-inline-block align-text-top logo">
+        </a>
+        <p class="text-body-secondary">© 2023</p>
+      </div>
 
-    <div class="col mb-3">
+      <div class="col mb-3">
 
-    </div>
+      </div>
 
-    <div class="col mb-3">
-      <h5>Servicios:</h5>
-      <ul class="nav flex-column">
-        <li class="nav-item mb-2"><a href="#scrollspyHeading1" class="nav-link p-0 text-body-secondary">Alfombras</a></li>
-        <li class="nav-item mb-2"><a href="#scrollspyHeading2" class="nav-link p-0 text-body-secondary">Salas</a></li>
-        <li class="nav-item mb-2"><a href="#scrollspyHeading3" class="nav-link p-0 text-body-secondary">Vestiduras de Autos</a></li>
-        <li class="nav-item mb-2"><a href="#scrollspyHeading4" class="nav-link p-0 text-body-secondary">Colchones</a></li>
-      </ul>
-    </div>
+      <div class="col mb-3">
+        <h5>Servicios:</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#scrollspyHeading1" class="nav-link p-0 text-body-secondary">Alfombras</a></li>
+          <li class="nav-item mb-2"><a href="#scrollspyHeading2" class="nav-link p-0 text-body-secondary">Salas</a></li>
+          <li class="nav-item mb-2"><a href="#scrollspyHeading3" class="nav-link p-0 text-body-secondary">Vestiduras de Autos</a></li>
+          <li class="nav-item mb-2"><a href="#scrollspyHeading4" class="nav-link p-0 text-body-secondary">Colchones</a></li>
+        </ul>
+      </div>
 
 
-  </footer>
-</div>
+    </footer>
+  </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 
