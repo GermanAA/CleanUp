@@ -5,15 +5,19 @@
 
 body{
 
-    font-size: 16px;
+    font-size: 14px;
     font-family: 'Lato', sans-serif;
 }
+
 
 h1{
     font-weight: bold;
 
 }
 
+.d-block{
+    border-radius: 8px;
+}
 
 .carusel{
 
@@ -64,4 +68,8 @@ h1{
 
 .salaC{
     height: 480px;
+}
+
+.navbar-brand{
+    font-size: 14px;
 }

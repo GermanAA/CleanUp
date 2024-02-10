@@ -38,10 +38,6 @@
 
 <body>
 
-
-
-
-
   <div class="container">
 
 
@@ -49,7 +45,7 @@
 
       <img src="img\Logo_Clean.jpg" alt="Logo" width="" height="" class="d-inline-block align-text-top logo">
 
-      <a class="navbar-brand" href="#">Servicios Comercial & Residencial</a>
+      <a class="navbar-brand" href="#">Servicio Comercial & Residencial a domicilio</a>
 
 
 
