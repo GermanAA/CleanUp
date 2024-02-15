@@ -53,18 +53,18 @@
         <ul class="navbar-nav">
 
           <li class="nav-item">
-            <a class="nav-link" href="#scrollspyHeading1">Alfombras</a>
+            <a class="nav-link" href="#Alfombras">Alfombras</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#scrollspyHeading2">Salas</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="#scrollspyHeading3">Vestiduras de Autos</a>
+            <a class="nav-link" href="#Salas">Salas</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="#scrollspyHeading4">Colchones</a>
+            <a class="nav-link" href="#Autos">Vestiduras de Autos</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#Colchones">Colchones</a>
           </li>
 
         </ul>
@@ -171,7 +171,7 @@
       <div class="col-sm-12 col-md-6 card">
 
         <div class="row">
-          <h5 class="card-body center" id="scrollspyHeading1">Limpieza de Alfombras</h5>
+          <h5 class="card-body center" id="Alfombras">Limpieza de Alfombras</h5>
           <p class="card-text">Trabajamos con lavadoras de Inyección y Succión para un lavado profundo, desinfección y desmanchado sin dañar el tejido.</p>
           <li class="h5">Medidas 2.30 X 1.60 desde <del>$900 mxn</del> $700</li>
         </div>
@@ -191,7 +191,7 @@
       <div class="col-sm-12 col-md-6 card">
 
         <div class="row">
-          <h5 class="card-body center" id="scrollspyHeading2">Limpieza de Salas & Sillas</h5>
+          <h5 class="card-body center" id="Salas">Limpieza de Salas & Sillas</h5>
           <p class="card-text">Lavado y Desinfectado de Salas de Tela desde <del>$1,400.00 mxn</del>$1,150 MXN</p>
           <li class="h5">Sillón Individual desde <del>$300.00 mxn</del> $250.00 MXN</li>
           <li class="h5">Sillón Doble desde <del>$500.00 mxn</del> $400 MXN</li>
@@ -252,7 +252,7 @@
 
       <div class="col-sm-12 col-md-6 card">
         <div class="row">
-          <h5 class="card-body center" id="scrollspyHeading3">Limpieza de Vestiduras de Autos</h5>
+          <h5 class="card-body center" id="Autos">Limpieza de Vestiduras de Autos</h5>
           <p class="card-text">Lavado y Desinfectado de Asientos & Alfombras desde <del>$1,250.00 mxn</del>$1000</p>
           <li class="h5">Autos desde <del>$1250.00 mxn</del>$1,000 MXN</li>
           <li class="h5">SUV desde <del>$1450.00 mxn</del>$1,200 MXN</li>
@@ -279,7 +279,7 @@
 
       <div class="col-sm-12 col-md-6 card">
         <div class="row">
-          <h5 class="card-body center" id="scrollspyHeading4">Limpieza de Colchones</h5>
+          <h5 class="card-body center" id="Colchones">Limpieza de Colchones</h5>
           <p class="card-text">Lavado y Desinfectado de Colchones desde <del>$900.00 mxn</del>$700 MXN</p>
           <li class="h5">Colchón individual desde <del>$900.00 mxn</del>$700 MXN</li>
           <li class="h5">Matrimonial desde <del>$1100.00 mxn</del>$900.00 MXN</li>
