@@ -71,70 +71,79 @@
       </div>
     </nav>
 
-    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"></li>
-        <li data-bs-target="#carouselExampleDark" data-bs-slide-to="1"></li>
-        <li data-bs-target="#carouselExampleDark" data-bs-slide-to="2"></li>
-        <li data-bs-target="#carouselExampleDark" data-bs-slide-to="3"></li>
-      </ol>
+    <div class="row justify-content-md-center">
+      <div class="col-sm-12 col-md-10">
 
-      <div class="row">
+        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#carouselExampleDark" data-bs-slide-to="1"></li>
+            <li data-bs-target="#carouselExampleDark" data-bs-slide-to="2"></li>
+            <li data-bs-target="#carouselExampleDark" data-bs-slide-to="3"></li>
+          </ol>
 
-        <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="5000">
-            <img src="img\L_Alfombra.jpg" class="carusel" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Limpieza de Alfombras</h5>
+          <div class="row">
 
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="5000">
+                <img src="img\L_Alfombra.jpg" class="carusel" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Limpieza de Alfombras</h5>
+
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="5000">
+                <img src="img\L_Sala.jpg" class="carusel" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Limpieza de Salas</h5>
+
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="5000">
+                <img src="img\autos.jpg" class="carusel" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Limpieza de Tapicería de Autos</h5>
+
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="5000">
+                <img src="img\L_Colchon.jpg" class="carusel" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Limpieza de Colchones</h5>
+
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="carousel-item" data-bs-interval="5000">
-            <img src="img\L_Sala.jpg" class="carusel" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Limpieza de Salas</h5>
 
-            </div>
           </div>
-          <div class="carousel-item" data-bs-interval="5000">
-            <img src="img\autos.jpg" class="carusel" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Limpieza de Tapicería de Autos</h5>
 
-            </div>
-          </div>
-          <div class="carousel-item" data-bs-interval="5000">
-            <img src="img\L_Colchon.jpg" class="carusel" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Limpieza de Colchones</h5>
 
-            </div>
-          </div>
+
+          <a class="carousel-control-prev" href="#carouselExampleDark" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleDark" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </a>
         </div>
 
+
       </div>
-
-
-
-      <a class="carousel-control-prev" href="#carouselExampleDark" role="button" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carouselExampleDark" role="button" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </a>
     </div>
+
+
 
     <br>
 
-    <div class="row">
-      <div class="col card">
+    <div class="row justify-content-md-center">
+      <div class="col-sm-6 col-md-5 card">
         <h2 class="card-body center">Misión</h5>
           <p class="card-text">Clean Up tiene el firme propósito de lograr la satisfacción de sus clientes, proporcionándoles servicios especializados de limpieza, con altos niveles de calidad.</p>
       </div>
 
-      <div class="col card">
+      <div class="col-sm-6 col-md-5 card">
         <h2 class="card-body center">Valores</h5>
 
           <p class="card-text">Puntualidad: Estamos convencidos que el tiempo es un recurso invaluable, por esta razón nuestro objetivo será llegar siempre a tiempo a nuestra cita.</p>
@@ -145,30 +154,34 @@
 
     </div>
 
-    <div class="row">
-      <div class="col ">
+    <div class="row justify-content-md-center">
+      <div class="col-sm-12 col-md-10 card ">
         <h2 class="card-body center">Ubicaciones: </h5>
           <p class="card-text">León, Irapuato, Salamanca, Celaya & Querétaro</p>
       </div>
     </div>
 
-    <div class="row">
+    <div class="row justify-content-md-center">
 
-      <iframe src="https://www.google.com/maps/d/embed?mid=1GCQsqIQ-gk1gmjO0tzG9uPkWF-xt9MM&ehbc=2E312F&noprof=1" width="600" height="450"></iframe>
+      <div class="col-sm-12 col-md-10 card">
+
+        <iframe src="https://www.google.com/maps/d/embed?mid=1GCQsqIQ-gk1gmjO0tzG9uPkWF-xt9MM&ehbc=2E312F&noprof=1" width="" height="450"></iframe>
+
+      </div>
 
     </div>
 
-    <div class="row">
-      <div class="col">
+    <div class="row justify-content-md-center">
+      <div class="col-sm-12 col-md-10">
         <h2 class="pb-2 border-bottom">Servicios:</h5>
       </div>
     </div>
 
 
 
-    <div class="row">
+    <div class="row justify-content-md-center">
 
-      <div class="col-sm-12 col-md-6 card">
+      <div class="col-sm-12 col-md-5 card">
 
         <div class="row">
           <h5 class="card-body center" id="Alfombras">Limpieza de Alfombras</h5>
@@ -177,18 +190,18 @@
         </div>
       </div>
 
-      <div class="col-sm-12 col-md-6 text-center">
+      <div class="col-sm-12 col-md-5 text-center">
         <img src="img\L_Alfombra.jpg" class="img-fluid rounded" alt="...">
       </div>
 
 
     </div>
 
-   
 
-    <div class="row">
 
-      <div class="col-sm-12 col-md-6 card">
+    <div class="row justify-content-md-center">
+
+      <div class="col-sm-12 col-md-5 card">
 
         <div class="row">
           <h5 class="card-body center" id="Salas">Limpieza de Salas & Sillas</h5>
@@ -200,7 +213,7 @@
 
       </div>
 
-      <div class="col-sm-12 col-md-6">
+      <div class="col-sm-12 col-md-5">
 
         <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner">
@@ -248,9 +261,9 @@
 
 
 
-    <div class="row">
+    <div class="row justify-content-md-center">
 
-      <div class="col-sm-12 col-md-6 card">
+      <div class="col-sm-12 col-md-5 card">
         <div class="row">
           <h5 class="card-body center" id="Autos">Limpieza de Vestiduras de Autos</h5>
           <p class="card-text">Lavado y Desinfectado de Asientos & Alfombras desde <del>$1,250.00 mxn</del>$1000</p>
@@ -260,7 +273,7 @@
         </div>
       </div>
 
-      <div class="col-sm-12 col-md-6 card">
+      <div class="col-sm-12 col-md-5 card">
         <figure class="figure">
           <img src="img\Vestiduras\Vestiduras.jpg" class="img-thumbnail" alt="...">
           <figcaption class="figure-caption"></figcaption>
@@ -275,9 +288,9 @@
 
 
 
-    <div class="row">
+    <div class="row justify-content-md-center">
 
-      <div class="col-sm-12 col-md-6 card">
+      <div class="col-sm-12 col-md-5 card">
         <div class="row">
           <h5 class="card-body center" id="Colchones">Limpieza de Colchones</h5>
           <p class="card-text">Lavado y Desinfectado de Colchones desde <del>$900.00 mxn</del>$700 MXN</p>
@@ -288,7 +301,7 @@
         </div>
       </div>
 
-      <div class="col-sm-12 col-md-6  text-center">
+      <div class="col-sm-12 col-md-5  text-center">
 
         <figure class="figure">
           <img src="img\Colchones\Colchon_C.jpg" class="img-thumbnail" alt="...">
@@ -307,9 +320,9 @@
 
 
 
-    <div class="row">
+    <div class="row justify-content-md-center">
 
-      <div class="card">
+      <div class="col-sm-12 col-md-10 card">
         <div class="card-body">
           <h5 class="card-title">Aceptamos tarjetas de Crédito & Debito</h5>
           <p class="card-text"></p>
@@ -320,97 +333,102 @@
 
     </div>
 
+    <div class="row justify-content-md-center">
+      <div class="col-sm-12 col-md-10 card">
 
 
+        <h5 class="Black-text">¿Tienes alguna Duda?...</h5>
+        <br>
+        <h5 class="Black-text">Pregunta por nuestras promociones, Contáctanos por WhatsApp:</h5>
+        <br>
 
-    <h5 class="Black-text">¿Tienes alguna Duda?...</h5>
-    <br>
-    <h5 class="Black-text">Pregunta por nuestras promociones, Contáctanos por WhatsApp:</h5>
-    <br>
-
-    <a class="btn-wsp" target="_blank" href="https://wa.me/524611130928?text=Buen%20día...">
-      <i class="icon-whatsapp"></i>
-    </a>
-
-    <h5 class="Black-text">Contáctanos por Email:</h5>
-    <br>
-
-    <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="POST" class="">
-
-      <div class="col-lg-12">
-        <label for="nombre" class="form-label"> Nombre:</label>
-        <input id="nombre" type="text" name="nombre" class="form-control">
-
-      </div>
-      <br>
-
-      <div class="col-lg-12">
-        <label for="email" class="form-label">Email</label>
-        <input id="email" name="correo" type="email" class="form-control">
-
-      </div>
-      <br>
-      <div class="col-lg-12">
-        <label for="icon_telephone" class="form-label">Teléfono</label>
-        <input id="icon_telephone" type="tel" name="telefono" class="form-control">
-
-      </div>
-      <br>
-
-      <div class="col-lg-12">
-        <label for="comentario" class="form-label">Comentarios</label>
-        <input id="comentario" type="text" name="comentario" class="form-control">
-
-      </div>
-
-      <br>
-
-      <div class="col-lg-12">
-        <label for="direccion" class="form-label">Dirección</label>
-        <input id="direccion" type="text" name="direccion" class="form-control">
-
-      </div>
-
-      <br>
-
-      <button class="btn btn-primary" type="submit" name="action">Enviar
-
-      </button>
-
-    </form>
-
-    <br>
-
-  </div>
-
-  <div class="container">
-    <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
-      <div class="col mb-3">
-        <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
-          <img src="img\Logo_Clean.jpg" alt="Logo" width="" height="" class="d-inline-block align-text-top logo">
+        <a class="btn-wsp" target="_blank" href="https://wa.me/524611130928?text=Buen%20día...">
+          <i class="icon-whatsapp"></i>
         </a>
-        <p class="text-body-secondary">© 2023</p>
+
+        <h5 class="Black-text">Contáctanos por Email:</h5>
+        <br>
+
+        <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="POST" class="">
+
+          <div class="col-lg-12">
+            <label for="nombre" class="form-label"> Nombre:</label>
+            <input id="nombre" type="text" name="nombre" class="form-control">
+
+          </div>
+          <br>
+
+          <div class="col-lg-12">
+            <label for="email" class="form-label">Email</label>
+            <input id="email" name="correo" type="email" class="form-control">
+
+          </div>
+          <br>
+          <div class="col-lg-12">
+            <label for="icon_telephone" class="form-label">Teléfono</label>
+            <input id="icon_telephone" type="tel" name="telefono" class="form-control">
+
+          </div>
+          <br>
+
+          <div class="col-lg-12">
+            <label for="comentario" class="form-label">Comentarios</label>
+            <input id="comentario" type="text" name="comentario" class="form-control">
+
+          </div>
+
+          <br>
+
+          <div class="col-lg-12">
+            <label for="direccion" class="form-label">Dirección</label>
+            <input id="direccion" type="text" name="direccion" class="form-control">
+
+          </div>
+
+          <br>
+
+          <button class="btn btn-primary" type="submit" name="action">Enviar
+
+          </button>
+
+        </form>
+
+        <br>
+
       </div>
 
-      <div class="col mb-3">
 
+
+
+
+      <div class="container">
+        <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+          <div class="col mb-3">
+            <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+              <img src="img\Logo_Clean.jpg" alt="Logo" width="" height="" class="d-inline-block align-text-top logo">
+            </a>
+            <p class="text-body-secondary">© 2023</p>
+          </div>
+
+          <div class="col mb-3">
+
+          </div>
+
+          <div class="col mb-3">
+            <h5>Servicios:</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#scrollspyHeading1" class="nav-link p-0 text-body-secondary">Alfombras</a></li>
+              <li class="nav-item mb-2"><a href="#scrollspyHeading2" class="nav-link p-0 text-body-secondary">Salas</a></li>
+              <li class="nav-item mb-2"><a href="#scrollspyHeading3" class="nav-link p-0 text-body-secondary">Vestiduras de Autos</a></li>
+              <li class="nav-item mb-2"><a href="#scrollspyHeading4" class="nav-link p-0 text-body-secondary">Colchones</a></li>
+            </ul>
+          </div>
+
+
+        </footer>
       </div>
 
-      <div class="col mb-3">
-        <h5>Servicios:</h5>
-        <ul class="nav flex-column">
-          <li class="nav-item mb-2"><a href="#scrollspyHeading1" class="nav-link p-0 text-body-secondary">Alfombras</a></li>
-          <li class="nav-item mb-2"><a href="#scrollspyHeading2" class="nav-link p-0 text-body-secondary">Salas</a></li>
-          <li class="nav-item mb-2"><a href="#scrollspyHeading3" class="nav-link p-0 text-body-secondary">Vestiduras de Autos</a></li>
-          <li class="nav-item mb-2"><a href="#scrollspyHeading4" class="nav-link p-0 text-body-secondary">Colchones</a></li>
-        </ul>
-      </div>
-
-
-    </footer>
-  </div>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 
 </body>
 
