@@ -299,9 +299,7 @@
             <div class="carousel-item">
               <img src="img\Vestiduras\Ves_4.jpg" class="d-block w-100" alt="...">
             </div>
-            <div class="carousel-item">
-              <img src="img\Vestiduras\Ves_5.jpg" class="d-block w-100" alt="...">
-            </div>
+           
           </div>
 
           <button class="carousel-control-prev" type="button" data-bs-target="#carouselVestiduras" data-bs-slide="prev">
