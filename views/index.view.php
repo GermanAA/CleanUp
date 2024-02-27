@@ -215,7 +215,8 @@
 
       <div class="col-sm-12 col-md-5">
 
-        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+
           <div class="carousel-inner">
             <div class="carousel-item active">
               <img src="img\Salas\Sala0.JPG" class="d-block w-100" alt="...">
@@ -251,6 +252,15 @@
               <img src="img\Salas\Sala10.JPG" class="d-block w-100" alt="...">
             </div>
           </div>
+
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselSalas" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselSalas" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
 
       </div>
@@ -274,10 +284,35 @@
       </div>
 
       <div class="col-sm-12 col-md-5 card">
-        <figure class="figure">
-          <img src="img\Vestiduras\Vestiduras.jpg" class="img-thumbnail" alt="...">
-          <figcaption class="figure-caption"></figcaption>
-        </figure>
+        <div id="carouselVestiduras" class="carousel carousel-dark slide" data-bs-ride="carousel">
+
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img\Vestiduras\Ves_1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="img\Vestiduras\Ves_2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="img\Vestiduras\Ves_3.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="img\Vestiduras\Ves_4.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="img\Vestiduras\Ves_5.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselVestiduras" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselVestiduras" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
 
       </div>
 
