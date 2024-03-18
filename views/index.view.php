@@ -86,7 +86,7 @@
 
             <div class="carousel-inner">
               <div class="carousel-item active" data-bs-interval="5000">
-                <img src="img\L_Alfombra.jpg" class="carusel" alt="...">
+                <img src="img\L_Alfombra2.jpg" class="carusel" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                   <h5>Limpieza de Alfombras</h5>
 
@@ -179,6 +179,90 @@
 
 
 
+
+
+
+    <div class="row justify-content-md-center">
+
+      <div class="col-sm-12 col-md-5 card">
+
+        <div class="row">
+          <h5 class="card-body center" id="Salas">Limpieza de Salas & Sillas</h5>
+          <p class="card-text">Lavado y Desinfectado de Salas de Tela desde <del>$1,400.00 mxn</del>$1,150 MXN</p>
+          <li class="h5">Sillón Individual desde <del>$300.00 mxn</del> $250.00 MXN</li>
+          <li class="h5">Sillón Doble desde <del>$500.00 mxn</del> $400 MXN</li>
+          <li class="h5">Sillón Triple desde <del>$600.00 mxn</del> $500 MXN</li>
+        </div>
+
+      </div>
+
+      <div class="col-sm-12 col-md-5">
+
+        <div id="carouselSalas" class="carousel carousel-dark slide" data-bs-ride="carousel">
+
+          <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+
+            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+
+
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="img\Salas\Sala0.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="img\Salas\Sala1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="img\Salas\Sala2.JPG" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="img\Salas\Sala3.JPG" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="img\Salas\Sala4.JPG" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="img\Salas\Sala5.JPG" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="img\Salas\Sala6.JPG" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="img\Salas\Sala7.JPG" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="img\Salas\Sala8.JPG" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="img\Salas\Sala9.JPG" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="img\Salas\Sala10.JPG" class="d-block w-100" alt="...">
+                </div>
+              </div>
+
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselSalas" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselSalas" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+
+          </div>
+
+
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+
     <div class="row justify-content-md-center">
 
       <div class="col-sm-12 col-md-5 card">
@@ -199,77 +283,6 @@
 
 
 
-    <div class="row justify-content-md-center">
-
-      <div class="col-sm-12 col-md-5 card">
-
-        <div class="row">
-          <h5 class="card-body center" id="Salas">Limpieza de Salas & Sillas</h5>
-          <p class="card-text">Lavado y Desinfectado de Salas de Tela desde <del>$1,400.00 mxn</del>$1,150 MXN</p>
-          <li class="h5">Sillón Individual desde <del>$300.00 mxn</del> $250.00 MXN</li>
-          <li class="h5">Sillón Doble desde <del>$500.00 mxn</del> $400 MXN</li>
-          <li class="h5">Sillón Triple desde <del>$600.00 mxn</del> $500 MXN</li>
-        </div>
-
-      </div>
-
-      <div class="col-sm-12 col-md-5">
-
-        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="img\Salas\Sala0.JPG" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="img\Salas\Sala1.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="img\Salas\Sala2.JPG" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="img\Salas\Sala3.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="img\Salas\Sala4.JPG" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="img\Salas\Sala5.JPG" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="img\Salas\Sala6.JPG" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="img\Salas\Sala7.JPG" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="img\Salas\Sala8.JPG" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="img\Salas\Sala9.JPG" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="img\Salas\Sala10.JPG" class="d-block w-100" alt="...">
-            </div>
-          </div>
-
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselSalas" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselSalas" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-
-      </div>
-
-
-
-    </div>
-
-
 
     <div class="row justify-content-md-center">
 
@@ -288,18 +301,21 @@
 
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="img\Vestiduras\Ves_1.jpg" class="d-block w-100" alt="...">
+
+              <img src="img\Vestiduras\Ves_1.JPG" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-              <img src="img\Vestiduras\Ves_2.jpg" class="d-block w-100" alt="...">
+              <img src="img\Vestiduras\Ves_2.JPG" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-              <img src="img\Vestiduras\Ves_3.jpg" class="d-block w-100" alt="...">
+              <img src="img\Vestiduras\Ves_3.JPG" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-              <img src="img\Vestiduras\Ves_4.jpg" class="d-block w-100" alt="...">
+              <img src="img\Vestiduras\Ves_4.JPG" class="d-block w-100" alt="...">
             </div>
-           
+
+
+
           </div>
 
           <button class="carousel-control-prev" type="button" data-bs-target="#carouselVestiduras" data-bs-slide="prev">
@@ -313,155 +329,158 @@
         </div>
 
       </div>
-
-
-
     </div>
 
 
 
 
-    <div class="row justify-content-md-center">
 
-      <div class="col-sm-12 col-md-5 card">
-        <div class="row">
-          <h5 class="card-body center" id="Colchones">Limpieza de Colchones</h5>
-          <p class="card-text">Lavado y Desinfectado de Colchones desde <del>$900.00 mxn</del>$700 MXN</p>
-          <li class="h5">Colchón individual desde <del>$900.00 mxn</del>$700 MXN</li>
-          <li class="h5">Matrimonial desde <del>$1100.00 mxn</del>$900.00 MXN</li>
-          <li class="h5">Queen desde<del> $1450.00 mxn</del>$1,250 MXN</li>
-          <li class="h5">king desde <del>$1650.00 mxn</del>$1,450 MXN</li>
+
+
+
+      <div class="row justify-content-md-center">
+
+        <div class="col-sm-12 col-md-5 card">
+          <div class="row">
+            <h5 class="card-body center" id="Colchones">Limpieza de Colchones</h5>
+            <p class="card-text">Lavado y Desinfectado de Colchones desde <del>$900.00 mxn</del>$700 MXN</p>
+            <li class="h5">Colchón individual desde <del>$900.00 mxn</del>$700 MXN</li>
+            <li class="h5">Matrimonial desde <del>$1100.00 mxn</del>$900.00 MXN</li>
+            <li class="h5">Queen desde<del> $1450.00 mxn</del>$1,250 MXN</li>
+            <li class="h5">king desde <del>$1650.00 mxn</del>$1,450 MXN</li>
+          </div>
         </div>
-      </div>
 
-      <div class="col-sm-12 col-md-5  text-center">
+        <div class="col-sm-12 col-md-5  text-center">
 
-        <figure class="figure">
-          <img src="img\Colchones\Colchon_C.jpg" class="img-thumbnail" alt="...">
-          <figcaption class="figure-caption"></figcaption>
-        </figure>
+          <figure class="figure">
+            <img src="img\Colchones\Colchon_C.jpg" class="img-thumbnail" alt="...">
+            <figcaption class="figure-caption"></figcaption>
+          </figure>
 
-      </div>
-
-    </div>
-
-
-
-
-    <br>
-
-
-
-
-    <div class="row justify-content-md-center">
-
-      <div class="col-sm-12 col-md-10 card">
-        <div class="card-body">
-          <h5 class="card-title">Aceptamos tarjetas de Crédito & Debito</h5>
-          <p class="card-text"></p>
         </div>
-        <img src="img\Tarjetas.png" class="card-img-top" alt="...">
 
       </div>
 
-    </div>
-
-    <div class="row justify-content-md-center">
-      <div class="col-sm-12 col-md-10 card">
 
 
-        <h5 class="Black-text">¿Tienes alguna Duda?...</h5>
-        <br>
-        <h5 class="Black-text">Pregunta por nuestras promociones, Contáctanos por WhatsApp:</h5>
-        <br>
 
-        <a class="btn-wsp" target="_blank" href="https://wa.me/524611130928?text=Buen%20día...">
-          <i class="icon-whatsapp"></i>
+ 
+
+
+
+
+      <div class="row justify-content-md-center">
+
+        <div class="col-sm-12 col-md-10 card">
+          <div class="card-body">
+            <h5 class="card-title">Aceptamos tarjetas de Crédito & Debito</h5>
+            <p class="card-text"></p>
+          </div>
+          <img src="img\Tarjetas.png" class="card-img-top" alt="...">
+
+        </div>
+
+      </div>
+
+      <div class="row justify-content-md-center">
+        <div class="col-sm-12 col-md-10 card">
+
+
+          <h5 class="Black-text">¿Tienes alguna Duda?...</h5>
+          <br>
+          <h5 class="Black-text">Pregunta por nuestras promociones, Contáctanos por WhatsApp:</h5>
+          <br>
+
+          <a class="btn-wsp" target="_blank" href="https://wa.me/524611130928?text=Buen%20día...">
+            <i class="icon-whatsapp"></i>
+          </a>
+
+          <h5 class="Black-text">Contáctanos por Email:</h5>
+          <br>
+
+          <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="POST" class="">
+
+            <div class="col-lg-12">
+              <label for="nombre" class="form-label"> Nombre:</label>
+              <input id="nombre" type="text" name="nombre" class="form-control">
+
+            </div>
+            <br>
+
+            <div class="col-lg-12">
+              <label for="email" class="form-label">Email</label>
+              <input id="email" name="correo" type="email" class="form-control">
+
+            </div>
+            <br>
+            <div class="col-lg-12">
+              <label for="icon_telephone" class="form-label">Teléfono</label>
+              <input id="icon_telephone" type="tel" name="telefono" class="form-control">
+
+            </div>
+            <br>
+
+            <div class="col-lg-12">
+              <label for="comentario" class="form-label">Comentarios</label>
+              <input id="comentario" type="text" name="comentario" class="form-control">
+
+            </div>
+
+            <br>
+
+            <div class="col-lg-12">
+              <label for="direccion" class="form-label">Dirección</label>
+              <input id="direccion" type="text" name="direccion" class="form-control">
+
+            </div>
+
+            <br>
+
+            <button class="btn btn-primary" type="submit" name="action">Enviar
+
+            </button>
+
+          </form>
+
+          <br>
+
+        </div>
+
+      </div>
+
+    
+
+  </div>
+
+  <div class="container">
+    <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+      <div class="col mb-3">
+        <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+          <img src="img\Logo_Clean.jpg" alt="Logo" width="" height="" class="d-inline-block align-text-top logo">
         </a>
+        <p class="text-body-secondary">© 2023</p>
+      </div>
 
-        <h5 class="Black-text">Contáctanos por Email:</h5>
-        <br>
-
-        <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="POST" class="">
-
-          <div class="col-lg-12">
-            <label for="nombre" class="form-label"> Nombre:</label>
-            <input id="nombre" type="text" name="nombre" class="form-control">
-
-          </div>
-          <br>
-
-          <div class="col-lg-12">
-            <label for="email" class="form-label">Email</label>
-            <input id="email" name="correo" type="email" class="form-control">
-
-          </div>
-          <br>
-          <div class="col-lg-12">
-            <label for="icon_telephone" class="form-label">Teléfono</label>
-            <input id="icon_telephone" type="tel" name="telefono" class="form-control">
-
-          </div>
-          <br>
-
-          <div class="col-lg-12">
-            <label for="comentario" class="form-label">Comentarios</label>
-            <input id="comentario" type="text" name="comentario" class="form-control">
-
-          </div>
-
-          <br>
-
-          <div class="col-lg-12">
-            <label for="direccion" class="form-label">Dirección</label>
-            <input id="direccion" type="text" name="direccion" class="form-control">
-
-          </div>
-
-          <br>
-
-          <button class="btn btn-primary" type="submit" name="action">Enviar
-
-          </button>
-
-        </form>
-
-        <br>
+      <div class="col mb-3">
 
       </div>
 
-
-
-
-
-      <div class="container">
-        <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
-          <div class="col mb-3">
-            <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
-              <img src="img\Logo_Clean.jpg" alt="Logo" width="" height="" class="d-inline-block align-text-top logo">
-            </a>
-            <p class="text-body-secondary">© 2023</p>
-          </div>
-
-          <div class="col mb-3">
-
-          </div>
-
-          <div class="col mb-3">
-            <h5>Servicios:</h5>
-            <ul class="nav flex-column">
-              <li class="nav-item mb-2"><a href="#scrollspyHeading1" class="nav-link p-0 text-body-secondary">Alfombras</a></li>
-              <li class="nav-item mb-2"><a href="#scrollspyHeading2" class="nav-link p-0 text-body-secondary">Salas</a></li>
-              <li class="nav-item mb-2"><a href="#scrollspyHeading3" class="nav-link p-0 text-body-secondary">Vestiduras de Autos</a></li>
-              <li class="nav-item mb-2"><a href="#scrollspyHeading4" class="nav-link p-0 text-body-secondary">Colchones</a></li>
-            </ul>
-          </div>
-
-
-        </footer>
+      <div class="col mb-3">
+        <h5>Servicios:</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#scrollspyHeading1" class="nav-link p-0 text-body-secondary">Alfombras</a></li>
+          <li class="nav-item mb-2"><a href="#scrollspyHeading2" class="nav-link p-0 text-body-secondary">Salas</a></li>
+          <li class="nav-item mb-2"><a href="#scrollspyHeading3" class="nav-link p-0 text-body-secondary">Vestiduras de Autos</a></li>
+          <li class="nav-item mb-2"><a href="#scrollspyHeading4" class="nav-link p-0 text-body-secondary">Colchones</a></li>
+        </ul>
       </div>
 
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+    </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 
 </body>
 
