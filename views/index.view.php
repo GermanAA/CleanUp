@@ -15,24 +15,32 @@
 
 
   <script src="https://use.fontawesome.com/603f27fb7e.js"></script>
+
   <link rel="stylesheet" type="text/css" href="css\estilos.css">
   <link rel="stylesheet" type="text/css" href="fontello-a540fdbf\css\fontello.css">
 
-  <script type="text/javascript" src="js/index.js"></script>
+
+  <!--<script type="text/javascript" src="js/index.js"></script> -->
 
   <title>Clean-Up, Servicio de Limpieza!</title>
-  <!-- Google tag (gtag.js) -->
+  <!-- Google tag (gtag.js)
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-34QR9FLW8N">
   </script>
   <script>
     window.dataLayer = window.dataLayer || [];
 
     function gtag() {
+
+
+    
+
+
+    
       dataLayer.push(arguments);
     }
     gtag('js', new Date());
 
-    gtag('config', 'G-34QR9FLW8N');
+    gtag('config', 'G-34QR9FLW8N');  -->
   </script>
 </head>
 
@@ -41,9 +49,9 @@
   <div class="container">
 
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light box">
 
-      <img src="img\Logo_Clean.jpg" alt="Logo" width="" height="" class="d-inline-block align-text-top logo">
+      <img src="img\Logo_Clean.webp" alt="Logo" width="" height="" class="d-inline-block align-text-top logo">
 
       <a class="navbar-brand" href="#">Servicio Comercial & Residencial a domicilio</a>
 
@@ -71,73 +79,55 @@
       </div>
     </nav>
 
-    <div class="row justify-content-md-center">
-      <div class="col-sm-12 col-md-10">
+    <div class="row justify-content-md-center box">
+      <div class="col-sm-12 col-md-8">
 
-        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-          <ol class="carousel-indicators">
-            <li data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"></li>
-            <li data-bs-target="#carouselExampleDark" data-bs-slide-to="1"></li>
-            <li data-bs-target="#carouselExampleDark" data-bs-slide-to="2"></li>
-            <li data-bs-target="#carouselExampleDark" data-bs-slide-to="3"></li>
-          </ol>
-
-          <div class="row">
-
-            <div class="carousel-inner">
-              <div class="carousel-item active" data-bs-interval="5000">
-                <img src="img\L_Alfombra2.jpg" class="carusel" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Limpieza de Alfombras</h5>
-
-                </div>
-              </div>
-              <div class="carousel-item" data-bs-interval="5000">
-                <img src="img\L_Sala.jpg" class="carusel" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Limpieza de Salas</h5>
-
-                </div>
-              </div>
-              <div class="carousel-item" data-bs-interval="5000">
-                <img src="img\autos.jpg" class="carusel" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Limpieza de Tapicería de Autos</h5>
-
-                </div>
-              </div>
-              <div class="carousel-item" data-bs-interval="5000">
-                <img src="img\L_Colchon.jpg" class="carusel" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Limpieza de Colchones</h5>
-
-                </div>
+        <div id="carouselExampleDark" class="carousel carousel-dark slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <img src="img\Salas\Sala0.webp" class="d-block w-100" height="400 alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Limpieza de Salas</h5>
+                <p>Lavado y Desinfectado de Salas de Tela desde <del>$1,400.00 mxn</del>$1,150 MXN</p>
               </div>
             </div>
-
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="img\Alfombra\L_Alfombra600.webp" class="d-block w-100" height="400 alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Limpieza de Alfombras</h5>
+                <p>Trabajamos con lavadoras de Inyección y Succión para un lavado profundo & desinfección.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="img\Vestiduras\Ves2_600.webp" class="d-block w-100" height="400 alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Limpieza de Vestiduras</h5>
+                <p>Lavado y Desinfectado de Asientos & Alfombras desde <del>$1,250.00 mxn</del>$1000</p>
+              </div>
+            </div>
           </div>
-
-
-
-          <a class="carousel-control-prev" href="#carouselExampleDark" role="button" data-bs-slide="prev">
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleDark" role="button" data-bs-slide="next">
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
-          </a>
+          </button>
         </div>
 
-
       </div>
+
     </div>
-
-
 
     <br>
 
-    <div class="row justify-content-md-center">
+    <div class="row justify-content-md-center box">
       <div class="col-sm-6 col-md-5 card">
         <h2 class="card-body center">Misión</h5>
           <p class="card-text">Clean Up tiene el firme propósito de lograr la satisfacción de sus clientes, proporcionándoles servicios especializados de limpieza, con altos niveles de calidad.</p>
@@ -154,24 +144,24 @@
 
     </div>
 
-    <div class="row justify-content-md-center">
+    <div class="row justify-content-md-center box">
       <div class="col-sm-12 col-md-10 card ">
         <h2 class="card-body center">Ubicaciones: </h5>
-          <p class="card-text">León, Irapuato, Salamanca, Celaya & Querétaro</p>
+          <p class="card-text">León, Irapuato, Querétaro & CDMX</p>
       </div>
     </div>
 
-    <div class="row justify-content-md-center">
+    <div class="row justify-content-md-center box">
 
-      <div class="col-sm-12 col-md-10 card">
+      <div class="col-sm-12 col-md-10 ">
 
-        <iframe src="https://www.google.com/maps/d/embed?mid=1GCQsqIQ-gk1gmjO0tzG9uPkWF-xt9MM&ehbc=2E312F&noprof=1" width="" height="450"></iframe>
+        <iframe class="mapa" src="https://www.google.com/maps/d/embed?mid=1GCQsqIQ-gk1gmjO0tzG9uPkWF-xt9MM&ehbc=2E312F&noprof=1" height="400"></iframe>
 
       </div>
 
     </div>
 
-    <div class="row justify-content-md-center">
+    <div class="row justify-content-md-center box">
       <div class="col-sm-12 col-md-10">
         <h2 class="pb-2 border-bottom">Servicios:</h5>
       </div>
@@ -182,7 +172,7 @@
 
 
 
-    <div class="row justify-content-md-center">
+    <div class="row justify-content-md-center box">
 
       <div class="col-sm-12 col-md-5 card">
 
@@ -198,24 +188,21 @@
 
       <div class="col-sm-12 col-md-5">
 
-        <div id="carouselSalas" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div id="carouselSalas" class="carousel slide">
 
-          <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
 
-            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-item active">
 
-
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="img\Salas\Sala0.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                  <img src="img\Salas\Sala1.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                  <img src="img\Salas\Sala2.JPG" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
+              <img src="img\Salas\Sala0_600.webp" class="foto" alt="..." width="400" height="350">
+            </div>
+            <div class="carousel-item">
+              <img src="img\Salas\Sala10_600.webp" class="foto" alt="..." width="400" height="350">
+            </div>
+            <div class="carousel-item">
+              <img src="img\Salas\Sala2_600.webp" class="foto" alt="..." width="400" height="350">
+            </div>
+            <!--     <div class="carousel-item">
                   <img src="img\Salas\Sala3.JPG" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
@@ -238,23 +225,16 @@
                 </div>
                 <div class="carousel-item">
                   <img src="img\Salas\Sala10.JPG" class="d-block w-100" alt="...">
-                </div>
-              </div>
-
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselSalas" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselSalas" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-            </div>
-
+                </div>-->
           </div>
-
-
-
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselSalas" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselSalas" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
       </div>
     </div>
@@ -262,8 +242,7 @@
 
 
 
-
-    <div class="row justify-content-md-center">
+    <div class="row justify-content-md-center box">
 
       <div class="col-sm-12 col-md-5 card">
 
@@ -275,7 +254,7 @@
       </div>
 
       <div class="col-sm-12 col-md-5 text-center">
-        <img src="img\L_Alfombra.jpg" class="img-fluid rounded" alt="...">
+        <img src="img\Alfombra\L_Alfombra600.webp" class="foto" alt="..." width="400" height="350">
       </div>
 
 
@@ -283,8 +262,7 @@
 
 
 
-
-    <div class="row justify-content-md-center">
+    <div class="row justify-content-md-center box">
 
       <div class="col-sm-12 col-md-5 card">
         <div class="row">
@@ -297,24 +275,22 @@
       </div>
 
       <div class="col-sm-12 col-md-5 card">
+
         <div id="carouselVestiduras" class="carousel carousel-dark slide" data-bs-ride="carousel">
 
           <div class="carousel-inner">
             <div class="carousel-item active">
-
-              <img src="img\Vestiduras\Ves_1.JPG" class="d-block w-100" alt="...">
+              <img src="img\Vestiduras\Ves1_600.webp" class="foto" alt="..." width="400" height="350">
             </div>
             <div class="carousel-item">
-              <img src="img\Vestiduras\Ves_2.JPG" class="d-block w-100" alt="...">
+              <img src="img\Vestiduras\Ves2_600.webp" class="foto" alt="..." width="400" height="350">
             </div>
             <div class="carousel-item">
-              <img src="img\Vestiduras\Ves_3.JPG" class="d-block w-100" alt="...">
+              <img src="img\Vestiduras\Ves3_600.webp" class="foto" alt="..." width="400" height="350">
             </div>
             <div class="carousel-item">
-              <img src="img\Vestiduras\Ves_4.JPG" class="d-block w-100" alt="...">
+              <img src="img\Vestiduras\Ves4_600.webp" class="foto" alt="..." width="400" height="350">
             </div>
-
-
 
           </div>
 
@@ -329,135 +305,143 @@
         </div>
 
       </div>
+
+
+
+    </div>
+
+
+    <div class="row justify-content-md-center box">
+
+      <div class="col-sm-12 col-md-5 card">
+        <div class="row">
+          <h5 class="card-body center" id="Colchones">Limpieza de Colchones</h5>
+          <p class="card-text">Lavado y Desinfectado de Colchones desde <del>$900.00 mxn</del>$700 MXN</p>
+          <li class="h5">Colchón individual desde <del>$900.00 mxn</del>$700 MXN</li>
+          <li class="h5">Matrimonial desde <del>$1100.00 mxn</del>$900.00 MXN</li>
+          <li class="h5">Queen desde<del> $1450.00 mxn</del>$1,250 MXN</li>
+          <li class="h5">king desde <del>$1650.00 mxn</del>$1,450 MXN</li>
+        </div>
+      </div>
+
+      <div class="col-sm-12 col-md-5  text-center">
+
+
+        <img src="img\Colchones\C600.webp" class="foto" alt="..." width="400" height="350">
+
+
+      </div>
+
+    </div>
+
+
+
+
+    <div class="row justify-content-md-center box">
+
+      <div class="col-sm-12 col-md-10 card">
+        <div class="card-body">
+          <h5 class="card-title">Aceptamos tarjetas de Crédito & Debito</h5>
+          <p class="card-text"></p>
+        </div>
+        <img src="img\Tarjetas.webp" class="" height="150" alt="...">
+
+      </div>
+
+    </div>
+
+    <a class="btn-wsp" target="_blank" href="https://wa.me/524611130928?text=Buen%20día...">
+      <i class="icon-whatsapp"></i>
+    </a>
+
+
+
+    <div class="row justify-content-md-center box">
+      <div class="col-sm-12 col-md-10 card">
+
+
+        <h5 class="Black-text">¿Tienes alguna Duda?...</h5>
+        <br>
+        <h5 class="Black-text">Pregunta por nuestras promociones, Contáctanos por WhatsApp:</h5>
+        <br>
+
+
+        <h5 class="Black-text">Contáctanos por Email:</h5>
+        <br>
+
+        <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="POST" class="">
+
+          <div class="col-lg-12">
+            <label for="nombre" class="form-label"> Nombre:</label>
+            <input id="nombre" type="text" name="nombre" class="form-control">
+
+          </div>
+          <br>
+
+          <div class="col-lg-12">
+            <label for="email" class="form-label">Email</label>
+            <input id="email" name="correo" type="email" class="form-control">
+
+          </div>
+          <br>
+          <div class="col-lg-12">
+            <label for="icon_telephone" class="form-label">Teléfono</label>
+            <input id="icon_telephone" type="tel" name="telefono" class="form-control">
+
+          </div>
+          <br>
+
+          <div class="col-lg-12">
+            <label for="comentario" class="form-label">Comentarios</label>
+            <input id="comentario" type="text" name="comentario" class="form-control">
+
+          </div>
+
+          <br>
+
+          <div class="col-lg-12">
+            <label for="direccion" class="form-label">Dirección</label>
+            <input id="direccion" type="text" name="direccion" class="form-control">
+
+          </div>
+
+          <br>
+
+          <button class="btn btn-primary" type="submit" name="action">Enviar
+
+          </button>
+
+        </form>
+
+        <br>
+
+      </div>
+
     </div>
 
 
 
 
 
-
-
-
-      <div class="row justify-content-md-center">
-
-        <div class="col-sm-12 col-md-5 card">
-          <div class="row">
-            <h5 class="card-body center" id="Colchones">Limpieza de Colchones</h5>
-            <p class="card-text">Lavado y Desinfectado de Colchones desde <del>$900.00 mxn</del>$700 MXN</p>
-            <li class="h5">Colchón individual desde <del>$900.00 mxn</del>$700 MXN</li>
-            <li class="h5">Matrimonial desde <del>$1100.00 mxn</del>$900.00 MXN</li>
-            <li class="h5">Queen desde<del> $1450.00 mxn</del>$1,250 MXN</li>
-            <li class="h5">king desde <del>$1650.00 mxn</del>$1,450 MXN</li>
-          </div>
-        </div>
-
-        <div class="col-sm-12 col-md-5  text-center">
-
-          <figure class="figure">
-            <img src="img\Colchones\Colchon_C.jpg" class="img-thumbnail" alt="...">
-            <figcaption class="figure-caption"></figcaption>
-          </figure>
-
-        </div>
-
-      </div>
+  </div>
 
 
 
 
- 
 
 
 
 
-      <div class="row justify-content-md-center">
 
-        <div class="col-sm-12 col-md-10 card">
-          <div class="card-body">
-            <h5 class="card-title">Aceptamos tarjetas de Crédito & Debito</h5>
-            <p class="card-text"></p>
-          </div>
-          <img src="img\Tarjetas.png" class="card-img-top" alt="...">
-
-        </div>
-
-      </div>
-
-      <div class="row justify-content-md-center">
-        <div class="col-sm-12 col-md-10 card">
-
-
-          <h5 class="Black-text">¿Tienes alguna Duda?...</h5>
-          <br>
-          <h5 class="Black-text">Pregunta por nuestras promociones, Contáctanos por WhatsApp:</h5>
-          <br>
-
-          <a class="btn-wsp" target="_blank" href="https://wa.me/524611130928?text=Buen%20día...">
-            <i class="icon-whatsapp"></i>
-          </a>
-
-          <h5 class="Black-text">Contáctanos por Email:</h5>
-          <br>
-
-          <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="POST" class="">
-
-            <div class="col-lg-12">
-              <label for="nombre" class="form-label"> Nombre:</label>
-              <input id="nombre" type="text" name="nombre" class="form-control">
-
-            </div>
-            <br>
-
-            <div class="col-lg-12">
-              <label for="email" class="form-label">Email</label>
-              <input id="email" name="correo" type="email" class="form-control">
-
-            </div>
-            <br>
-            <div class="col-lg-12">
-              <label for="icon_telephone" class="form-label">Teléfono</label>
-              <input id="icon_telephone" type="tel" name="telefono" class="form-control">
-
-            </div>
-            <br>
-
-            <div class="col-lg-12">
-              <label for="comentario" class="form-label">Comentarios</label>
-              <input id="comentario" type="text" name="comentario" class="form-control">
-
-            </div>
-
-            <br>
-
-            <div class="col-lg-12">
-              <label for="direccion" class="form-label">Dirección</label>
-              <input id="direccion" type="text" name="direccion" class="form-control">
-
-            </div>
-
-            <br>
-
-            <button class="btn btn-primary" type="submit" name="action">Enviar
-
-            </button>
-
-          </form>
-
-          <br>
-
-        </div>
-
-      </div>
-
-    
 
   </div>
+
 
   <div class="container">
     <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
       <div class="col mb-3">
         <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
-          <img src="img\Logo_Clean.jpg" alt="Logo" width="" height="" class="d-inline-block align-text-top logo">
+          <img src="img\Logo_Clean.webp" alt="Logo" width="" height="" class="d-inline-block align-text-top logo">
         </a>
         <p class="text-body-secondary">© 2023</p>
       </div>
@@ -469,10 +453,11 @@
       <div class="col mb-3">
         <h5>Servicios:</h5>
         <ul class="nav flex-column">
-          <li class="nav-item mb-2"><a href="#scrollspyHeading1" class="nav-link p-0 text-body-secondary">Alfombras</a></li>
-          <li class="nav-item mb-2"><a href="#scrollspyHeading2" class="nav-link p-0 text-body-secondary">Salas</a></li>
-          <li class="nav-item mb-2"><a href="#scrollspyHeading3" class="nav-link p-0 text-body-secondary">Vestiduras de Autos</a></li>
-          <li class="nav-item mb-2"><a href="#scrollspyHeading4" class="nav-link p-0 text-body-secondary">Colchones</a></li>
+          <li class="nav-item mb-2"><a href="#Alfombras" class="nav-link p-0 text-body-secondary">Alfombras</a></li>
+          <li class="nav-item mb-2"><a href="#Salas" class="nav-link p-0 text-body-secondary">Salas</a></li>
+          <li class="nav-item mb-2"><a href="#Autos" class="nav-link p-0 text-body-secondary">Vestiduras de Autos</a></li>
+          <li class="nav-item mb-2"><a href="#Colchones" class="nav-link p-0 text-body-secondary">Colchones</a></li>
+
         </ul>
       </div>
 
@@ -481,6 +466,8 @@
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+  <script type="text/javascript" src="js/index.js"></script>
 
 </body>
 
