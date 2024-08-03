@@ -369,7 +369,7 @@
         <h5 class="Black-text">Contáctanos por Email:</h5>
         <br>
 
-        <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="POST" class="">
+        <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" id="myForm" method="POST" class="">
 
           <div class="col-lg-12">
             <label for="nombre" class="form-label"> Nombre:</label>
@@ -386,7 +386,7 @@
           <br>
           <div class="col-lg-12">
             <label for="icon_telephone" class="form-label">Teléfono</label>
-            <input id="icon_telephone" type="tel" name="telefono" class="form-control">
+            <input id="telefono" type="tel" name="telefono" class="form-control">
 
           </div>
           <br>
