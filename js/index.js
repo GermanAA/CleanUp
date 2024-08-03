@@ -1,1 +1,53 @@
-document.addEventListener("DOMContentLoaded", function () { var e; if ("IntersectionObserver" in window) { e = document.querySelectorAll(".lazy"); var n = new IntersectionObserver(function (e, t) { e.forEach(function (e) { if (e.isIntersecting) { var t = e.target; t.src = t.dataset.src, t.classList.remove("lazy"), n.unobserve(t) } }) }); e.forEach(function (e) { n.observe(e) }) } else { var t; function r() { t && clearTimeout(t), t = setTimeout(function () { var n = window.pageYOffset; e.forEach(function (e) { e.offsetTop < window.innerHeight + n && (e.src = e.dataset.src, e.classList.remove("lazy")) }), 0 == e.length && (document.removeEventListener("scroll", r), window.removeEventListener("resize", r), window.removeEventListener("orientationChange", r)) }, 20) } e = document.querySelectorAll(".lazy"), document.addEventListener("scroll", r), window.addEventListener("resize", r), window.addEventListener("orientationChange", r) } });
+
+
+  const boxes2 = document.querySelectorAll(".box");
+
+  window.addEventListener("scroll",() =>{
+
+
+    const triggerBottom = window.innerHeight;
+
+    boxes2.forEach(box => {
+      const boxTop = box.getBoundingClientRect().top;
+
+      if(boxTop<triggerBottom){
+        box.classList.add("show");
+      }else{
+        box.classList.remove("show");
+      }
+
+
+  });
+});
+
+const boxes = document.querySelectorAll('.box');
+
+    function checkScroll() {
+        boxes.forEach(box => {
+            const boxTop = box.getBoundingClientRect().top;
+            const windowHeight = window.innerHeight;
+            if (boxTop < windowHeight * 0.75) {
+                box.classList.add('visible');
+            } else {
+                box.classList.remove('visible');
+            }
+        });
+    }
+
+    window.addEventListener('scroll', checkScroll);
+    checkScroll(); // Para comprobar el estado inicial al cargar la página
+
+
+
+  /*function checkBoxes(){*/
+
+
+
+  //window.alert("Pregunta por Nuestras Promociones por WhatsApp");
+
+window.onload = function() { // también puede usar window.addEventListener('load', (event) => {
+    alert('Pregunta por Nuestras Promociones por WhatsApp');
+
+    // la imagen es cargada al mismo tiempo
+    
+  };

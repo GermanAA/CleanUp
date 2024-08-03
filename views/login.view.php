@@ -21,13 +21,14 @@
 
 <body class="text-center">
 
+<!--
 	<div class="row justify-content-center mt-3">
 		<div class="col-12 col-sm-6 col-md-3">
 			<form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="POST" class="form-signin" name="login">
 
 				<img src="" width="200" height="100" alt="" loading="">
 
-				<h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+				<h1 class="h3 mb-3 font-weight-normal">Pleaseee sign in</h1>
 
 				<div class="form-group row">
 
@@ -81,6 +82,26 @@
 
 		</div>
 	</div>
+				-->
+
+	<div class="box blue show">
+		<h2>Content1</h2>
+	</div>
+
+	<div class="box yellow">
+		<h2>Content2</h2>
+	</div>
+	<div class="box green">
+		<h2>Content3</h2>
+	</div>
+	<div class="box">
+		<h2>Content4</h2>
+	</div>
+	<div class="box">
+		<h2>Content5</h2>
+	</div>
+
+
 
 
 

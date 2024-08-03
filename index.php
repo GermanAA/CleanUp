@@ -5,8 +5,8 @@ $fotos_por_pagina = 8;
 
 $pagina_actual = (isset($_GET['p']) ? (int)$_GET['p'] : 1);
 $inicio = ($pagina_actual > 1) ? $pagina_actual * $fotos_por_pagina - $fotos_por_pagina :0;
-//$conexion = conexion('cremeria', 'root', 'KGBa9tUE8_JW5.qT');
-$conexion = conexion('cre', 'root', '');
+$conexion = conexion('cremeria', 'gz90wnok', 'Julio70AK7');
+//$conexion = conexion('cre', 'root', '');
 //$conexion = conexion('cremeria', 'gz90wnok', 'Julio70AK7');
 
 if (!$conexion){
