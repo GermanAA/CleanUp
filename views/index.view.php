@@ -6,21 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <!--<script src="js/jquery-3.5.1.js"></script>-->
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-
-
   <script src="https://use.fontawesome.com/603f27fb7e.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/estilos.css">
+  <link rel="stylesheet" type="text/css" href="fontello-a540fdbf/css/fontello.css">
 
-  <link rel="stylesheet" type="text/css" href="css\estilos.css">
-  <link rel="stylesheet" type="text/css" href="fontello-a540fdbf\css\fontello.css">
-
-
-  <!--<script type="text/javascript" src="js/index.js"></script> -->
 
   <title>Clean-Up, Servicio de Limpieza!</title>
   <!-- Google tag (gtag.js)
@@ -48,34 +43,32 @@
 
   <div class="container">
 
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <img src="img\Logo_Clean.webp" alt="Logo" width="" height="" class="d-inline-block align-text-top logo">
+        <a class="navbar-brand" href="#">Servicio Comercial & Residencial a domicilio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#Alfombras">Alfombras</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Salas">Salas</a>
+            </li>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light box">
+            <li class="nav-item">
+              <a class="nav-link" href="#Autos">Vestiduras de Autos</a>
+            </li>
 
-      <img src="img\Logo_Clean.webp" alt="Logo" width="" height="" class="d-inline-block align-text-top logo">
+            <li class="nav-item">
+              <a class="nav-link" href="#Colchones">Colchones</a>
+            </li>
 
-      <a class="navbar-brand" href="#">Servicio Comercial & Residencial a domicilio</a>
-
-
-
-      <div class="" id="navbarNav">
-        <ul class="navbar-nav">
-
-          <li class="nav-item">
-            <a class="nav-link" href="#Alfombras">Alfombras</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#Salas">Salas</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="#Autos">Vestiduras de Autos</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="#Colchones">Colchones</a>
-          </li>
-
-        </ul>
+          </ul>
+        </div>
       </div>
     </nav>
 
@@ -90,21 +83,21 @@
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active" data-bs-interval="10000">
-              <img src="img\Salas\Sala0.webp" class="d-block w-100" height="400 alt="...">
+              <img src="img\Salas\Sala0.webp" class="d-block w-100" height="400 alt=" ...">
               <div class="carousel-caption d-none d-md-block">
                 <h5>Limpieza de Salas</h5>
                 <p>Lavado y Desinfectado de Salas de Tela desde <del>$1,400.00 mxn</del>$1,150 MXN</p>
               </div>
             </div>
             <div class="carousel-item" data-bs-interval="2000">
-              <img src="img\Alfombra\L_Alfombra600.webp" class="d-block w-100" height="400 alt="...">
+              <img src="img\Alfombra\L_Alfombra600.webp" class="d-block w-100" height="400 alt=" ...">
               <div class="carousel-caption d-none d-md-block">
                 <h5>Limpieza de Alfombras</h5>
                 <p>Trabajamos con lavadoras de Inyección y Succión para un lavado profundo & desinfección.</p>
               </div>
             </div>
             <div class="carousel-item">
-              <img src="img\Vestiduras\Ves2_600.webp" class="d-block w-100" height="400 alt="...">
+              <img src="img\Vestiduras\Ves2_600.webp" class="d-block w-100" height="400 alt=" ...">
               <div class="carousel-caption d-none d-md-block">
                 <h5>Limpieza de Vestiduras</h5>
                 <p>Lavado y Desinfectado de Asientos & Alfombras desde <del>$1,250.00 mxn</del>$1000</p>
@@ -420,6 +413,34 @@
     </div>
 
 
+    <div class="row box">
+      <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+        <div class="col mb-3">
+          <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+            <img src="img\Logo_Clean.webp" alt="Logo" width="" height="" class="d-inline-block align-text-top logo">
+          </a>
+          <p class="text-body-secondary">© 2023</p>
+        </div>
+
+        <div class="col mb-3">
+
+        </div>
+
+        <div class="col mb-3">
+          <h5>Servicios:</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#Alfombras" class="nav-link p-0 text-body-secondary">Alfombras</a></li>
+            <li class="nav-item mb-2"><a href="#Salas" class="nav-link p-0 text-body-secondary">Salas</a></li>
+            <li class="nav-item mb-2"><a href="#Autos" class="nav-link p-0 text-body-secondary">Vestiduras de Autos</a></li>
+            <li class="nav-item mb-2"><a href="#Colchones" class="nav-link p-0 text-body-secondary">Colchones</a></li>
+
+          </ul>
+        </div>
+
+
+      </footer>
+    </div>
+
 
 
 
@@ -427,45 +448,8 @@
 
 
 
-
-
-
-
-
-
-
-  </div>
-
-
-  <div class="container">
-    <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
-      <div class="col mb-3">
-        <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
-          <img src="img\Logo_Clean.webp" alt="Logo" width="" height="" class="d-inline-block align-text-top logo">
-        </a>
-        <p class="text-body-secondary">© 2023</p>
-      </div>
-
-      <div class="col mb-3">
-
-      </div>
-
-      <div class="col mb-3">
-        <h5>Servicios:</h5>
-        <ul class="nav flex-column">
-          <li class="nav-item mb-2"><a href="#Alfombras" class="nav-link p-0 text-body-secondary">Alfombras</a></li>
-          <li class="nav-item mb-2"><a href="#Salas" class="nav-link p-0 text-body-secondary">Salas</a></li>
-          <li class="nav-item mb-2"><a href="#Autos" class="nav-link p-0 text-body-secondary">Vestiduras de Autos</a></li>
-          <li class="nav-item mb-2"><a href="#Colchones" class="nav-link p-0 text-body-secondary">Colchones</a></li>
-
-        </ul>
-      </div>
-
-
-    </footer>
-  </div>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 
   <script type="text/javascript" src="js/index.js"></script>
 
