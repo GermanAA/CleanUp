@@ -43,7 +43,7 @@
 
   <div class="container">
 
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light mb-4"">
       <div class="container-fluid">
         <img src="img\Logo_Clean.webp" alt="Logo" width="" height="" class="d-inline-block align-text-top logo">
         <a class="navbar-brand" href="#">Servicio Comercial & Residencial a domicilio</a>
