@@ -59,16 +59,20 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         try {
             // Configuración del servidor SMTP
             $mail->isSMTP();
-            $mail->Host = 'smtp.gmail.com'; // Servidor SMTP de Google
-            $mail->SMTPAuth = true;
-            $mail->Username = 'ventas@clean-up.mx '; // Cambia esto con tu correo de Google Workspace
+            $mail->Host = 'localhost'; // Servidor SMTP de Google
+            $mail->SMTPAuth = false;
+            $mail->Username = 'info@clean-up.mx'; // Cambia esto con tu correo de Google Workspace
             //$mail->Password = ''; // Cambia esto con tu contraseña de Google Workspace o usa una App Password
             $mail->Password =  $password; // Cambia esto con tu contraseña de Google Workspace o usa una App Password
-            $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
-            $mail->Port = 465;
+            //$mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
+            //$mail->Port = 465;
+            //$mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS; // Usar TLS
+            $mail->Port = 25; // 
+            // Habilitar depuración detallada
+            //$mail->SMTPDebug = 3; // Niveles: 1 = errores y mensajes, 2 = mensajes generales, 3 = información detallada (recomendado para depuración)
 
             // Configuración del correo
-            $mail->setFrom('ventas@clean-up.mx', 'Contacto Clean UP'); // Cambia esto con tu correo de Google Workspace
+            $mail->setFrom('info@clean-up.mx', 'Contacto Clean UP'); // Cambia esto con tu correo de Google Workspace
             $mail->addAddress($correo);
             $mail->addAddress($destinatario);
 
