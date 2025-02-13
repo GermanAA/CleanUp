@@ -148,7 +148,9 @@
 
       <div class="col-sm-12 col-md-10 ">
 
-        <iframe class="mapa" src="https://www.google.com/maps/d/embed?mid=1GCQsqIQ-gk1gmjO0tzG9uPkWF-xt9MM&ehbc=2E312F&noprof=1" height="400"></iframe>
+  
+
+          <iframe class="mapa" src="https://www.google.com/maps/d/embed?mid=15z1_1HBzmhQETtI4RfborIVkM1dq8lc&ehbc=2E312F&noprof=1" width="640" height="480"></iframe>
 
       </div>
 
