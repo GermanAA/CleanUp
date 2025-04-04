@@ -83,7 +83,7 @@
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active" data-bs-interval="10000">
-              <img src="img\Salas\Sala0.webp" class="d-block w-100" height="400 alt=" ...">
+              <img src="img\Salas\Sala0_600.webp" class="d-block w-100" height="400 alt=" ...">
               <div class="carousel-caption d-none d-md-block">
                 <h5>Limpieza de Salas</h5>
                 <p>Lavado y Desinfectado de Salas de Tela desde <del>$1,400.00 mxn</del>$1,150 MXN</p>
