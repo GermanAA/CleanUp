@@ -8,6 +8,7 @@
   <!-- Bootstrap CSS -->
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,7 +16,6 @@
   <script src="https://use.fontawesome.com/603f27fb7e.js"></script>
   <link rel="stylesheet" type="text/css" href="css/estilos.css">
   <link rel="stylesheet" type="text/css" href="fontello-a540fdbf/css/fontello.css">
-
 
   <title>Clean-Up, Servicio de Limpieza!</title>
   <!-- Google tag (gtag.js)
@@ -43,34 +43,51 @@
 
   <div class="container">
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light mb-4"">
+    <nav class="navbar navbar-expand-lg bg-light navbar-light mb-4">
       <div class="container-fluid">
-        <img src="img\Logo_Clean.webp" alt="Logo" width="" height="" class="d-inline-block align-text-top logo">
-        <a class="navbar-brand" href="#">Servicio Comercial & Residencial a domicilio</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <!-- LOGO + Título -->
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img
+            src="img/Logo_Clean.webp"
+            alt="Logo"
+            width="40"
+            height="55"
+            class="d-inline-block align-text-top me-2 logo">
+          <span class="fw-semibold">Servicio Comercial &amp; Residencial a domicilio</span>
+        </a>
+
+        <!-- Botón toggler para mobile -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
+
+        <!-- Links de navegación -->
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
+          <ul class="navbar-nav ms-auto">
             <li class="nav-item">
               <a class="nav-link" href="#Alfombras">Alfombras</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#Salas">Salas</a>
             </li>
-
             <li class="nav-item">
               <a class="nav-link" href="#Autos">Vestiduras de Autos</a>
             </li>
-
             <li class="nav-item">
               <a class="nav-link" href="#Colchones">Colchones</a>
             </li>
-
           </ul>
         </div>
       </div>
     </nav>
+
 
     <div class="row justify-content-md-center box">
       <div class="col-sm-12 col-md-8">
@@ -148,9 +165,9 @@
 
       <div class="col-sm-12 col-md-10 ">
 
-  
 
-          <iframe class="mapa" src="https://www.google.com/maps/d/embed?mid=15z1_1HBzmhQETtI4RfborIVkM1dq8lc&ehbc=2E312F&noprof=1" width="640" height="480"></iframe>
+
+        <iframe class="mapa" src="https://www.google.com/maps/d/embed?mid=15z1_1HBzmhQETtI4RfborIVkM1dq8lc&ehbc=2E312F&noprof=1" width="640" height="480"></iframe>
 
       </div>
 
@@ -269,7 +286,7 @@
         </div>
       </div>
 
-      <div class="col-sm-12 col-md-5 card">
+      <div class="col-sm-12 col-md-5">
 
         <div id="carouselVestiduras" class="carousel carousel-dark slide" data-bs-ride="carousel">
 
@@ -364,48 +381,101 @@
         <h5 class="Black-text">Contáctanos por Email:</h5>
         <br>
 
-        <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" id="myForm" method="POST" class="">
-
-          <div class="col-lg-12">
-            <label for="nombre" class="form-label"> Nombre:</label>
-            <input id="nombre" type="text" name="nombre" class="form-control">
-
-          </div>
-          <br>
-
-          <div class="col-lg-12">
-            <label for="email" class="form-label">Email</label>
-            <input id="email" name="correo" type="email" class="form-control">
-
-          </div>
-          <br>
-          <div class="col-lg-12">
-            <label for="icon_telephone" class="form-label">Teléfono</label>
-            <input id="telefono" type="tel" name="telefono" class="form-control">
-
-          </div>
-          <br>
-
-          <div class="col-lg-12">
-            <label for="comentario" class="form-label">Comentarios</label>
-            <input id="comentario" type="text" name="comentario" class="form-control">
-
+        <form
+          action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>"
+          id="myForm"
+          method="POST"
+          class="needs-validation"
+          novalidate>
+          <!-- Nombre -->
+          <div class="mb-3">
+            <label for="nombre" class="form-label">
+              <i class="bi bi-person-fill"></i> Nombre
+            </label>
+            <input
+              type="text"
+              class="form-control"
+              id="nombre"
+              name="nombre"
+              placeholder="Escribe tu nombre"
+              required>
+            <div class="invalid-feedback">
+              Por favor, ingresa tu nombre.
+            </div>
           </div>
 
-          <br>
-
-          <div class="col-lg-12">
-            <label for="direccion" class="form-label">Dirección</label>
-            <input id="direccion" type="text" name="direccion" class="form-control">
-
+          <!-- Email -->
+          <div class="mb-3">
+            <label for="email" class="form-label">
+              <i class="bi bi-envelope-fill"></i> Email
+            </label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              name="correo"
+              placeholder="correo@dominio.com"
+              required>
+            <div class="invalid-feedback">
+              Por favor, ingresa un correo válido.
+            </div>
           </div>
 
-          <br>
+          <!-- Teléfono -->
+          <div class="mb-3">
+            <label for="telefono" class="form-label">
+              <i class="bi bi-telephone-fill"></i> Teléfono
+            </label>
+            <input
+              type="tel"
+              class="form-control"
+              id="telefono"
+              name="telefono"
+              placeholder="555-1234-567"
+              required>
+            <div class="invalid-feedback">
+              Por favor, ingresa tu número de teléfono.
+            </div>
+          </div>
 
-          <button class="btn btn-primary" type="submit" name="action">Enviar
+          <!-- Comentarios (con textarea) -->
+          <div class="mb-3">
+            <label for="comentario" class="form-label">
+              <i class="bi bi-chat-dots-fill"></i> Comentarios
+            </label>
+            <textarea
+              class="form-control"
+              id="comentario"
+              name="comentario"
+              rows="3"
+              placeholder="Escribe aquí ..."
+              required></textarea>
+            <div class="invalid-feedback">
+              Por favor, agrega un comentario.
+            </div>
+          </div>
 
+          <!-- Dirección -->
+          <div class="mb-3">
+            <label for="direccion" class="form-label">
+              <i class="bi bi-geo-alt-fill"></i> Dirección
+            </label>
+            <input
+              type="text"
+              class="form-control"
+              id="direccion"
+              name="direccion"
+              placeholder="Calle 123, Ciudad"
+              required>
+            <div class="invalid-feedback">
+              Por favor, ingresa tu dirección.
+            </div>
+          </div>
+
+          <!-- Botón de envío -->
+          <button class="btn btn-primary" type="submit" name="action">
+            Enviar
           </button>
-
         </form>
 
         <br>
@@ -416,31 +486,71 @@
 
 
     <div class="row box">
-      <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
-        <div class="col mb-3">
-          <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
-            <img src="img\Logo_Clean.webp" alt="Logo" width="" height="" class="d-inline-block align-text-top logo">
-          </a>
-          <p class="text-body-secondary">© 2023</p>
+      <footer class="container py-5 my-5 border-top">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+          <!-- Logo y derechos reservados -->
+          <div class="col mb-3">
+            <a
+              href="/"
+              class="d-flex align-items-center mb-3 text-decoration-none link-body-emphasis">
+              <img
+                src="img/Logo_Clean.webp"
+                alt="Logo"
+                height="55"
+                class="d-inline-block align-text-top logo">
+            </a>
+            <p class="text-body-secondary mb-0">© 2023</p>
+          </div>
+
+          <!-- Espacio vacío o sección adicional -->
+          <div class="col mb-3">
+            <!-- Puedes agregar aquí alguna información adicional si lo deseas. -->
+          </div>
+
+          <!-- Sección de Servicios -->
+          <div class="col mb-3">
+            <h5>Servicios</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="#Alfombras" class="nav-link p-0 text-body-secondary">Alfombras</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#Salas" class="nav-link p-0 text-body-secondary">Salas</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#Autos" class="nav-link p-0 text-body-secondary">Vestiduras de Autos</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#Colchones" class="nav-link p-0 text-body-secondary">Colchones</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Sección de Redes Sociales -->
+          <div class="col mb-3">
+            <h5>Síguenos</h5>
+            <ul class="list-unstyled d-flex">
+              <li class="ms-0">
+                <a class="text-body-secondary me-3" href="#" aria-label="Facebook">
+                  <i class="bi bi-facebook"></i>
+                </a>
+              </li>
+              <li>
+                <a class="text-body-secondary me-3" href="#" aria-label="Twitter">
+                  <i class="bi bi-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a class="text-body-secondary me-3" href="#" aria-label="Instagram">
+                  <i class="bi bi-instagram"></i>
+                </a>
+              </li>
+
+            </ul>
+          </div>
         </div>
-
-        <div class="col mb-3">
-
-        </div>
-
-        <div class="col mb-3">
-          <h5>Servicios:</h5>
-          <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="#Alfombras" class="nav-link p-0 text-body-secondary">Alfombras</a></li>
-            <li class="nav-item mb-2"><a href="#Salas" class="nav-link p-0 text-body-secondary">Salas</a></li>
-            <li class="nav-item mb-2"><a href="#Autos" class="nav-link p-0 text-body-secondary">Vestiduras de Autos</a></li>
-            <li class="nav-item mb-2"><a href="#Colchones" class="nav-link p-0 text-body-secondary">Colchones</a></li>
-
-          </ul>
-        </div>
-
-
       </footer>
+
     </div>
 
 
