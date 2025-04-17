@@ -1,81 +1,59 @@
+// Optimización de animación con IntersectionObserver
+const boxes = document.querySelectorAll(".box");
 
-
-const boxes2 = document.querySelectorAll(".box");
-
-window.addEventListener("scroll", () => {
-
-
-  const triggerBottom = window.innerHeight;
-
-  boxes2.forEach(box => {
-    const boxTop = box.getBoundingClientRect().top;
-
-    if (boxTop < triggerBottom) {
-      box.classList.add("show");
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show", "visible");
     } else {
-      box.classList.remove("show");
+      entry.target.classList.remove("show", "visible");
     }
-
-
   });
+}, {
+  threshold: 0.25 // Se activa cuando el 25% del elemento es visible
 });
 
-const boxes = document.querySelectorAll('.box');
+boxes.forEach(box => observer.observe(box));
 
-function checkScroll() {
-  boxes.forEach(box => {
-    const boxTop = box.getBoundingClientRect().top;
-    const windowHeight = window.innerHeight;
-    if (boxTop < windowHeight * 0.75) {
-      box.classList.add('visible');
-    } else {
-      box.classList.remove('visible');
-    }
-  });
-}
-
-window.addEventListener('scroll', checkScroll);
-checkScroll(); // Para comprobar el estado inicial al cargar la página
-
-
-
-/*function checkBoxes(){*/
-
-
-
-//window.alert("Pregunta por Nuestras Promociones por WhatsApp");
-
-window.onload = function () { // también puede usar window.addEventListener('load', (event) => {
+// Mostrar alerta promocional al cargar la página
+window.addEventListener('load', () => {
   alert('Pregunta por Nuestras Promociones por WhatsApp');
+});
 
-};
+// Validación nativa de Bootstrap (form-control + needs-validation)
+(() => {
+  'use strict';
+  const forms = document.querySelectorAll('.needs-validation');
+  forms.forEach(form => {
+    form.addEventListener('submit', event => {
+      if (!form.checkValidity()) {
+        event.preventDefault();
+        event.stopPropagation();
+      }
+      form.classList.add('was-validated');
+    });
+  });
+})();
 
-document.addEventListener('DOMContentLoaded', function () {
+// Validación personalizada y confirmación antes de enviar formulario
+document.addEventListener('DOMContentLoaded', () => {
   const form = document.getElementById('myForm');
+  if (!form) return;
 
-  form.addEventListener('submit', function (event) {
-    event.preventDefault(); // Evita el envío del formulario
+  form.addEventListener('submit', event => {
+    event.preventDefault();
 
-    // Obtener los valores del formulario
-    const name = document.getElementById('nombre').value;
-    const email = document.getElementById('email').value;
-    const telefono = document.getElementById('telefono').value;
-    const comentario = document.getElementById('comentario').value;
-    const direccion = document.getElementById('direccion').value;
+    const name = document.getElementById('nombre')?.value || '';
+    const email = document.getElementById('email')?.value || '';
+    const telefono = document.getElementById('telefono')?.value || '';
+    const comentario = document.getElementById('comentario')?.value || '';
+    const direccion = document.getElementById('direccion')?.value || '';
 
+    const confirmationMessage = `Confirma el envío de los siguientes datos:\n\nNombre: ${name}\nEmail: ${email}\nTeléfono: ${telefono}\nComentarios: ${comentario}\nDirección: ${direccion}`;
 
-    // Crear el mensaje de confirmación
-    const confirmationMessage = `Confirma el envío de los siguientes datos:\n\nNombre: ${name}
-      \nEmail: ${email}
-      \nTeléfono: ${telefono}
-       \nComentarios: ${comentario}
-        \nDirección: ${direccion}
-      `;
-
-    // Mostrar la ventana emergente
     if (confirm(confirmationMessage)) {
-      // Si el usuario confirma, enviar el formulario
       form.submit();
     }
   });
 });
+

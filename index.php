@@ -2,103 +2,100 @@
 require 'vendor/autoload.php';
 require 'funciones.php';
 
+
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 use Dotenv\Dotenv;
 
-
 $dotenv = Dotenv::createImmutable(__DIR__);
 $dotenv->load();
 
-$password = $_ENV['DB_PASSWORD'];
 $secretKey = $_ENV['CAP_PASSWORD'] ?? '';
 
-// Validar que todas las variables están configuradas
 if (empty($secretKey)) {
-    die("Error: Faltan configuraciones en el archivo .env.");
+    echo "<div class='alert alert-danger'>Error: Faltan configuraciones en el archivo .env.</div>";
+    exit;
 }
 
-// Función para validar Google reCAPTCHA
 function validarCaptcha($recaptchaResponse, $secretKey)
 {
     $verifyUrl = 'https://www.google.com/recaptcha/api/siteverify';
     $response = file_get_contents($verifyUrl . '?secret=' . $secretKey . '&response=' . $recaptchaResponse);
     $responseData = json_decode($response);
+    echo "<pre>Resultado CAPTCHA: " . json_encode($responseData, JSON_PRETTY_PRINT) . "</pre>";
     return $responseData->success;
 }
 
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    echo "<pre>Solicitud POST recibida</pre>";
 
-if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $nombreCliente = $_POST['nombre'];
-    $correo = $_POST['correo'];
-    $telefono = $_POST['telefono'];
-    $comentario = $_POST['comentario'];
-    $direccion = $_POST['direccion'];
+    $nombreCliente = trim($_POST['nombre'] ?? '');
+    $correo = trim($_POST['correo'] ?? '');
+    $telefono = trim($_POST['telefono'] ?? '');
+    $comentario = trim($_POST['comentario'] ?? '');
+    $direccion = trim($_POST['direccion'] ?? '');
     $recaptchaResponse = $_POST['g-recaptcha-response'] ?? '';
-    // Validar CAPTCHA
-    if (!validarCaptcha($recaptchaResponse, $secretKey)) {
-        die("<div class='alert alert-danger'>Error: CAPTCHA no válido.</div>");
+
+    echo "<pre>Datos recibidos:\nNombre: $nombreCliente\nCorreo: $correo\nTeléfono: $telefono\nComentario: $comentario\nDirección: $direccion</pre>";
+
+    if (empty($nombreCliente) || empty($correo) || empty($telefono) || empty($comentario) || empty($direccion)) {
+        echo "<div class='alert alert-danger'>Error: Todos los campos son obligatorios.</div>";
+        exit;
     }
 
-    if ($comentario != "") {
-        // Datos del correo
-        $destinatario = "ventas@clean-up.mx";
-        $asunto = "Servicio Clean UP";
-        $mensaje = "Nombre del cliente: " . $nombreCliente . "\nCorreo: " . $correo . "\nTeléfono: " . $telefono . "\nComentario: " . $comentario . "\nDirección: " . $direccion;
+    if (!validarCaptcha($recaptchaResponse, $secretKey)) {
+        echo "<div class='alert alert-danger'>Error: CAPTCHA no válido.</div>";
+        exit;
+    }
 
-        // Configuración de PHPMailer
-        $mail = new PHPMailer(true);
-        try {
-            // Configuración del servidor SMTP
-            $mail->isSMTP();
-            $mail->Host = 'localhost'; // Servidor SMTP de Google
-            $mail->SMTPAuth = false;
-            $mail->Username = 'info@clean-up.mx'; // Cambia esto con tu correo de Google Workspace
-            //$mail->Password = ''; // Cambia esto con tu contraseña de Google Workspace o usa una App Password
-            $mail->Password =  $password; // Cambia esto con tu contraseña de Google Workspace o usa una App Password
-            //$mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
-            //$mail->Port = 465;
-            //$mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS; // Usar TLS
-            $mail->Port = 25; // 
-            // Habilitar depuración detallada
-            //$mail->SMTPDebug = 3; // Niveles: 1 = errores y mensajes, 2 = mensajes generales, 3 = información detallada (recomendado para depuración)
+    echo "<pre>Enviando correo...</pre>";
+    $destinatario = "ventas@clean-up.mx";
+    $asunto = "Servicio Clean UP";
+    $mensaje = "Nombre del cliente: $nombreCliente\nCorreo: $correo\nTeléfono: $telefono\nComentario: $comentario\nDirección: $direccion";
 
-            // Configuración del correo
-            $mail->setFrom('info@clean-up.mx', 'Contacto Clean UP'); // Cambia esto con tu correo de Google Workspace
-            $mail->addAddress($correo);
-            $mail->addAddress($destinatario);
+    $mail = new PHPMailer(true);
+    try {
+        $mail->isSMTP();
+        $mail->Host = 'localhost';
+        $mail->SMTPAuth = true;
+        $mail->Username = 'info@clean-up.mx';
+        $mail->Password = $password;
+        $mail->Port = 25;
 
-            // Contenido del correo
-            $mail->isHTML(false);
-            $mail->Subject = $asunto;
-            $mail->Body = $mensaje;
+        $mail->setFrom('info@clean-up.mx', 'Contacto Clean UP');
+        $mail->addAddress($correo);
+        $mail->addAddress($destinatario);
 
-            // Enviar correo
-            $mail->send();
-            echo "<!DOCTYPE html>
-            <html lang='es'>
-            <head>
-                <meta charset='UTF-8'>
-                <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-                <title>Mensaje Enviado</title>
-                <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH' crossorigin='anonymous'>
-                <link rel='stylesheet' href='estilos/styles.css'>
-            </head>
-            <body>
-                <div class='container mt-5'>
-                    <div class='alert alert-success'>
-                        <h4 class='alert-heading'>Gracias, $nombreCliente</h4>
-                        <p>Tu mensaje ha sido enviado con éxito. Nos pondremos en contacto contigo a la brevedad posible.</p>
-                        <hr>
-                        <p class='mb-0'><a href='index.php' class='btn btn-primary'>Volver al formulario</a></p>
-                    </div>
+        $mail->isHTML(false);
+        $mail->Subject = $asunto;
+        $mail->Body = $mensaje;
+
+        $mail->send();
+        echo "<pre>Correo enviado exitosamente a $correo y $destinatario</pre>";
+
+        echo "<!DOCTYPE html>
+        <html lang='es'>
+        <head>
+            <meta charset='UTF-8'>
+            <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+            <title>Mensaje Enviado</title>
+            <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH' crossorigin='anonymous'>
+            <link rel='stylesheet' href='estilos/styles.css'>
+        </head>
+        <body>
+            <div class='container mt-5'>
+                <div class='alert alert-success'>
+                    <h4 class='alert-heading'>Gracias, $nombreCliente</h4>
+                    <p>Tu mensaje ha sido enviado con éxito. Nos pondremos en contacto contigo a la brevedad posible.</p>
+                    <hr>
+                    <p class='mb-0'><a href='index.php' class='btn btn-primary'>Volver al formulario</a></p>
                 </div>
-                <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js'></script>
-            </body>
-            </html>";
-        } catch (Exception $e) {
-            echo "¡Mensaje No Enviado! Error: {$mail->ErrorInfo}";
-        }
+            </div>
+            <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js'></script>
+        </body>
+        </html>";
+    } catch (Exception $e) {
+        echo "<div class='alert alert-danger'>¡Mensaje No Enviado! Error: {$mail->ErrorInfo}</div>";
     }
 }
 

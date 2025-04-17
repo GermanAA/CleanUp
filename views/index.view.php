@@ -381,104 +381,45 @@
         <h5 class="Black-text">Contáctanos por Email:</h5>
         <br>
 
-        <form
-          action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>"
-          id="myForm"
-          method="POST"
-          class="needs-validation"
-          novalidate>
-          <!-- Nombre -->
+        <form id="formularioContacto" class="needs-validation" novalidate>
           <div class="mb-3">
-            <label for="nombre" class="form-label">
-              <i class="bi bi-person-fill"></i> Nombre
-            </label>
-            <input
-              type="text"
-              class="form-control"
-              id="nombre"
-              name="nombre"
-              placeholder="Escribe tu nombre"
-              required>
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="nombre" name="nombre" required>
             <div class="invalid-feedback">
-              Por favor, ingresa tu nombre.
+              Por favor ingresa tu nombre.
             </div>
           </div>
-
-          <!-- Email -->
           <div class="mb-3">
-            <label for="email" class="form-label">
-              <i class="bi bi-envelope-fill"></i> Email
-            </label>
-            <input
-              type="email"
-              class="form-control"
-              id="email"
-              name="correo"
-              placeholder="correo@dominio.com"
-              required>
+            <label for="correo" class="form-label">Correo electrónico</label>
+            <input type="email" class="form-control" id="correo" name="correo" required>
             <div class="invalid-feedback">
-              Por favor, ingresa un correo válido.
+              Ingresa un correo electrónico válido.
             </div>
           </div>
-
-          <!-- Teléfono -->
           <div class="mb-3">
-            <label for="telefono" class="form-label">
-              <i class="bi bi-telephone-fill"></i> Teléfono
-            </label>
-            <input
-              type="tel"
-              class="form-control"
-              id="telefono"
-              name="telefono"
-              placeholder="555-1234-567"
-              required>
+            <label for="telefono" class="form-label">Teléfono</label>
+            <input type="tel" class="form-control" id="telefono" name="telefono" pattern="[0-9]{10}" required>
             <div class="invalid-feedback">
-              Por favor, ingresa tu número de teléfono.
+              Ingresa un número de teléfono válido de 10 dígitos.
             </div>
           </div>
-
-          <!-- Comentarios (con textarea) -->
           <div class="mb-3">
-            <label for="comentario" class="form-label">
-              <i class="bi bi-chat-dots-fill"></i> Comentarios
-            </label>
-            <textarea
-              class="form-control"
-              id="comentario"
-              name="comentario"
-              rows="3"
-              placeholder="Escribe aquí ..."
-              required></textarea>
+            <label for="comentario" class="form-label">Comentario</label>
+            <textarea class="form-control" id="comentario" name="comentario" rows="3" required></textarea>
             <div class="invalid-feedback">
-              Por favor, agrega un comentario.
+              Por favor agrega un comentario.
             </div>
           </div>
-
-          <!-- Dirección -->
           <div class="mb-3">
-            <label for="direccion" class="form-label">
-              <i class="bi bi-geo-alt-fill"></i> Dirección
-            </label>
-            <input
-              type="text"
-              class="form-control"
-              id="direccion"
-              name="direccion"
-              placeholder="Calle 123, Ciudad"
-              required>
+            <label for="direccion" class="form-label">Dirección</label>
+            <input type="text" class="form-control" id="direccion" name="direccion" required>
             <div class="invalid-feedback">
-              Por favor, ingresa tu dirección.
+              Por favor ingresa tu dirección.
             </div>
           </div>
-
-          <!-- Botón de envío -->
-          <div class="g-recaptcha" data-sitekey="6Ld_QsMqAAAAAJvREOuFK8KMJMqzK2wCwMEeUZhS"></div>
-          <div class="col-sm-12 col-md-10"><button type="submit" class="btn btn-primary" name="action">Enviar</button>
-          </div>
-           
+          <div class="g-recaptcha mb-3" data-sitekey="6Ld_QsMqAAAAAJvREOuFK8KMJMqzK2wCwMEeUZhS"></div>
+          <button type="submit" class="btn btn-primary">Enviar</button>
         </form>
-
         <br>
 
       </div>
