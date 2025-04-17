@@ -374,7 +374,7 @@
 
         <h5 class="Black-text">¿Tienes alguna Duda?...</h5>
         <br>
-        <h5 class="Black-text">Pregunta por nuestras promociones, Contáctanos por WhatsApp:</h5>
+    
         <br>
 
 
@@ -383,42 +383,42 @@
 
         <form id="formularioContacto" class="needs-validation" novalidate>
           <div class="mb-3">
-            <label for="nombre" class="form-label">Nombre</label>
+            <label for="nombre" class="form-label"><i class="bi bi-person-fill me-1"></i>Nombre</label>
             <input type="text" class="form-control" id="nombre" name="nombre" required>
             <div class="invalid-feedback">
               Por favor ingresa tu nombre.
             </div>
           </div>
           <div class="mb-3">
-            <label for="correo" class="form-label">Correo electrónico</label>
+            <label for="correo" class="form-label"><i class="bi bi-envelope-fill me-1"></i>Correo electrónico</label>
             <input type="email" class="form-control" id="correo" name="correo" required>
             <div class="invalid-feedback">
               Ingresa un correo electrónico válido.
             </div>
           </div>
           <div class="mb-3">
-            <label for="telefono" class="form-label">Teléfono</label>
+            <label for="telefono" class="form-label"><i class="bi bi-telephone-fill me-1"></i>Teléfono</label>
             <input type="tel" class="form-control" id="telefono" name="telefono" pattern="[0-9]{10}" required>
             <div class="invalid-feedback">
               Ingresa un número de teléfono válido de 10 dígitos.
             </div>
           </div>
           <div class="mb-3">
-            <label for="comentario" class="form-label">Comentario</label>
+            <label for="comentario" class="form-label"><i class="bi bi-chat-dots-fill me-1"></i>Comentario</label>
             <textarea class="form-control" id="comentario" name="comentario" rows="3" required></textarea>
             <div class="invalid-feedback">
               Por favor agrega un comentario.
             </div>
           </div>
           <div class="mb-3">
-            <label for="direccion" class="form-label">Dirección</label>
+            <label for="direccion" class="form-label"><i class="bi bi-geo-alt-fill me-1"></i>Dirección</label>
             <input type="text" class="form-control" id="direccion" name="direccion" required>
             <div class="invalid-feedback">
               Por favor ingresa tu dirección.
             </div>
           </div>
           <div class="g-recaptcha mb-3" data-sitekey="6Ld_QsMqAAAAAJvREOuFK8KMJMqzK2wCwMEeUZhS"></div>
-          <button type="submit" class="btn btn-primary">Enviar</button>
+          <button type="submit" class="btn btn-primary"><i class="bi bi-send-fill me-1"></i>Enviar</button>
         </form>
         <br>
 
