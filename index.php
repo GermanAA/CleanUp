@@ -1,14 +1,31 @@
 <?php
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\Exception;
-
 require 'vendor/autoload.php';
 require 'funciones.php';
 
-$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+use Dotenv\Dotenv;
+
+
+$dotenv = Dotenv::createImmutable(__DIR__);
 $dotenv->load();
 
 $password = $_ENV['DB_PASSWORD'];
+$secretKey = $_ENV['CAP_PASSWORD'] ?? '';
+
+// Validar que todas las variables están configuradas
+if (empty($secretKey)) {
+    die("Error: Faltan configuraciones en el archivo .env.");
+}
+
+// Función para validar Google reCAPTCHA
+function validarCaptcha($recaptchaResponse, $secretKey)
+{
+    $verifyUrl = 'https://www.google.com/recaptcha/api/siteverify';
+    $response = file_get_contents($verifyUrl . '?secret=' . $secretKey . '&response=' . $recaptchaResponse);
+    $responseData = json_decode($response);
+    return $responseData->success;
+}
 
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
@@ -17,6 +34,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $telefono = $_POST['telefono'];
     $comentario = $_POST['comentario'];
     $direccion = $_POST['direccion'];
+    $recaptchaResponse = $_POST['g-recaptcha-response'] ?? '';
+    // Validar CAPTCHA
+    if (!validarCaptcha($recaptchaResponse, $secretKey)) {
+        die("<div class='alert alert-danger'>Error: CAPTCHA no válido.</div>");
+    }
 
     if ($comentario != "") {
         // Datos del correo

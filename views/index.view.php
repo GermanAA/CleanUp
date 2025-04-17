@@ -53,7 +53,7 @@
             width="40"
             height="55"
             class="d-inline-block align-text-top me-2 logo">
-          <span class="fw-semibold">Servicio Comercial &amp; Residencial a domicilio</span>
+          <span class="fw-semibold">Servicio Comercial &amp; Residencial</span>
         </a>
 
         <!-- Botón toggler para mobile -->
@@ -473,9 +473,10 @@
           </div>
 
           <!-- Botón de envío -->
-          <button class="btn btn-primary" type="submit" name="action">
-            Enviar
-          </button>
+          <div class="g-recaptcha" data-sitekey="6Ld_QsMqAAAAAJvREOuFK8KMJMqzK2wCwMEeUZhS"></div>
+          <div class="col-sm-12 col-md-10"><button type="submit" class="btn btn-primary" name="action">Enviar</button>
+          </div>
+           
         </form>
 
         <br>
@@ -562,7 +563,7 @@
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   <script type="text/javascript" src="js/index.js"></script>
 
 </body>
