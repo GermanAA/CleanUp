@@ -9,10 +9,12 @@
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+<!-- Font -->
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Saira:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
   <script src="https://use.fontawesome.com/603f27fb7e.js"></script>
   <link rel="stylesheet" type="text/css" href="css/estilos.css">
   <link rel="stylesheet" type="text/css" href="fontello-a540fdbf/css/fontello.css">
@@ -46,14 +48,14 @@
     <nav class="navbar navbar-expand-lg bg-light navbar-light mb-4">
       <div class="container-fluid">
         <!-- LOGO + Título -->
-        <a class="navbar-brand d-flex align-items-center" href="#">
+        <a class="navbar-brand d-flex align-items-center" href="index.php">
           <img
             src="img/Logo_Clean.webp"
             alt="Logo"
             width="40"
             height="55"
             class="d-inline-block align-text-top me-2 logo">
-          <span class="fw-semibold">Servicio Comercial &amp; Residencial</span>
+          <span class="merriweather-bold">Servicio Comercial &amp; Residencial</span>
         </a>
 
         <!-- Botón toggler para mobile -->
@@ -72,19 +74,11 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#Alfombras">Alfombras</a>
+              <a class="nav-link merriweather-regular" href="index.php">Inicio</a>
             </li>
+  
             <li class="nav-item">
-              <a class="nav-link" href="#Salas">Salas</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#Autos">Vestiduras de Autos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#Colchones">Colchones</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="privacy-policy.php">Aviso de Privacidad</a>
+              <a class="nav-link merriweather-regular" href="privacy-policy.php">Aviso de Privacidad</a>
             </li>
           </ul>
         </div>
@@ -96,8 +90,8 @@
 
     <div class="row justify-content-md-center box">
       <div class="col-sm-12 col-md-10 card ">
-        <h2 class="card-body center">Aviso de Privacidad </h5>
-          <p class="card-text">Clean-Up.mx, con domicilio en Querétaro, México, es responsable del tratamiento de los datos personales que usted nos proporcione, los cuales serán protegidos conforme a lo dispuesto por la Ley Federal de Protección de Datos Personales en Posesión de los Particulares.
+        <h2 class="merriweather-bold center">Aviso de Privacidad </h5>
+          <p class="card-text merriweather-regular">Clean-Up.mx, con domicilio en Querétaro, México, es responsable del tratamiento de los datos personales que usted nos proporcione, los cuales serán protegidos conforme a lo dispuesto por la Ley Federal de Protección de Datos Personales en Posesión de los Particulares.
             <br>
             1. Finalidad del tratamiento de datos
             Los datos personales que recabamos a través de nuestros formularios de contacto, WhatsApp u otros medios digitales serán utilizados para las siguientes finalidades:
@@ -143,13 +137,13 @@
       <div class="col-sm-12 col-md-10 card">
 
 
-        <h5 class="Black-text">¿Tienes alguna Duda?...</h5>
+        <h5 class="merriweather-bold">¿Tienes alguna Duda?...</h5>
         <br>
 
         <br>
 
 
-        <h5 class="Black-text">Contáctanos por Email:</h5>
+        <h5 class="merriweather-regular">Contáctanos por Email:</h5>
         <br>
 
         <form id="formularioContacto" class="needs-validation" novalidate>
@@ -161,28 +155,28 @@
             </div>
           </div>
           <div class="mb-3">
-            <label for="correo" class="form-label"><i class="bi bi-envelope-fill me-1"></i>Correo electrónico</label>
+            <label for="correo" class="form-label merriweather-regular"><i class="bi bi-envelope-fill me-1"></i>Correo electrónico</label>
             <input type="email" class="form-control" id="correo" name="correo" required>
             <div class="invalid-feedback">
               Ingresa un correo electrónico válido.
             </div>
           </div>
           <div class="mb-3">
-            <label for="telefono" class="form-label"><i class="bi bi-telephone-fill me-1"></i>Teléfono</label>
+            <label for="telefono" class="form-label merriweather-regular"><i class="bi bi-telephone-fill me-1"></i>Teléfono</label>
             <input type="tel" class="form-control" id="telefono" name="telefono" pattern="[0-9]{10}" required>
             <div class="invalid-feedback">
               Ingresa un número de teléfono válido de 10 dígitos.
             </div>
           </div>
           <div class="mb-3">
-            <label for="comentario" class="form-label"><i class="bi bi-chat-dots-fill me-1"></i>Comentario</label>
+            <label for="comentario" class="form-label merriweather-regular"><i class="bi bi-chat-dots-fill me-1"></i>Comentario</label>
             <textarea class="form-control" id="comentario" name="comentario" rows="3" required></textarea>
             <div class="invalid-feedback">
               Por favor agrega un comentario.
             </div>
           </div>
           <div class="mb-3">
-            <label for="direccion" class="form-label"><i class="bi bi-geo-alt-fill me-1"></i>Dirección</label>
+            <label for="direccion" class="form-label merriweather-regular"><i class="bi bi-geo-alt-fill me-1"></i>Dirección</label>
             <input type="text" class="form-control" id="direccion" name="direccion" required>
             <div class="invalid-feedback">
               Por favor ingresa tu dirección.
@@ -222,26 +216,26 @@
 
           <!-- Sección de Servicios -->
           <div class="col mb-3">
-            <h5>Servicios</h5>
+            <h5 class="merriweather-bold">Servicios</h5>
             <ul class="nav flex-column">
               <li class="nav-item mb-2">
-                <a href="#Alfombras" class="nav-link p-0 text-body-secondary">Alfombras</a>
+                <a href="#Alfombras" class="nav-link p-0 merriweather-regular">Alfombras</a>
               </li>
               <li class="nav-item mb-2">
-                <a href="#Salas" class="nav-link p-0 text-body-secondary">Salas</a>
+                <a href="#Salas" class="nav-link p-0 merriweather-regular">Salas</a>
               </li>
               <li class="nav-item mb-2">
-                <a href="#Autos" class="nav-link p-0 text-body-secondary">Vestiduras de Autos</a>
+                <a href="#Autos" class="nav-link p-0 merriweather-regular">Vestiduras de Autos</a>
               </li>
               <li class="nav-item mb-2">
-                <a href="#Colchones" class="nav-link p-0 text-body-secondary">Colchones</a>
+                <a href="#Colchones" class="nav-link p-0 merriweather-regular">Colchones</a>
               </li>
             </ul>
           </div>
 
           <!-- Sección de Redes Sociales -->
           <div class="col mb-3">
-            <h5>Síguenos</h5>
+            <h5 class="merriweather-bold">Síguenos</h5>
             <ul class="list-unstyled d-flex">
               <li class="ms-0">
                 <a class="text-body-secondary me-3" href="#" aria-label="Facebook">

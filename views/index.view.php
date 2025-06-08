@@ -29,10 +29,13 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
 
+  <!-- Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Saira:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
   <script src="https://use.fontawesome.com/603f27fb7e.js"></script>
+
   <link rel="stylesheet" type="text/css" href="css/estilos.css">
   <link rel="stylesheet" type="text/css" href="fontello-a540fdbf/css/fontello.css">
 
@@ -58,7 +61,7 @@
             width="40"
             height="55"
             class="d-inline-block align-text-top me-2 logo">
-          <span class="fw-semibold">Servicio Comercial &amp; Residencial</span>
+          <span class="merriweather-bold">Servicio Comercial &amp; Residencial</span>
         </a>
 
         <!-- Botón toggler para mobile -->
@@ -77,18 +80,21 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#Alfombras">Alfombras</a>
+              <a class="nav-link merriweather-regular" href="#Alfombras">Alfombras</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#Salas">Salas</a>
+              <a class="nav-link merriweather-regular" href="#Salas">Salas</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#Autos">Vestiduras de Autos</a>
+              <a class="nav-link merriweather-regular" href="#Autos">Vestiduras de Autos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#Colchones">Colchones</a>
+              <a class="nav-link merriweather-regular" href="#Colchones">Colchones</a>
             </li>
-               <li class="nav-item">
+            <li class="nav-item">
+              <a class="nav-link merriweather-regular" href="#Contacto">Contacto</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="privacy-policy.php">Aviso de Privacidad</a>
             </li>
           </ul>
@@ -110,22 +116,22 @@
             <div class="carousel-item active" data-bs-interval="10000">
               <img src="img\Salas\Sala0_600.webp" class="d-block w-100" height="400 alt=" ...">
               <div class="carousel-caption d-none d-md-block">
-                <h5>Limpieza de Salas</h5>
-                <p>Lavado y Desinfectado de Salas de Tela desde <del>$1,400.00 mxn</del>$1,150 MXN</p>
+                <h5 class="merriweather-bold">Limpieza de Salas</h5>
+                <p class="merriweather-regular">Lavado y Desinfectado de Salas de Tela desde <del>$1,400.00 mxn</del>$1,150 MXN</p>
               </div>
             </div>
             <div class="carousel-item" data-bs-interval="2000">
               <img src="img\Alfombra\L_Alfombra600.webp" class="d-block w-100" height="400 alt=" ...">
               <div class="carousel-caption d-none d-md-block">
-                <h5>Limpieza de Alfombras</h5>
-                <p>Trabajamos con lavadoras de Inyección y Succión para un lavado profundo & desinfección.</p>
+                <h5 class="merriweather-bold">Limpieza de Alfombras</h5>
+                <p class="merriweather-regular">Trabajamos con lavadoras de Inyección y Succión para un lavado profundo & desinfección.</p>
               </div>
             </div>
             <div class="carousel-item">
               <img src="img\Vestiduras\Ves2_600.webp" class="d-block w-100" height="400 alt=" ...">
               <div class="carousel-caption d-none d-md-block">
-                <h5>Limpieza de Vestiduras</h5>
-                <p>Lavado y Desinfectado de Asientos & Alfombras desde <del>$1,250.00 mxn</del>$1000</p>
+                <h5 class="merriweather-bold">Limpieza de Vestiduras</h5>
+                <p class="merriweather-regular">Lavado y Desinfectado de Asientos & Alfombras desde <del>$1,250.00 mxn</del>$1000</p>
               </div>
             </div>
           </div>
@@ -143,19 +149,20 @@
 
     </div>
 
-    <br>
+    <div class="row  justify-content-md-center box">
 
-    <div class="row justify-content-md-center box">
-      <div class="col-sm-6 col-md-5 card">
-        <h2 class="card-body center">Misión</h5>
-          <p class="card-text">Clean Up tiene el firme propósito de lograr la satisfacción de sus clientes, proporcionándoles servicios especializados de limpieza, con altos niveles de calidad.</p>
+      <div class="col-sm-6 col-md-5 card text-center">
+        <h2 class="merriweather-bold">Misión</h2>
+        <p class="merriweather-regular">
+          Clean Up tiene el firme propósito de lograr la satisfacción de sus clientes, proporcionándoles servicios especializados de limpieza, con altos niveles de calidad.
+        </p>
       </div>
 
-      <div class="col-sm-6 col-md-5 card">
-        <h2 class="card-body center">Valores</h5>
+      <div class="col-sm-6 col-md-5 card text-center">
+        <h2 class="merriweather-bold">Valores</h5>
 
-          <p class="card-text">Puntualidad: Estamos convencidos que el tiempo es un recurso invaluable, por esta razón nuestro objetivo será llegar siempre a tiempo a nuestra cita.</p>
-          <p class="card-text">Responsabilidad: Comprometidos en conservar en buen estado sus pertenencias.</p>
+          <p class="merriweather-regular">Puntualidad: Estamos convencidos que el tiempo es un recurso invaluable, por esta razón nuestro objetivo será llegar siempre a tiempo a nuestra cita.</p>
+          <p class="merriweather-regular">Responsabilidad: Comprometidos en conservar en buen estado sus pertenencias.</p>
 
 
       </div>
@@ -164,8 +171,8 @@
 
     <div class="row justify-content-md-center box">
       <div class="col-sm-12 col-md-10 card ">
-        <h2 class="card-body center">Ubicaciones: </h5>
-          <p class="card-text">León, Irapuato, Querétaro & CDMX</p>
+        <h2 class="merriweather-bold center">Ubicaciones: </h5>
+          <p class="merriweather-regular">León, Irapuato, Querétaro & CDMX</p>
       </div>
     </div>
 
@@ -182,26 +189,21 @@
     </div>
 
     <div class="row justify-content-md-center box">
-      <div class="col-sm-12 col-md-10">
-        <h2 class="pb-2 border-bottom">Servicios:</h5>
+      <div class="col-sm-12 col-md-10 card">
+        <h2 class="merriweather-bold">Servicios:</h5>
       </div>
     </div>
-
-
-
-
-
 
     <div class="row justify-content-md-center box">
 
       <div class="col-sm-12 col-md-5 card">
 
         <div class="row">
-          <h5 class="card-body center" id="Salas">Limpieza de Salas & Sillas</h5>
-          <p class="card-text">Lavado y Desinfectado de Salas de Tela desde <del>$1,400.00 mxn</del>$1,150 MXN</p>
-          <li class="h5">Sillón Individual desde <del>$300.00 mxn</del> $250.00 MXN</li>
-          <li class="h5">Sillón Doble desde <del>$500.00 mxn</del> $400 MXN</li>
-          <li class="h5">Sillón Triple desde <del>$600.00 mxn</del> $500 MXN</li>
+          <h5 class="merriweather-bold center" id="Salas">Limpieza de Salas & Sillas</h5>
+          <p class="merriweather-regular">Lavado y Desinfectado de Salas de Tela desde <del>$1,400.00 mxn</del>$1,150 MXN</p>
+          <li class="merriweather-regular">Sillón Individual desde <del>$300.00 mxn</del> $250.00 MXN</li>
+          <li class="merriweather-regular">Sillón Doble desde <del>$500.00 mxn</del> $400 MXN</li>
+          <li class="merriweather-regular">Sillón Triple desde <del>$600.00 mxn</del> $500 MXN</li>
         </div>
 
       </div>
@@ -259,17 +261,14 @@
       </div>
     </div>
 
-
-
-
     <div class="row justify-content-md-center box">
 
       <div class="col-sm-12 col-md-5 card">
 
         <div class="row">
-          <h5 class="card-body center" id="Alfombras">Limpieza de Alfombras</h5>
-          <p class="card-text">Trabajamos con lavadoras de Inyección y Succión para un lavado profundo, desinfección y desmanchado sin dañar el tejido.</p>
-          <li class="h5">Medidas 2.30 X 1.60 desde <del>$900 mxn</del> $700</li>
+          <h5 class="merriweather-bold center" id="Alfombras">Limpieza de Alfombras</h5>
+          <p class="merriweather-regular">Trabajamos con lavadoras de Inyección y Succión para un lavado profundo, desinfección y desmanchado sin dañar el tejido.</p>
+          <li class="merriweather-regular">Medidas 2.30 X 1.60 desde <del>$900 mxn</del> $700</li>
         </div>
       </div>
 
@@ -280,17 +279,15 @@
 
     </div>
 
-
-
     <div class="row justify-content-md-center box">
 
       <div class="col-sm-12 col-md-5 card">
         <div class="row">
-          <h5 class="card-body center" id="Autos">Limpieza de Vestiduras de Autos</h5>
-          <p class="card-text">Lavado y Desinfectado de Asientos & Alfombras desde <del>$1,250.00 mxn</del>$1000</p>
-          <li class="h5">Autos desde <del>$1250.00 mxn</del>$1,000 MXN</li>
-          <li class="h5">SUV desde <del>$1450.00 mxn</del>$1,200 MXN</li>
-          <li class="h5">Vans desde <del>$1650.00 mxn</del>$1,400 MXN</li>
+          <h5 class="merriweather-bold center" id="Autos">Limpieza de Vestiduras de Autos</h5>
+          <p class="merriweather-regular">Lavado y Desinfectado de Asientos & Alfombras desde <del>$1,250.00 mxn</del>$1000</p>
+          <li class="merriweather-regular">Autos desde <del>$1250.00 mxn</del>$1,000 MXN</li>
+          <li class="merriweather-regular">SUV desde <del>$1450.00 mxn</del>$1,200 MXN</li>
+          <li class="merriweather-regular">Vans desde <del>$1650.00 mxn</del>$1,400 MXN</li>
         </div>
       </div>
 
@@ -330,17 +327,16 @@
 
     </div>
 
-
     <div class="row justify-content-md-center box">
 
       <div class="col-sm-12 col-md-5 card">
         <div class="row">
-          <h5 class="card-body center" id="Colchones">Limpieza de Colchones</h5>
-          <p class="card-text">Lavado y Desinfectado de Colchones desde <del>$900.00 mxn</del>$700 MXN</p>
-          <li class="h5">Colchón individual desde <del>$900.00 mxn</del>$700 MXN</li>
-          <li class="h5">Matrimonial desde <del>$1100.00 mxn</del>$900.00 MXN</li>
-          <li class="h5">Queen desde<del> $1450.00 mxn</del>$1,250 MXN</li>
-          <li class="h5">king desde <del>$1650.00 mxn</del>$1,450 MXN</li>
+          <h5 class="merriweather-bold center" id="Colchones">Limpieza de Colchones</h5>
+          <p class="merriweather-regular">Lavado y Desinfectado de Colchones desde <del>$900.00 mxn</del>$700 MXN</p>
+          <li class="merriweather-regular">Colchón individual desde <del>$900.00 mxn</del>$700 MXN</li>
+          <li class="merriweather-regular">Matrimonial desde <del>$1100.00 mxn</del>$900.00 MXN</li>
+          <li class="merriweather-regular">Queen desde<del> $1450.00 mxn</del>$1,250 MXN</li>
+          <li class="merriweather-regular">king desde <del>$1650.00 mxn</del>$1,450 MXN</li>
         </div>
       </div>
 
@@ -354,14 +350,11 @@
 
     </div>
 
-
-
-
     <div class="row justify-content-md-center box">
 
       <div class="col-sm-12 col-md-10 card">
-        <div class="card-body">
-          <h5 class="card-title">Aceptamos tarjetas de Crédito & Debito</h5>
+        <div class="merriweather-bold">
+          <h5 class="merriweather-bold">Aceptamos tarjetas de Crédito & Debito</h5>
           <p class="card-text"></p>
         </div>
         <img src="img\Tarjetas.webp" class="" height="150" alt="...">
@@ -375,51 +368,50 @@
     </a>
 
 
-
     <div class="row justify-content-md-center box">
       <div class="col-sm-12 col-md-10 card">
 
 
-        <h5 class="Black-text">¿Tienes alguna Duda?...</h5>
+        <h5 class="merriweather-bold" id="Contacto">¿Tienes alguna Duda?...</h5>
         <br>
 
         <br>
 
 
-        <h5 class="Black-text">Contáctanos por Email:</h5>
+        <h5 class="merriweather-regular">Contáctanos por Email:</h5>
         <br>
 
         <form id="formularioContacto" class="needs-validation" novalidate>
           <div class="mb-3">
-            <label for="nombre" class="form-label"><i class="bi bi-person-fill me-1"></i>Nombre</label>
+            <label for="nombre" class="form-label merriweather-regular"><i class="bi bi-person-fill me-1"></i>Nombre</label>
             <input type="text" class="form-control" id="nombre" name="nombre" required>
             <div class="invalid-feedback">
               Por favor ingresa tu nombre.
             </div>
           </div>
           <div class="mb-3">
-            <label for="correo" class="form-label"><i class="bi bi-envelope-fill me-1"></i>Correo electrónico</label>
+            <label for="correo" class="form-label merriweather-regular"><i class="bi bi-envelope-fill me-1"></i>Correo electrónico</label>
             <input type="email" class="form-control" id="correo" name="correo" required>
             <div class="invalid-feedback">
               Ingresa un correo electrónico válido.
             </div>
           </div>
           <div class="mb-3">
-            <label for="telefono" class="form-label"><i class="bi bi-telephone-fill me-1"></i>Teléfono</label>
+            <label for="telefono" class="form-label merriweather-regular"><i class="bi bi-telephone-fill me-1"></i>Teléfono</label>
             <input type="tel" class="form-control" id="telefono" name="telefono" pattern="[0-9]{10}" required>
             <div class="invalid-feedback">
               Ingresa un número de teléfono válido de 10 dígitos.
             </div>
           </div>
           <div class="mb-3">
-            <label for="comentario" class="form-label"><i class="bi bi-chat-dots-fill me-1"></i>Comentario</label>
+            <label for="comentario" class="form-label merriweather-regular"><i class="bi bi-chat-dots-fill me-1"></i>Comentario</label>
             <textarea class="form-control" id="comentario" name="comentario" rows="3" required></textarea>
             <div class="invalid-feedback">
               Por favor agrega un comentario.
             </div>
           </div>
           <div class="mb-3">
-            <label for="direccion" class="form-label"><i class="bi bi-geo-alt-fill me-1"></i>Dirección</label>
+            <label for="direccion" class="form-label merriweather-regular"><i class="bi bi-geo-alt-fill me-1"></i>Dirección</label>
             <input type="text" class="form-control" id="direccion" name="direccion" required>
             <div class="invalid-feedback">
               Por favor ingresa tu dirección.
@@ -459,26 +451,26 @@
 
           <!-- Sección de Servicios -->
           <div class="col mb-3">
-            <h5>Servicios</h5>
+            <h5 class="merriweather-bold">Servicios</h5>
             <ul class="nav flex-column">
               <li class="nav-item mb-2">
-                <a href="#Alfombras" class="nav-link p-0 text-body-secondary">Alfombras</a>
+                <a href="#Alfombras" class="nav-link merriweather-regular">Alfombras</a>
               </li>
               <li class="nav-item mb-2">
-                <a href="#Salas" class="nav-link p-0 text-body-secondary">Salas</a>
+                <a href="#Salas" class="nav-link merriweather-regular">Salas</a>
               </li>
               <li class="nav-item mb-2">
-                <a href="#Autos" class="nav-link p-0 text-body-secondary">Vestiduras de Autos</a>
+                <a href="#Autos" class="nav-link merriweather-regular">Vestiduras de Autos</a>
               </li>
               <li class="nav-item mb-2">
-                <a href="#Colchones" class="nav-link p-0 text-body-secondary">Colchones</a>
+                <a href="#Colchones" class="nav-link merriweather-regular">Colchones</a>
               </li>
             </ul>
           </div>
 
           <!-- Sección de Redes Sociales -->
           <div class="col mb-3">
-            <h5>Síguenos</h5>
+            <h5 class="merriweather-bold">Síguenos</h5>
             <ul class="list-unstyled d-flex">
               <li class="ms-0">
                 <a class="text-body-secondary me-3" href="#" aria-label="Facebook">
@@ -503,10 +495,10 @@
 
     </div>
 
-
-
-
   </div>
+
+
+
 
 
 
