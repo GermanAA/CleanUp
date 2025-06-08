@@ -88,6 +88,9 @@
             <li class="nav-item">
               <a class="nav-link" href="#Colchones">Colchones</a>
             </li>
+               <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.php">Aviso de Privacidad</a>
+            </li>
           </ul>
         </div>
       </div>
