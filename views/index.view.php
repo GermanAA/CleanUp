@@ -473,7 +473,7 @@
             <h5 class="merriweather-bold">Síguenos</h5>
             <ul class="list-unstyled d-flex">
               <li class="ms-0">
-                <a class="text-body-secondary me-3" href="#" aria-label="Facebook">
+                <a class="text-body-secondary me-3" href="https://www.facebook.com/profile.php?id=61577084604187" aria-label="Facebook">
                   <i class="bi bi-facebook"></i>
                 </a>
               </li>
@@ -483,7 +483,7 @@
                 </a>
               </li>
               <li>
-                <a class="text-body-secondary me-3" href="#" aria-label="Instagram">
+                <a class="text-body-secondary me-3" href="https://www.instagram.com/cleanupmexico7" aria-label="Instagram">
                   <i class="bi bi-instagram"></i>
                 </a>
               </li>

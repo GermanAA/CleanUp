@@ -9,11 +9,11 @@
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
-<!-- Font -->
+  <!-- Font -->
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Saira:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Saira:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
   <script src="https://use.fontawesome.com/603f27fb7e.js"></script>
   <link rel="stylesheet" type="text/css" href="css/estilos.css">
@@ -76,7 +76,7 @@
             <li class="nav-item">
               <a class="nav-link merriweather-regular" href="index.php">Inicio</a>
             </li>
-  
+
             <li class="nav-item">
               <a class="nav-link merriweather-regular" href="privacy-policy.php">Aviso de Privacidad</a>
             </li>
@@ -238,7 +238,7 @@
             <h5 class="merriweather-bold">Síguenos</h5>
             <ul class="list-unstyled d-flex">
               <li class="ms-0">
-                <a class="text-body-secondary me-3" href="#" aria-label="Facebook">
+                <a class="text-body-secondary me-3" href="https://www.facebook.com/profile.php?id=61577084604187" aria-label="Facebook">
                   <i class="bi bi-facebook"></i>
                 </a>
               </li>
@@ -248,7 +248,7 @@
                 </a>
               </li>
               <li>
-                <a class="text-body-secondary me-3" href="#" aria-label="Instagram">
+                <a class="text-body-secondary me-3" href="https://www.instagram.com/cleanupmexico7" aria-label="Instagram">
                   <i class="bi bi-instagram"></i>
                 </a>
               </li>
