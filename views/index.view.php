@@ -115,14 +115,14 @@
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active" data-bs-interval="10000">
-              <img src="img\Salas\Sala0_600.webp" class="d-block w-100" height="400 alt=" ...">
+              <img src="img\Salas\SalaM.svg" class="d-block w-100" height="400 alt=" ...">
               <div class="carousel-caption d-none d-md-block">
                 <h5 class="merriweather-bold">Limpieza de Salas</h5>
                 <p class="merriweather-regular">Lavado y Desinfectado de Salas de Tela desde <del>$1,400.00 mxn</del>$1,150 MXN</p>
               </div>
             </div>
             <div class="carousel-item" data-bs-interval="2000">
-              <img src="img\Alfombra\L_Alfombra600.webp" class="d-block w-100" height="400 alt=" ...">
+              <img src="img\Alfombra\AlfombraG.svg" class="d-block w-100" height="400 alt=" ...">
               <div class="carousel-caption d-none d-md-block">
                 <h5 class="merriweather-bold">Limpieza de Alfombras</h5>
                 <p class="merriweather-regular">Trabajamos con lavadoras de Inyección y Succión para un lavado profundo & desinfección.</p>
