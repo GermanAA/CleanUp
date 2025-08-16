@@ -116,21 +116,34 @@
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active" data-bs-interval="10000">
-              <img src="img\Salas\SalaM.svg" class="d-block w-100" alt=" ...">
+
+              <picture>
+                <source media="(min-width: 769px)" srcset="img/Salas/SalaPc.svg">
+                <img src="img\Salas\SalaM.svg" class="d-block w-100" alt=" ...">
+              </picture>
+
               <div class="carousel-caption d-none d-md-block">
                 <h5 class="merriweather-bold">Limpieza de Salas</h5>
                 <p class="merriweather-regular">Lavado y Desinfectado de Salas de Tela desde <del>$1,400.00 mxn</del>$1,150 MXN</p>
               </div>
             </div>
             <div class="carousel-item" data-bs-interval="2000">
-              <img src="img\Alfombra\AlfombraG.svg" class="d-block w-100" alt=" ...">
+              <picture>
+                <source media="(min-width: 769px)" srcset="img/Alfombra/AlfombraPc.svg">
+                <img src="img\Alfombra\AlfombraG.svg" class="d-block w-100" alt=" ...">
+              </picture>
+
               <div class="carousel-caption d-none d-md-block">
                 <h5 class="merriweather-bold">Limpieza de Alfombras</h5>
                 <p class="merriweather-regular">Trabajamos con lavadoras de Inyección y Succión para un lavado profundo & desinfección.</p>
               </div>
             </div>
             <div class="carousel-item">
-              <img src="img\Vestiduras\Auto_Carousel.svg" class="d-block w-100" alt="...">
+              <picture>
+                <source media="(min-width: 769px)" srcset="img/Vestiduras/AutoPc.svg">
+                <img src="img\Vestiduras\Auto_Carousel.svg" class="d-block w-100" alt="...">
+              </picture>
+
               <div class="carousel-caption d-none d-md-block">
                 <h5 class="merriweather-bold">Limpieza de Vestiduras</h5>
                 <p class="merriweather-regular">Lavado y Desinfectado de Asientos & Alfombras desde <del>$1,250.00 mxn</del>$1000</p>
@@ -138,7 +151,11 @@
             </div>
 
             <div class="carousel-item">
-              <img src="img\Colchones\Colchon.svg" class="d-block w-100" alt="...">
+              <picture>
+                <source media="(min-width: 769px)" srcset="img/Colchones/ColchonPc.svg">
+                <img src="img\Colchones\Colchon.svg" class="d-block w-100" alt="...">
+              </picture>
+
               <div class="carousel-caption d-none d-md-block">
                 <h5 class="merriweather-bold">Limpieza de Colchones</h5>
                 <p class="merriweather-regular">Lavado y Desinfectado de Colchones <del>$1,000.00 mxn</del>$600</p>
