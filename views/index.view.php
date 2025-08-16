@@ -112,27 +112,36 @@
             <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
             <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active" data-bs-interval="10000">
-              <img src="img\Salas\SalaM.svg" class="d-block w-100" height="400 alt=" ...">
+              <img src="img\Salas\SalaM.svg" class="d-block w-100" alt=" ...">
               <div class="carousel-caption d-none d-md-block">
                 <h5 class="merriweather-bold">Limpieza de Salas</h5>
                 <p class="merriweather-regular">Lavado y Desinfectado de Salas de Tela desde <del>$1,400.00 mxn</del>$1,150 MXN</p>
               </div>
             </div>
             <div class="carousel-item" data-bs-interval="2000">
-              <img src="img\Alfombra\AlfombraG.svg" class="d-block w-100" height="400 alt=" ...">
+              <img src="img\Alfombra\AlfombraG.svg" class="d-block w-100" alt=" ...">
               <div class="carousel-caption d-none d-md-block">
                 <h5 class="merriweather-bold">Limpieza de Alfombras</h5>
                 <p class="merriweather-regular">Trabajamos con lavadoras de Inyección y Succión para un lavado profundo & desinfección.</p>
               </div>
             </div>
             <div class="carousel-item">
-              <img src="img\Vestiduras\Ves2_600.webp" class="d-block w-100" height="400 alt=" ...">
+              <img src="img\Vestiduras\Auto_Carousel.svg" class="d-block w-100" alt="...">
               <div class="carousel-caption d-none d-md-block">
                 <h5 class="merriweather-bold">Limpieza de Vestiduras</h5>
                 <p class="merriweather-regular">Lavado y Desinfectado de Asientos & Alfombras desde <del>$1,250.00 mxn</del>$1000</p>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <img src="img\Colchones\Colchon.svg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5 class="merriweather-bold">Limpieza de Colchones</h5>
+                <p class="merriweather-regular">Lavado y Desinfectado de Colchones <del>$1,000.00 mxn</del>$600</p>
               </div>
             </div>
           </div>
@@ -217,13 +226,11 @@
 
             <div class="carousel-item active">
 
-              <img src="img\Salas\Sala0_600.webp" class="foto" alt="..." width="400" height="350">
+              <img src="img\Salas\SalaGiu.svg" class="foto" alt="..." width="400" height="">
             </div>
+
             <div class="carousel-item">
-              <img src="img\Salas\Sala10_600.webp" class="foto" alt="..." width="400" height="350">
-            </div>
-            <div class="carousel-item">
-              <img src="img\Salas\Sala2_600.webp" class="foto" alt="..." width="400" height="350">
+              <img src="img\Salas\Silla.svg" class="foto" alt="..." width="400" height="">
             </div>
             <!--     <div class="carousel-item">
                   <img src="img\Salas\Sala3.JPG" class="d-block w-100" alt="...">
@@ -274,7 +281,7 @@
       </div>
 
       <div class="col-sm-12 col-md-5 text-center">
-        <img src="img\Alfombra\L_Alfombra600.webp" class="foto" alt="..." width="400" height="350">
+        <img src="img\Alfombra\HeadAutos_Colchon.svg" class="foto" alt="..." width="400" height="350">
       </div>
 
 
@@ -298,17 +305,15 @@
 
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="img\Vestiduras\Ves1_600.webp" class="foto" alt="..." width="400" height="350">
+              <img src="img\Vestiduras\V_Carousel1.svg" class="foto" alt="..." width="400" height="350">
             </div>
             <div class="carousel-item">
-              <img src="img\Vestiduras\Ves2_600.webp" class="foto" alt="..." width="400" height="350">
+              <img src="img\Vestiduras\V_Carousel2.svg" class="foto" alt="..." width="400" height="350">
             </div>
             <div class="carousel-item">
-              <img src="img\Vestiduras\Ves3_600.webp" class="foto" alt="..." width="400" height="350">
+              <img src="img\Vestiduras\V_Carousel3.svg" class="foto" alt="..." width="400" height="350">
             </div>
-            <div class="carousel-item">
-              <img src="img\Vestiduras\Ves4_600.webp" class="foto" alt="..." width="400" height="350">
-            </div>
+
 
           </div>
 
@@ -344,7 +349,7 @@
       <div class="col-sm-12 col-md-5  text-center">
 
 
-        <img src="img\Colchones\C600.webp" class="foto" alt="..." width="400" height="350">
+        <img src="img\Colchones\Colchon.svg" class="foto" alt="..." width="400" height="350">
 
 
       </div>

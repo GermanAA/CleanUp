@@ -25,6 +25,15 @@ body {
 
 }
 
+.carousel-item{
+  height: 400px; /* La altura que desees para el carrusel */
+  object-fit: cover; /* ¡Esta es la clave! */
+  /*object-position: center; /* Opcional: Centra la imagen si se recorta */
+}
+.carousel-item img {
+  border-radius: 15px; /* Ajusta este valor a tu gusto */
+}
+
 .merriweather-regular {
     font-family: "Saira", sans-serif;
     font-optical-sizing: auto;
