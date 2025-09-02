@@ -529,7 +529,7 @@
                 </a>
               </li>
               <li>
-                <a class="text-body-secondary me-3" href="https://www.instagram.com/cleanupmexico7" aria-label="Instagram">
+                <a class="text-body-secondary me-3" href="https://www.instagram.com/clean_up_mx" aria-label="Instagram">
                   <i class="bi bi-instagram"></i>
                 </a>
               </li>
