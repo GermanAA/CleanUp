@@ -234,7 +234,7 @@
             ✅ Malos olores, dejando un aroma a limpio y fresco.
             ✅ Suciedad acumulada que opaca los colores.
             Utilizamos un sistema de inyección-succión que limpia las fibras desde adentro hacia afuera, sin dañar la tela.
-            ¡Dale una segunda vida a tus muebles! 👇 <del>$1,400.00 mxn</del>$1,150 MXN</p>
+            ¡Dale una segunda vida a tus muebles! 👇 
 
         </div>
 
