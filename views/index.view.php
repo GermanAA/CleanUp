@@ -124,7 +124,6 @@
 
               <div class="carousel-caption d-none d-md-block">
                 <h5 class="merriweather-bold">Limpieza de Salas</h5>
-                <p class="merriweather-regular">Lavado y Desinfectado de Salas de Tela desde <del>$1,400.00 mxn</del>$1,150 MXN</p>
               </div>
             </div>
             <div class="carousel-item" data-bs-interval="2000">
@@ -135,7 +134,7 @@
 
               <div class="carousel-caption d-none d-md-block">
                 <h5 class="merriweather-bold">Limpieza de Alfombras</h5>
-                <p class="merriweather-regular">Trabajamos con lavadoras de Inyección y Succión para un lavado profundo & desinfección.</p>
+                
               </div>
             </div>
             <div class="carousel-item">
@@ -146,7 +145,7 @@
 
               <div class="carousel-caption d-none d-md-block">
                 <h5 class="merriweather-bold">Limpieza de Vestiduras</h5>
-                <p class="merriweather-regular">Lavado y Desinfectado de Asientos & Alfombras desde <del>$1,250.00 mxn</del>$1000</p>
+                
               </div>
             </div>
 
@@ -158,7 +157,7 @@
 
               <div class="carousel-caption d-none d-md-block">
                 <h5 class="merriweather-bold">Limpieza de Colchones</h5>
-                <p class="merriweather-regular">Lavado y Desinfectado de Colchones <del>$1,000.00 mxn</del>$600</p>
+                
               </div>
             </div>
           </div>
@@ -227,10 +226,16 @@
 
         <div class="row">
           <h5 class="merriweather-bold center" id="Salas">Limpieza de Salas & Sillas</h5>
-          <p class="merriweather-regular">Lavado y Desinfectado de Salas de Tela desde <del>$1,400.00 mxn</del>$1,150 MXN</p>
-          <li class="merriweather-regular">Sillón Individual desde <del>$300.00 mxn</del> $250.00 MXN</li>
-          <li class="merriweather-regular">Sillón Doble desde <del>$500.00 mxn</del> $400 MXN</li>
-          <li class="merriweather-regular">Sillón Triple desde <del>$600.00 mxn</del> $500 MXN</li>
+          <p class="merriweather-regular">✨ ¡No cambies tu sala, TRANSFÓRMALA! ✨
+            ¿Esa mancha de café te persigue? ¿El pelo de tu mascota ya es parte de la decoración? 🤔
+            Tu sala es el corazón de tu hogar, pero el uso diario, el polvo y los accidentes la desgastan. Con nuestro servicio profesional de limpieza de salas, eliminamos a fondo:
+
+            ✅ Ácaros, polvo y alérgenos que afectan tu salud.
+            ✅ Malos olores, dejando un aroma a limpio y fresco.
+            ✅ Suciedad acumulada que opaca los colores.
+            Utilizamos un sistema de inyección-succión que limpia las fibras desde adentro hacia afuera, sin dañar la tela.
+            ¡Dale una segunda vida a tus muebles! 👇 <del>$1,400.00 mxn</del>$1,150 MXN</p>
+
         </div>
 
       </div>
@@ -292,8 +297,22 @@
 
         <div class="row">
           <h5 class="merriweather-bold center" id="Alfombras">Limpieza de Alfombras</h5>
-          <p class="merriweather-regular">Trabajamos con lavadoras de Inyección y Succión para un lavado profundo, desinfección y desmanchado sin dañar el tejido.</p>
-          <li class="merriweather-regular">Medidas 2.30 X 1.60 desde <del>$900 mxn</del> $700</li>
+          <p class="merriweather-regular">Pensando en cambiar esa alfombra? 🤔 ¡Espera! Dale una segunda oportunidad.
+
+            Nuestro sistema de limpieza profunda por inyección-succión no solo elimina las manchas, sino que también extrae el polvo, los ácaros y los alérgenos que se esconden en las fibras. 🦠
+
+            ¡El resultado es una alfombra que no solo se ve, sino que se SIENTE y HUELE a limpio!
+
+            ✅ Colores más vivos y renovados.
+            ✅ Adiós a los malos olores (mascotas, humedad, etc.).
+            ✅ Un ambiente más saludable para tu familia.
+            ✅ Usamos productos biodegradables, seguros para niños y mascotas.
+
+            ✨ ¡No la des por perdida! Dale una segunda vida.
+
+            Pide tu cotización sin compromiso. Es rápido y fácil.
+            📲 Envíanos un WhatsApp</p>
+
         </div>
       </div>
 
@@ -309,10 +328,15 @@
       <div class="col-sm-12 col-md-5 card">
         <div class="row">
           <h5 class="merriweather-bold center" id="Autos">Limpieza de Vestiduras de Autos</h5>
-          <p class="merriweather-regular">Lavado y Desinfectado de Asientos & Alfombras desde <del>$1,250.00 mxn</del>$1000</p>
-          <li class="merriweather-regular">Autos desde <del>$1250.00 mxn</del>$1,000 MXN</li>
-          <li class="merriweather-regular">SUV desde <del>$1450.00 mxn</del>$1,200 MXN</li>
-          <li class="merriweather-regular">Vans desde <del>$1650.00 mxn</del>$1,400 MXN</li>
+          <p class="merriweather-regular">Esas manchas en tus asientos NO son permanentes. 🫣 ✨ Te lo demostramos.
+            Limpieza Profunda por Inyección-Succión. 💧⚙️
+            No es una limpieza superficial. Nuestro sistema profesional:
+            * Inyecta ➡️ una solución limpiadora que disuelve la suciedad desde la raíz.
+            * Extrae ⬅️ potentemente toda la suciedad, manchas, líquidos y bacterias.
+            El resultado no es solo un asiento limpio, es un asiento sanitizado y restaurado. ✅
+            No te resignes a viajar en un interior que se ve y se siente sucio. 👎
+            📩 ¡Envíanos una foto de tus vestiduras por DM 📲 y recibe una cotización al instante! Agenda hoy. 🗓️</p>
+
         </div>
       </div>
 
@@ -355,11 +379,10 @@
       <div class="col-sm-12 col-md-5 card">
         <div class="row">
           <h5 class="merriweather-bold center" id="Colchones">Limpieza de Colchones</h5>
-          <p class="merriweather-regular">Lavado y Desinfectado de Colchones desde <del>$900.00 mxn</del>$700 MXN</p>
-          <li class="merriweather-regular">Colchón individual desde <del>$900.00 mxn</del>$700 MXN</li>
-          <li class="merriweather-regular">Matrimonial desde <del>$1100.00 mxn</del>$900.00 MXN</li>
-          <li class="merriweather-regular">Queen desde<del> $1450.00 mxn</del>$1,250 MXN</li>
-          <li class="merriweather-regular">king desde <del>$1650.00 mxn</del>$1,450 MXN</li>
+          <p class="merriweather-regular">¿Duermes realmente solo? 🤔 Tu colchón acumula millones de ácaros, células muertas y sudor que pueden afectar tu salud y la de tu familia. 🤧
+
+            ¡Pero no te preocupes! Con nuestro sistema de limpieza profunda por inyección-succión, eliminamos toda la suciedad y dejamos tu colchón desinfectado, fresco y listo para un verdadero descanso. ✨</p>
+
         </div>
       </div>
 
