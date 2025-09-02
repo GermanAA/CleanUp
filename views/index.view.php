@@ -500,7 +500,7 @@
 
 
   <div class="iconos-sociales-flotantes">
-    <a href="https://www.instagram.com/cleanupmexico7/" target="_blank" class="icono-instagram">
+    <a href="https://www.instagram.com/clean_up_mx/" target="_blank" class="icono-instagram">
       <i class="fa-brands fa-instagram"></i>
     </a>
     <a href="https://www.facebook.com/profile.php?id=61577084604187" target="_blank" class="icono-facebook">
