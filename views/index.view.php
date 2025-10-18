@@ -510,67 +510,71 @@
 
 
     <div class="row box">
-      <footer class="container py-5 my-5 border-top">
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
-          <!-- Logo y derechos reservados -->
-          <div class="col mb-3">
-            <a
-              href="/"
-              class="d-flex align-items-center mb-3 text-decoration-none link-body-emphasis">
-              <img
-                src="img/Logo_Clean.webp"
-                alt="Logo"
-                height="55"
-                class="d-inline-block align-text-top logo">
-            </a>
-            <p class="text-body-secondary mb-0">© 2023</p>
+
+
+      <footer class="bg-dark text-white pt-5 pb-4" data-bs-theme="dark">
+        <div class="container text-center text-md-start">
+          <div class="row text-center text-md-start">
+
+            <!-- Columna de la Marca -->
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+              <h5 class="text-uppercase mb-4 fw-bold text-success">Clean Up</h5>
+              <p>
+                Expertos en limpieza comercial y residencial. Tu satisfacción es nuestra prioridad.
+              </p>
+            </div>
+
+            <!-- Columna de Servicios -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+              <h5 class="text-uppercase mb-4 fw-bold">Servicios</h5>
+              <p><a href="#Alfombras" class="text-white">Alfombras</a></p>
+              <p><a href="#Salas" class="text-white">Salas</a></p>
+              <p><a href="#Autos" class="text-white">Vestiduras de Autos</a></p>
+              <p><a href="#Colchones" class="text-white">Colchones</a></p>
+            </div>
+
+            <!-- Columna de Legal -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+              <h5 class="text-uppercase mb-4 fw-bold">Legal</h5>
+              <p><a href="privacy-policy.php" class="text-white">Aviso de Privacidad</a></p>
+              <p><a href="#" class="text-white">Términos y Condiciones</a></p>
+            </div>
+
+            <!-- Columna de Contacto y Redes -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+              <h5 class="text-uppercase mb-4 fw-bold">Contacto</h5>
+              <p><i class="bi bi-geo-alt-fill me-2"></i>Querétaro. México</p>
+              <p><i class="bi bi-envelope-fill me-2"></i>contacto@clean-up.mx</p>
+              <p><i class="bi bi-telephone-fill me-2"></i>+52 461 113 0928</p>
+            </div>
           </div>
 
-          <!-- Espacio vacío o sección adicional -->
-          <div class="col mb-3">
-            <!-- Puedes agregar aquí alguna información adicional si lo deseas. -->
-          </div>
+          <hr class="mb-4">
 
-          <!-- Sección de Servicios -->
-          <div class="col mb-3">
-            <h5 class="merriweather-bold">Servicios</h5>
-            <ul class="nav flex-column">
-              <li class="nav-item mb-2">
-                <a href="#Alfombras" class="nav-link merriweather-regular">Alfombras</a>
-              </li>
-              <li class="nav-item mb-2">
-                <a href="#Salas" class="nav-link merriweather-regular">Salas</a>
-              </li>
-              <li class="nav-item mb-2">
-                <a href="#Autos" class="nav-link merriweather-regular">Vestiduras de Autos</a>
-              </li>
-              <li class="nav-item mb-2">
-                <a href="#Colchones" class="nav-link merriweather-regular">Colchones</a>
-              </li>
-            </ul>
-          </div>
-
-          <!-- Sección de Redes Sociales -->
-          <div class="col mb-3">
-            <h5 class="merriweather-bold">Síguenos</h5>
-            <ul class="list-unstyled d-flex">
-              <li class="ms-0">
-                <a class="text-body-secondary me-3" href="https://www.facebook.com/profile.php?id=61577084604187" aria-label="Facebook">
-                  <i class="bi bi-facebook"></i>
-                </a>
-              </li>
-              <li>
-                <a class="text-body-secondary me-3" href="#" aria-label="Twitter">
-                  <i class="bi bi-twitter"></i>
-                </a>
-              </li>
-              <li>
-                <a class="text-body-secondary me-3" href="https://www.instagram.com/clean_up_mx" aria-label="Instagram">
-                  <i class="bi bi-instagram"></i>
-                </a>
-              </li>
-
-            </ul>
+          <!-- Fila de Copyright y Redes Sociales -->
+          <div class="row align-items-center">
+            <!-- Copyright -->
+            <div class="col-md-7 col-lg-8">
+              <p>Copyright © <span id="current-year"></span> Todos los derechos reservados por:
+                <a href="#" class="text-success"><strong>Clean Up</strong></a>
+              </p>
+            </div>
+            <!-- Redes Sociales -->
+            <div class="col-md-5 col-lg-4">
+              <div class="text-center text-md-end">
+                <ul class="list-unstyled list-inline mb-0">
+                  <li class="list-inline-item">
+                    <a href="https://www.facebook.com/profile.php?id=61577084604187" class="btn-floating btn-sm text-white footer-social-icon" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#" class="btn-floating btn-sm text-white footer-social-icon" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="https://www.instagram.com/clean_up_mx" class="btn-floating btn-sm text-white footer-social-icon" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </footer>
