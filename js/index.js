@@ -15,9 +15,14 @@ const observer = new IntersectionObserver((entries) => {
 
 boxes.forEach(box => observer.observe(box));
 
-// Mostrar alerta promocional al cargar la página
-window.addEventListener('load', () => {
-  alert('Pregunta por Nuestras Promociones por WhatsApp');
+// Se asegura de que el script se ejecute una vez que el DOM esté completamente cargado.
+document.addEventListener('DOMContentLoaded', () => {
+  // Selecciona el elemento del modal por su ID.
+  const promoModalElement = document.getElementById('promoModal');
+  // Crea una nueva instancia del componente Modal de Bootstrap.
+  const promoModal = new bootstrap.Modal(promoModalElement);
+  // Muestra el modal.
+  promoModal.show();
 });
 
 // Validación nativa de Bootstrap (form-control + needs-validation)

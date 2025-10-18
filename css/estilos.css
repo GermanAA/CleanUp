@@ -221,3 +221,22 @@ h1 {
 .icono-facebook {
     background-color: #1877F2; /* Color oficial de Facebook */
 }
+
+/* Estilos para el botón flotante de WhatsApp */
+.whatsapp-flotante {
+    position: fixed;     /* Fija el elemento en la pantalla */
+    bottom: 25px;        /* Distancia desde la parte inferior */
+    right: 25px;         /* Distancia desde la derecha */
+    z-index: 1000;       /* Asegura que esté por encima de otros elementos */
+    
+    /* Ajuste para que el icono se vea más grande y centrado */
+    font-size: 1.5rem;   /* Tamaño del icono */
+    padding: 0.5rem 0.8rem; /* Ajuste manual del padding para centrar el icono */
+    line-height: 1.5;      /* Altura de línea para centrar verticalmente */
+}
+
+/* Opcional: Pequeña animación al pasar el mouse */
+.whatsapp-flotante:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s ease-in-out;
+}

@@ -38,7 +38,7 @@
   <script src="https://use.fontawesome.com/603f27fb7e.js"></script>
 
   <link rel="stylesheet" type="text/css" href="css/estilos.css">
-  <link rel="stylesheet" type="text/css" href="fontello-a540fdbf/css/fontello.css">
+
 
   <title>Clean-Up, Servicio de Limpieza!</title>
 
@@ -119,7 +119,7 @@
 
               <picture>
                 <source media="(min-width: 769px)" srcset="img/Salas/SalaPc.svg">
-                <img src="img\Salas\SalaM.svg" class="d-block w-100" alt=" ...">
+                <img src="img\Salas\SalaCarouselMobil.webp" class="d-block w-100" alt=" ...">
               </picture>
 
               <div class="carousel-caption d-none d-md-block">
@@ -129,35 +129,35 @@
             <div class="carousel-item" data-bs-interval="2000">
               <picture>
                 <source media="(min-width: 769px)" srcset="img/Alfombra/AlfombraPc.svg">
-                <img src="img\Alfombra\AlfombraG.svg" class="d-block w-100" alt=" ...">
+                <img src="img\Alfombra\AlfombraCarouselMobil.webp" class="d-block w-100" alt=" ...">
               </picture>
 
               <div class="carousel-caption d-none d-md-block">
                 <h5 class="merriweather-bold">Limpieza de Alfombras</h5>
-                
+
               </div>
             </div>
             <div class="carousel-item">
               <picture>
                 <source media="(min-width: 769px)" srcset="img/Vestiduras/AutoPc.svg">
-                <img src="img\Vestiduras\Auto_Carousel.svg" class="d-block w-100" alt="...">
+                <img src="img\Vestiduras\AutoCarouselMobil.webp" class="d-block w-100" alt="...">
               </picture>
 
               <div class="carousel-caption d-none d-md-block">
                 <h5 class="merriweather-bold">Limpieza de Vestiduras</h5>
-                
+
               </div>
             </div>
 
             <div class="carousel-item">
               <picture>
                 <source media="(min-width: 769px)" srcset="img/Colchones/ColchonPc.svg">
-                <img src="img\Colchones\Colchon.svg" class="d-block w-100" alt="...">
+                <img src="img\Colchones\ColchonCarouselMobil.webp" class="d-block w-100" alt="...">
               </picture>
 
               <div class="carousel-caption d-none d-md-block">
                 <h5 class="merriweather-bold">Limpieza de Colchones</h5>
-                
+
               </div>
             </div>
           </div>
@@ -175,31 +175,60 @@
 
     </div>
 
-    <div class="row  justify-content-md-center box">
+    <div class="container py-5 box">
+      <!-- Fila para Misión y Valores -->
+      <div class="row justify-content-center g-4 mb-4">
 
-      <div class="col-sm-6 col-md-5 card text-center">
-        <h2 class="merriweather-bold">Misión</h2>
-        <p class="merriweather-regular">
-          Clean Up tiene el firme propósito de lograr la satisfacción de sus clientes, proporcionándoles servicios especializados de limpieza, con altos niveles de calidad.
-        </p>
+        <!-- Card: Misión -->
+        <div class="col-lg-5 col-md-6">
+          <div class="card h-100 shadow-sm border-0 text-center">
+            <div class="card-body p-4">
+              <i class="bi bi-bullseye text-primary card-icon mb-3"></i>
+              <h2 class="card-title fw-bold">Misión</h2>
+              <p class="card-text text-muted">
+                Tenemos el firme propósito de lograr la satisfacción de nuestros clientes, proporcionándoles servicios especializados de limpieza con los más altos niveles de calidad.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card: Valores -->
+        <div class="col-lg-5 col-md-6">
+          <div class="card h-100 shadow-sm border-0 text-center">
+            <div class="card-body p-4">
+              <i class="bi bi-gem text-primary card-icon mb-3"></i>
+              <h2 class="card-title fw-bold">Valores</h2>
+              <!-- Lista para mejorar la estructura y legibilidad -->
+              <ul class="list-unstyled text-start mt-3">
+                <li class="mb-2 valor-item">
+                  <i class="bi bi-check-circle-fill text-success me-2"></i>
+                  <strong>Puntualidad:</strong> Estamos convencidos de que el tiempo es un recurso invaluable.
+                </li>
+                <li class="valor-item">
+                  <i class="bi bi-check-circle-fill text-success me-2"></i>
+                  <strong>Responsabilidad:</strong> Comprometidos en conservar en buen estado sus pertenencias.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <div class="col-sm-6 col-md-5 card text-center">
-        <h2 class="merriweather-bold">Valores</h5>
-
-          <p class="merriweather-regular">Puntualidad: Estamos convencidos que el tiempo es un recurso invaluable, por esta razón nuestro objetivo será llegar siempre a tiempo a nuestra cita.</p>
-          <p class="merriweather-regular">Responsabilidad: Comprometidos en conservar en buen estado sus pertenencias.</p>
-
-
+      <!-- Fila para Ubicaciones -->
+      <div class="row justify-content-center">
+        <div class="col-lg-10 col-md-12">
+          <div class="card shadow-sm border-0 text-center">
+            <div class="card-body p-4">
+              <i class="bi bi-geo-alt-fill text-primary card-icon mb-3"></i>
+              <h2 class="card-title fw-bold">Cobertura</h2>
+              <p class="lead">
+                León, Irapuato, Querétaro & CDMX
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
 
-    </div>
-
-    <div class="row justify-content-md-center box">
-      <div class="col-sm-12 col-md-10 card ">
-        <h2 class="merriweather-bold center">Ubicaciones: </h5>
-          <p class="merriweather-regular">León, Irapuato, Querétaro & CDMX</p>
-      </div>
     </div>
 
     <div class="row justify-content-md-center box">
@@ -220,6 +249,28 @@
       </div>
     </div>
 
+    <!-- Modal Promocional -->
+    <div class="modal fade" id="promoModal" tabindex="-1" aria-labelledby="promoModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content text-center shadow-lg">
+          <div class="modal-header pb-0">
+            <h5 class="modal-title w-100 fs-4 fw-bold text-success" id="promoModalLabel">¡Promoción Especial!</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body py-4">
+            <p class="lead">¿Buscas el mejor servicio de limpieza al mejor precio?</p>
+            <p>Contáctanos y pregunta por las ofertas exclusivas que tenemos para ti.</p>
+          </div>
+          <div class="modal-footer justify-content-center pt-0">
+            <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cerrar</button>
+            <a href="https://wa.me/524611130928?text=Buen%20día...%20me%20puede%20compartir%20información%20de" target="_blank" rel="noopener noreferrer" class="btn btn-success">
+              <i class="bi bi-whatsapp me-2"></i> Preguntar por WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="row justify-content-md-center box">
 
       <div class="col-sm-12 col-md-5 card">
@@ -234,7 +285,7 @@
             ✅ Malos olores, dejando un aroma a limpio y fresco.
             ✅ Suciedad acumulada que opaca los colores.
             Utilizamos un sistema de inyección-succión que limpia las fibras desde adentro hacia afuera, sin dañar la tela.
-            ¡Dale una segunda vida a tus muebles! 👇 
+            ¡Dale una segunda vida a tus muebles! 👇
 
         </div>
 
@@ -248,36 +299,13 @@
 
             <div class="carousel-item active">
 
-              <img src="img\Salas\SalaGiu.svg" class="foto" alt="..." width="400" height="">
+              <img src="img\Salas\SalaMobilM1.webp" class="foto" alt="..." width="400" height="">
             </div>
 
             <div class="carousel-item">
-              <img src="img\Salas\Silla.svg" class="foto" alt="..." width="400" height="">
+              <img src="img\Salas\SalaMobilM2.webp" class="foto" alt="..." width="400" height="">
             </div>
-            <!--     <div class="carousel-item">
-                  <img src="img\Salas\Sala3.JPG" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                  <img src="img\Salas\Sala4.JPG" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                  <img src="img\Salas\Sala5.JPG" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                  <img src="img\Salas\Sala6.JPG" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                  <img src="img\Salas\Sala7.JPG" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                  <img src="img\Salas\Sala8.JPG" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                  <img src="img\Salas\Sala9.JPG" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                  <img src="img\Salas\Sala10.JPG" class="d-block w-100" alt="...">
-                </div>-->
+
           </div>
           <button class="carousel-control-prev" type="button" data-bs-target="#carouselSalas" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -317,7 +345,7 @@
       </div>
 
       <div class="col-sm-12 col-md-5 text-center">
-        <img src="img\Alfombra\HeadAutos_Colchon.svg" class="foto" alt="..." width="400" height="350">
+        <img src="img\Alfombra\AlfombraOCarouselMobil.webp" class="foto" alt="..." width="400" height="350">
       </div>
 
 
@@ -346,13 +374,13 @@
 
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="img\Vestiduras\V_Carousel1.svg" class="foto" alt="..." width="400" height="350">
+              <img src="img\Vestiduras\AutoCarouselMobil1.webp" class="foto" alt="..." width="400" height="350">
             </div>
             <div class="carousel-item">
-              <img src="img\Vestiduras\V_Carousel2.svg" class="foto" alt="..." width="400" height="350">
+              <img src="img\Vestiduras\AutoCarouselMobil2.webp" class="foto" alt="..." width="400" height="350">
             </div>
             <div class="carousel-item">
-              <img src="img\Vestiduras\V_Carousel3.svg" class="foto" alt="..." width="400" height="350">
+              <img src="img\Vestiduras\AutoCarouselMobil3.webp" class="foto" alt="..." width="400" height="350">
             </div>
 
 
@@ -389,7 +417,7 @@
       <div class="col-sm-12 col-md-5  text-center">
 
 
-        <img src="img\Colchones\Colchon.svg" class="foto" alt="..." width="400" height="350">
+        <img src="img\Colchones\ColchonCarouselMobil.webp" class="foto" alt="..." width="400" height="350">
 
 
       </div>
@@ -409,10 +437,18 @@
 
     </div>
 
-    <a class="btn-wsp" target="_blank" href="https://wa.me/524611130928?text=Buen%20día...">
-      <i class="icon-whatsapp"></i>
-    </a>
 
+
+
+    <a href="https://wa.me/524611130928?text=Buen%20día...%20me%20puede%20compartir%20información%20de"
+      class="whatsapp-flotante btn btn-success btn-lg rounded-circle shadow"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Chatear por WhatsApp">
+
+      <i class="bi bi-whatsapp"></i>
+
+    </a>
 
     <div class="row justify-content-md-center box">
       <div class="col-sm-12 col-md-10 card">
