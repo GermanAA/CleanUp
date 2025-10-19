@@ -273,39 +273,34 @@
 
     <div class="row justify-content-md-center box">
 
-      <div class="col-sm-12 col-md-5 card">
+ 
 
-        <div class="row">
-          <h5 class="merriweather-bold center" id="Salas">Limpieza de Salas & Sillas</h5>
-          <p class="merriweather-regular">✨ ¡No cambies tu sala, TRANSFÓRMALA! ✨
-            ¿Esa mancha de café te persigue? ¿El pelo de tu mascota ya es parte de la decoración? 🤔
-            Tu sala es el corazón de tu hogar, pero el uso diario, el polvo y los accidentes la desgastan. Con nuestro servicio profesional de limpieza de salas, eliminamos a fondo:
-
-            ✅ Ácaros, polvo y alérgenos que afectan tu salud.
-            ✅ Malos olores, dejando un aroma a limpio y fresco.
-            ✅ Suciedad acumulada que opaca los colores.
-            Utilizamos un sistema de inyección-succión que limpia las fibras desde adentro hacia afuera, sin dañar la tela.
-            ¡Dale una segunda vida a tus muebles! 👇
-
-        </div>
-
+      <div class="col-md-5 card">
+        <h3 class="merriweather-bold" id="Salas"><i class="bi bi-display-fill text-primary me-2"></i>Limpieza de Salas & Sillas</h3>
+        <!-- COMENTARIO MEJORA: Se formatea tu nuevo texto de marketing en un formato más digerible, usando una lista para destacar los beneficios clave. -->
+        <p class="merriweather-regular">✨ ¡No cambies tu sala, TRANSFÓRMALA! ✨ ¿Esa mancha de café te persigue? ¿El pelo de tu mascota ya es parte de la decoración? 🤔</p>
+        <p class="merriweather-regular">Tu sala es el corazón de tu hogar, pero el uso diario, el polvo y los accidentes la desgastan. Con nuestro servicio profesional eliminamos a fondo:</p>
+        <ul class="list-unstyled merriweather-regular">
+          <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Ácaros, polvo y alérgenos que afectan tu salud.</li>
+          <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Malos olores, dejando un aroma a limpio y fresco.</li>
+          <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Suciedad acumulada que opaca los colores.</li>
+        </ul>
+        <p class="merriweather-regular">Utilizamos un sistema de inyección-succión que limpia las fibras desde adentro hacia afuera, sin dañar la tela.</p>
+      
+        <a href="https://wa.me/524611130928?text=Hola,%20me%20interesa%20una%20cotización%20para%20limpieza%20de%20Salas." target="_blank" class="btn btn-success mt-2"><i class="fa-brands fa-whatsapp me-2"></i>¡Dale una segunda vida a tus muebles! 👇</a>
       </div>
-
-      <div class="col-sm-12 col-md-5">
-
-        <div id="carouselSalas" class="carousel slide">
-
+      <div class="col-md-5">
+        <!-- COMENTARIO MEJORA: Se añade un carrusel con tus nuevas imágenes y se le aplican estilos de sombra y redondeo para consistencia visual. -->
+        <div id="carouselSalas" class="carousel slide shadow rounded overflow-hidden" data-bs-ride="carousel">
           <div class="carousel-inner">
-
             <div class="carousel-item active">
-
-              <img src="img\Salas\SalaMobilM1.webp" class="foto" alt="..." width="400" height="">
+              <!-- COMENTARIO: Recuerda reemplazar 'placehold.co' con la ruta a tu imagen 'SalaMobilM1.webp'. -->
+              <img src="img\Salas\SalaMobilM1.webp" class="d-block w-100" alt="Sala antes de la limpieza profunda">
             </div>
-
             <div class="carousel-item">
-              <img src="img\Salas\SalaMobilM2.webp" class="foto" alt="..." width="400" height="">
+              <!-- COMENTARIO: Recuerda reemplazar 'placehold.co' con la ruta a tu imagen 'SalaMobilM2.webp'. -->
+              <img src="img\Salas\SalaMobilM2.webp" class="d-block w-100" alt="Sala después de la limpieza profunda">
             </div>
-
           </div>
           <button class="carousel-control-prev" type="button" data-bs-target="#carouselSalas" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -317,58 +312,56 @@
           </button>
         </div>
       </div>
-    </div>
-
-    <div class="row justify-content-md-center box">
-
-      <div class="col-sm-12 col-md-5 card">
-
-        <div class="row">
-          <h5 class="merriweather-bold center" id="Alfombras">Limpieza de Alfombras</h5>
-          <p class="merriweather-regular">Pensando en cambiar esa alfombra? 🤔 ¡Espera! Dale una segunda oportunidad.
-
-            Nuestro sistema de limpieza profunda por inyección-succión no solo elimina las manchas, sino que también extrae el polvo, los ácaros y los alérgenos que se esconden en las fibras. 🦠
-
-            ¡El resultado es una alfombra que no solo se ve, sino que se SIENTE y HUELE a limpio!
-
-            ✅ Colores más vivos y renovados.
-            ✅ Adiós a los malos olores (mascotas, humedad, etc.).
-            ✅ Un ambiente más saludable para tu familia.
-            ✅ Usamos productos biodegradables, seguros para niños y mascotas.
-
-            ✨ ¡No la des por perdida! Dale una segunda vida.
-
-            Pide tu cotización sin compromiso. Es rápido y fácil.
-            📲 Envíanos un WhatsApp</p>
-
-        </div>
-      </div>
-
-      <div class="col-sm-12 col-md-5 text-center">
-        <img src="img\Alfombra\AlfombraOCarouselMobil.webp" class="foto" alt="..." width="400" height="350">
-      </div>
-
 
     </div>
 
     <div class="row justify-content-md-center box">
 
-      <div class="col-sm-12 col-md-5 card">
-        <div class="row">
-          <h5 class="merriweather-bold center" id="Autos">Limpieza de Vestiduras de Autos</h5>
-          <p class="merriweather-regular">Esas manchas en tus asientos NO son permanentes. 🫣 ✨ Te lo demostramos.
-            Limpieza Profunda por Inyección-Succión. 💧⚙️
-            No es una limpieza superficial. Nuestro sistema profesional:
-            * Inyecta ➡️ una solución limpiadora que disuelve la suciedad desde la raíz.
-            * Extrae ⬅️ potentemente toda la suciedad, manchas, líquidos y bacterias.
-            El resultado no es solo un asiento limpio, es un asiento sanitizado y restaurado. ✅
-            No te resignes a viajar en un interior que se ve y se siente sucio. 👎
-            📩 ¡Envíanos una foto de tus vestiduras por DM 📲 y recibe una cotización al instante! Agenda hoy. 🗓️</p>
 
-        </div>
+      <div class="col-md-5 card">
+        <!-- Columna del Texto -->
+      
+          <h2 class="fw-bold mb-3">Limpieza Profunda de Alfombras</h2>
+          <p class="lead mb-4">✨ ¡Devuélvele la vida y el color a tus alfombras! ✨</p>
+          <p>Las alfombras acumulan polvo, manchas y bacterias que los métodos caseros no pueden eliminar. Nuestro equipo especializado utiliza maquinaria profesional para:</p>
+          <ul class="list-unstyled mt-4 mb-4">
+            <li class="d-flex mb-2">
+              <i class="bi bi-check-circle-fill text-success me-2 mt-1"></i>
+              <span><strong>Eliminar manchas difíciles</strong> de vino, café o mascotas.</span>
+            </li>
+            <li class="d-flex mb-2">
+              <i class="bi bi-check-circle-fill text-success me-2 mt-1"></i>
+              <span><strong>Desinfectar y neutralizar olores,</strong> creando un ambiente más saludable.</span>
+            </li>
+            <li class="d-flex mb-2">
+              <i class="bi bi-check-circle-fill text-success me-2 mt-1"></i>
+              <span><strong>Restaurar la suavidad</strong> y el color original de las fibras.</span>
+            </li>
+          </ul>
+          <p>Protege tu inversión y la salud de tu familia con una limpieza profesional. ¡Resultados que puedes ver y sentir!</p>
+
+     
+
       </div>
 
-      <div class="col-sm-12 col-md-5">
+      <!-- Columna de la Imagen -->
+      <div class="col-md-5">
+        <img src="img\Alfombra\AlfombraOCarouselMobil.webp" class="img-fluid rounded shadow-sm" alt="Alfombra limpia y reluciente">
+      </div>
+
+
+
+    </div>
+
+    <div class="row justify-content-md-center box">
+
+      <div class="col-md-5 card">
+        <h3 class="merriweather-bold" id="Autos"><i class="bi bi-car-front-fill text-primary me-2"></i>Limpieza de Vestiduras de Autos</h3>
+        <p class="merriweather-regular">Esas manchas en tus asientos NO son permanentes. Te lo demostramos. Nuestro sistema profesional inyecta una solución limpiadora y extrae potentemente toda la suciedad, manchas, líquidos y bacterias.</p>
+        <p class="merriweather-regular"><strong>El resultado no es solo un asiento limpio, es un asiento sanitizado y restaurado.</strong> No te resignes a viajar en un interior que se ve y se siente sucio.</p>
+        <a href="https://wa.me/524611130928?text=Hola,%20me%20interesa%20una%20cotización%20para%20limpieza%20de%20vestiduras." target="_blank" class="btn btn-success mt-2"><i class="fa-brands fa-whatsapp me-2"></i>Cotiza por WhatsApp al instante</a>
+      </div>
+      <div class="col-md-5">
 
         <div id="carouselVestiduras" class="carousel carousel-dark slide" data-bs-ride="carousel">
 
@@ -396,190 +389,185 @@
           </button>
         </div>
 
-      </div>
-
-
-
     </div>
 
-    <div class="row justify-content-md-center box">
+  </div>
 
-      <div class="col-sm-12 col-md-5 card">
-        <div class="row">
-          <h5 class="merriweather-bold center" id="Colchones">Limpieza de Colchones</h5>
-          <p class="merriweather-regular">¿Duermes realmente solo? 🤔 Tu colchón acumula millones de ácaros, células muertas y sudor que pueden afectar tu salud y la de tu familia. 🤧
+  <div class="row justify-content-md-center box">
 
-            ¡Pero no te preocupes! Con nuestro sistema de limpieza profunda por inyección-succión, eliminamos toda la suciedad y dejamos tu colchón desinfectado, fresco y listo para un verdadero descanso. ✨</p>
+    <div class="col-md-5 card">
+      <h3 class="merriweather-bold" id="Colchones"><i class="bi bi-hdd-stack-fill text-primary me-2"></i>Limpieza de Colchones</h3>
+      <p class="merriweather-regular">¿Duermes realmente solo? Tu colchón acumula millones de ácaros, células muertas y sudor. Con nuestro sistema de inyección-succión, eliminamos toda la suciedad y dejamos tu colchón desinfectado, fresco y listo para un verdadero descanso.</p>
+      
+      <a href="https://wa.me/524611130928?text=Hola,%20me%20interesa%20una%20cotización%20para%20limpieza%20de%20Colchones." target="_blank" class="btn btn-success mt-2"><i class="fa-brands fa-whatsapp me-2"></i>Duerme en un ambiente saludable</a>
+    </div>
+    <div class="col-md-5">
+      <img src="img\Colchones\ColchonCarouselMobil.webp" class="img-fluid rounded shadow" alt="Colchón fresco y desinfectado">
+    </div>
 
+  </div>
+
+
+
+  <div class="row justify-content-center text-center mb-5 box">
+    <!-- MÉTODOS DE PAGO -->
+    <div class="col-12 mb-4">
+      <div class="card h-100 p-4 shadow-sm">
+        <h3 class="merriweather-bold">Aceptamos tarjetas</h3>
+        <p class="merriweather-regular">Paga de forma cómoda y segura al momento de recibir tu servicio.</p>
+        <div>
+          <i class="fa-brands fa-cc-visa fa-3x mx-2 text-primary"></i>
+          <i class="fa-brands fa-cc-mastercard fa-3x mx-2 text-primary"></i>
+          <i class="fa-brands fa-cc-amex fa-3x mx-2 text-primary"></i>
         </div>
       </div>
-
-      <div class="col-sm-12 col-md-5  text-center">
-
-
-        <img src="img\Colchones\ColchonCarouselMobil.webp" class="foto" alt="..." width="400" height="350">
-
-
-      </div>
-
     </div>
 
-    <div class="row justify-content-md-center box">
+  </div>
 
-      <div class="col-sm-12 col-md-10 card">
-        <div class="merriweather-bold">
-          <h5 class="merriweather-bold">Aceptamos tarjetas de Crédito & Debito</h5>
-          <p class="card-text"></p>
+
+
+
+  <a href="https://wa.me/524611130928?text=Buen%20día...%20me%20puede%20compartir%20información%20de"
+    class="whatsapp-flotante btn btn-success btn-lg rounded-circle shadow"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Chatear por WhatsApp">
+
+    <i class="bi bi-whatsapp"></i>
+
+  </a>
+
+  <div class="row justify-content-md-center box">
+    <div class="col-sm-12 col-md-10 card">
+
+
+      <h5 class="merriweather-bold" id="Contacto">¿Tienes alguna Duda?...</h5>
+      <br>
+
+      <br>
+
+
+      <h5 class="merriweather-regular">Contáctanos por Email:</h5>
+      <br>
+
+      <form id="formularioContacto" class="needs-validation" novalidate>
+        <div class="mb-3">
+          <label for="nombre" class="form-label merriweather-regular"><i class="bi bi-person-fill me-1"></i>Nombre</label>
+          <input type="text" class="form-control" id="nombre" name="nombre" required>
+          <div class="invalid-feedback">
+            Por favor ingresa tu nombre.
+          </div>
         </div>
-        <img src="img\Tarjetas.webp" class="" height="150" alt="...">
-
-      </div>
+        <div class="mb-3">
+          <label for="correo" class="form-label merriweather-regular"><i class="bi bi-envelope-fill me-1"></i>Correo electrónico</label>
+          <input type="email" class="form-control" id="correo" name="correo" required>
+          <div class="invalid-feedback">
+            Ingresa un correo electrónico válido.
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="telefono" class="form-label merriweather-regular"><i class="bi bi-telephone-fill me-1"></i>Teléfono</label>
+          <input type="tel" class="form-control" id="telefono" name="telefono" pattern="[0-9]{10}" required>
+          <div class="invalid-feedback">
+            Ingresa un número de teléfono válido de 10 dígitos.
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="comentario" class="form-label merriweather-regular"><i class="bi bi-chat-dots-fill me-1"></i>Comentario</label>
+          <textarea class="form-control" id="comentario" name="comentario" rows="3" required></textarea>
+          <div class="invalid-feedback">
+            Por favor agrega un comentario.
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="direccion" class="form-label merriweather-regular"><i class="bi bi-geo-alt-fill me-1"></i>Dirección</label>
+          <input type="text" class="form-control" id="direccion" name="direccion" required>
+          <div class="invalid-feedback">
+            Por favor ingresa tu dirección.
+          </div>
+        </div>
+        <div class="g-recaptcha mb-3" data-sitekey="6Ld_QsMqAAAAAJvREOuFK8KMJMqzK2wCwMEeUZhS"></div>
+        <button type="submit" class="btn btn-primary"><i class="bi bi-send-fill me-1"></i>Enviar</button>
+      </form>
+      <br>
 
     </div>
 
+  </div>
 
 
-
-    <a href="https://wa.me/524611130928?text=Buen%20día...%20me%20puede%20compartir%20información%20de"
-      class="whatsapp-flotante btn btn-success btn-lg rounded-circle shadow"
-      target="_blank"
-      rel="noopener noreferrer"
-      aria-label="Chatear por WhatsApp">
-
-      <i class="bi bi-whatsapp"></i>
-
-    </a>
-
-    <div class="row justify-content-md-center box">
-      <div class="col-sm-12 col-md-10 card">
+  <div class="row box">
 
 
-        <h5 class="merriweather-bold" id="Contacto">¿Tienes alguna Duda?...</h5>
-        <br>
+    <footer class="bg-dark text-white pt-5 pb-4" data-bs-theme="dark">
+      <div class="container text-center text-md-start">
+        <div class="row text-center text-md-start">
 
-        <br>
-
-
-        <h5 class="merriweather-regular">Contáctanos por Email:</h5>
-        <br>
-
-        <form id="formularioContacto" class="needs-validation" novalidate>
-          <div class="mb-3">
-            <label for="nombre" class="form-label merriweather-regular"><i class="bi bi-person-fill me-1"></i>Nombre</label>
-            <input type="text" class="form-control" id="nombre" name="nombre" required>
-            <div class="invalid-feedback">
-              Por favor ingresa tu nombre.
-            </div>
-          </div>
-          <div class="mb-3">
-            <label for="correo" class="form-label merriweather-regular"><i class="bi bi-envelope-fill me-1"></i>Correo electrónico</label>
-            <input type="email" class="form-control" id="correo" name="correo" required>
-            <div class="invalid-feedback">
-              Ingresa un correo electrónico válido.
-            </div>
-          </div>
-          <div class="mb-3">
-            <label for="telefono" class="form-label merriweather-regular"><i class="bi bi-telephone-fill me-1"></i>Teléfono</label>
-            <input type="tel" class="form-control" id="telefono" name="telefono" pattern="[0-9]{10}" required>
-            <div class="invalid-feedback">
-              Ingresa un número de teléfono válido de 10 dígitos.
-            </div>
-          </div>
-          <div class="mb-3">
-            <label for="comentario" class="form-label merriweather-regular"><i class="bi bi-chat-dots-fill me-1"></i>Comentario</label>
-            <textarea class="form-control" id="comentario" name="comentario" rows="3" required></textarea>
-            <div class="invalid-feedback">
-              Por favor agrega un comentario.
-            </div>
-          </div>
-          <div class="mb-3">
-            <label for="direccion" class="form-label merriweather-regular"><i class="bi bi-geo-alt-fill me-1"></i>Dirección</label>
-            <input type="text" class="form-control" id="direccion" name="direccion" required>
-            <div class="invalid-feedback">
-              Por favor ingresa tu dirección.
-            </div>
-          </div>
-          <div class="g-recaptcha mb-3" data-sitekey="6Ld_QsMqAAAAAJvREOuFK8KMJMqzK2wCwMEeUZhS"></div>
-          <button type="submit" class="btn btn-primary"><i class="bi bi-send-fill me-1"></i>Enviar</button>
-        </form>
-        <br>
-
-      </div>
-
-    </div>
-
-
-    <div class="row box">
-
-
-      <footer class="bg-dark text-white pt-5 pb-4" data-bs-theme="dark">
-        <div class="container text-center text-md-start">
-          <div class="row text-center text-md-start">
-
-            <!-- Columna de la Marca -->
-            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-              <h5 class="text-uppercase mb-4 fw-bold text-success">Clean Up</h5>
-              <p>
-                Expertos en limpieza comercial y residencial. Tu satisfacción es nuestra prioridad.
-              </p>
-            </div>
-
-            <!-- Columna de Servicios -->
-            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-              <h5 class="text-uppercase mb-4 fw-bold">Servicios</h5>
-              <p><a href="#Alfombras" class="text-white">Alfombras</a></p>
-              <p><a href="#Salas" class="text-white">Salas</a></p>
-              <p><a href="#Autos" class="text-white">Vestiduras de Autos</a></p>
-              <p><a href="#Colchones" class="text-white">Colchones</a></p>
-            </div>
-
-            <!-- Columna de Legal -->
-            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-              <h5 class="text-uppercase mb-4 fw-bold">Legal</h5>
-              <p><a href="privacy-policy.php" class="text-white">Aviso de Privacidad</a></p>
-              <p><a href="#" class="text-white">Términos y Condiciones</a></p>
-            </div>
-
-            <!-- Columna de Contacto y Redes -->
-            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-              <h5 class="text-uppercase mb-4 fw-bold">Contacto</h5>
-              <p><i class="bi bi-geo-alt-fill me-2"></i>Querétaro. México</p>
-              <p><i class="bi bi-envelope-fill me-2"></i>contacto@clean-up.mx</p>
-              <p><i class="bi bi-telephone-fill me-2"></i>+52 461 113 0928</p>
-            </div>
+          <!-- Columna de la Marca -->
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 fw-bold text-success">Clean Up</h5>
+            <p>
+              Expertos en limpieza comercial y residencial. Tu satisfacción es nuestra prioridad.
+            </p>
           </div>
 
-          <hr class="mb-4">
+          <!-- Columna de Servicios -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 fw-bold">Servicios</h5>
+            <p><a href="#Alfombras" class="text-white">Alfombras</a></p>
+            <p><a href="#Salas" class="text-white">Salas</a></p>
+            <p><a href="#Autos" class="text-white">Vestiduras de Autos</a></p>
+            <p><a href="#Colchones" class="text-white">Colchones</a></p>
+          </div>
 
-          <!-- Fila de Copyright y Redes Sociales -->
-          <div class="row align-items-center">
-            <!-- Copyright -->
-            <div class="col-md-7 col-lg-8">
-              <p>Copyright © <span id="current-year"></span> Todos los derechos reservados por:
-                <a href="#" class="text-success"><strong>Clean Up</strong></a>
-              </p>
-            </div>
-            <!-- Redes Sociales -->
-            <div class="col-md-5 col-lg-4">
-              <div class="text-center text-md-end">
-                <ul class="list-unstyled list-inline mb-0">
-                  <li class="list-inline-item">
-                    <a href="https://www.facebook.com/profile.php?id=61577084604187" class="btn-floating btn-sm text-white footer-social-icon" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a href="#" class="btn-floating btn-sm text-white footer-social-icon" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a href="https://www.instagram.com/clean_up_mx" class="btn-floating btn-sm text-white footer-social-icon" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
-                  </li>
-                </ul>
-              </div>
+          <!-- Columna de Legal -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 fw-bold">Legal</h5>
+            <p><a href="privacy-policy.php" class="text-white">Aviso de Privacidad</a></p>
+            <p><a href="#" class="text-white">Términos y Condiciones</a></p>
+          </div>
+
+          <!-- Columna de Contacto y Redes -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 fw-bold">Contacto</h5>
+            <p><i class="bi bi-geo-alt-fill me-2"></i>Querétaro. México</p>
+            <p><i class="bi bi-envelope-fill me-2"></i>contacto@clean-up.mx</p>
+            <p><i class="bi bi-telephone-fill me-2"></i>+52 461 113 0928</p>
+          </div>
+        </div>
+
+        <hr class="mb-4">
+
+        <!-- Fila de Copyright y Redes Sociales -->
+        <div class="row align-items-center">
+          <!-- Copyright -->
+          <div class="col-md-7 col-lg-8">
+            <p>Copyright © <span id="current-year"></span> Todos los derechos reservados por:
+              <a href="#" class="text-success"><strong>Clean Up</strong></a>
+            </p>
+          </div>
+          <!-- Redes Sociales -->
+          <div class="col-md-5 col-lg-4">
+            <div class="text-center text-md-end">
+              <ul class="list-unstyled list-inline mb-0">
+                <li class="list-inline-item">
+                  <a href="https://www.facebook.com/profile.php?id=61577084604187" class="btn-floating btn-sm text-white footer-social-icon" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="btn-floating btn-sm text-white footer-social-icon" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://www.instagram.com/clean_up_mx" class="btn-floating btn-sm text-white footer-social-icon" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
-      </footer>
+      </div>
+    </footer>
 
-    </div>
+  </div>
 
   </div>
 
