@@ -532,7 +532,7 @@
           <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
             <h5 class="text-uppercase mb-4 fw-bold">Contacto</h5>
             <p><i class="bi bi-geo-alt-fill me-2"></i>Querétaro. México</p>
-            <p><i class="bi bi-envelope-fill me-2"></i>contacto@clean-up.mx</p>
+            <p><i class="bi bi-envelope-fill me-2"></i>ventas@clean-up.mx</p>
             <p><i class="bi bi-telephone-fill me-2"></i>+52 461 113 0928</p>
           </div>
         </div>
@@ -558,7 +558,7 @@
                   <a href="#" class="btn-floating btn-sm text-white footer-social-icon" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
                 </li>
                 <li class="list-inline-item">
-                  <a href="https://www.instagram.com/clean_up_mx" class="btn-floating btn-sm text-white footer-social-icon" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                  <a href="https://www.instagram.com/cleanupmxofficial" class="btn-floating btn-sm text-white footer-social-icon" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
                 </li>
               </ul>
             </div>
@@ -573,7 +573,7 @@
 
 
   <div class="iconos-sociales-flotantes">
-    <a href="https://www.instagram.com/clean_up_mx/" target="_blank" class="icono-instagram">
+    <a href="https://www.instagram.com/cleanupmxofficial/" target="_blank" class="icono-instagram">
       <i class="fa-brands fa-instagram"></i>
     </a>
     <a href="https://www.facebook.com/profile.php?id=61577084604187" target="_blank" class="icono-facebook">
