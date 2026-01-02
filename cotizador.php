@@ -108,7 +108,7 @@
 
 <body>
 
-    <div class="container py-5">
+    <div class="container">
         <div class="row mb-5 align-items-center border-bottom pb-4">
             <div class="col-md-6 text-center text-md-start">
                 <img src="img/Logo_Clean.webp" alt="Logo Empresa" style="max-height: 80px;" class="img-fluid mb-3 mb-md-0">
