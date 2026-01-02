@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,7 +25,7 @@
         .card {
             border: none;
             border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
         }
 
         .card-header {
@@ -76,18 +77,38 @@
         }
 
         @media print {
-            .no-print { display: none; }
-            .card { box-shadow: none; border: 1px solid #ddd; }
+            .no-print {
+                display: none !important;
+            }
+
+            .card {
+                box-shadow: none;
+                border: 1px solid #ddd;
+            }
+
+            body {
+                background-color: white;
+            }
+
+            /* Asegurar que la nota se imprima con color de fondo si el navegador lo permite */
+            .technical-note {
+                border: 1px solid #ddd;
+            }
+
+
         }
     </style>
 </head>
+
 <body>
 
-<div class="container py-5">
-    <div class="row mb-4 no-print">
-        <div class="col-12 text-center">
+    <div class="container py-5">
+        <div class="row mb-5 align-items-center border-bottom pb-4">
+            <div class="col-md-6 text-center text-md-start">
+                <img src="img/Logo_Clean.webp" alt="Logo Empresa" style="max-height: 80px;" class="img-fluid mb-3 mb-md-0">
+            </div>
             <h1 class="fw-bold"><i class="bi bi-calculator me-2 text-primary"></i>Cotizador Pro</h1>
-            <p class="text-muted">Presupuestos rápidos para muebles y alfombras</p>
+            <p class="text-muted">Presupuestos de Muebles y Alfombras</p>
         </div>
     </div>
 
@@ -171,13 +192,29 @@
                     </div>
                 </div>
             </div>
+
+            <div class="technical-note">
+                <div class="d-flex">
+                    <div class="me-3">
+                        <i class="bi bi-exclamation-triangle-fill fs-4"></i>
+                    </div>
+                    <div>
+                        <h6 class="fw-bold mb-1">Notas Importantes:</h6>
+                        <ul class="mb-0 ps-3">
+                            <li><strong>En el caso de las alfombras, las medidas serán confirmadas por el técnico en sitio.</strong></li>
+                          
+                            <li>Esta cotización tiene una vigencia de 15 días.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <!-- Panel de Resumen y Totales -->
         <div class="col-lg-4">
             <div class="summary-box shadow-sm sticky-top" style="top: 2rem;">
                 <h5 class="mb-4 border-bottom pb-2">Resumen Financiero</h5>
-                
+
                 <div class="mb-4 no-print border-bottom pb-3">
                     <!-- Sección de Descuento -->
                     <div class="mb-3">
@@ -244,169 +281,269 @@
             </div>
         </div>
     </div>
-</div>
+    </div>
 
-<script>
-    // ==========================================
-    // 1. BASE DE DATOS DE PRODUCTOS
-    // ==========================================
-    const products = [
-        { id: 1, name: "Silla (Modelo A)", price: 100.00, category: "Sillas" },
-        { id: 2, name: "Silla (Modelo B)", price: 85.00, category: "Sillas" },
-        { id: 3, name: "Sillón Individual", price: 275.00, category: "Sillones" },
-        { id: 4, name: "Sillón Doble", price: 450.00, category: "Sillones" },
-        { id: 5, name: "Sillón Triple", price: 550.00, category: "Sillones" },
-        { id: 6, name: "Colchón Individual", price: 600.00, category: "Descanso" },
-        { id: 7, name: "Colchón Matrimonial", price: 700.00, category: "Descanso" },
-        { id: 8, name: "Colchón Queen", price: 800.00, category: "Descanso" },
-        { id: 9, name: "Colchón King", price: 900.00, category: "Descanso" },
-        { id: 10, name: "Cabecera Individual", price: 400.00, category: "Cabeceras" },
-        { id: 11, name: "Cabecera Matrimonial", price: 450.00, category: "Cabeceras" },
-        { id: 12, name: "Cabecera Queen", price: 500.00, category: "Cabeceras" },
-        { id: 13, name: "Cabecera King", price: 550.00, category: "Cabeceras" },
-        { id: 14, name: "Base Individual", price: 280.00, category: "Bases" },
-        { id: 15, name: "Base Matrimonial", price: 380.00, category: "Bases" },
-        { id: 16, name: "Base Queen", price: 480.00, category: "Bases" },
-        { id: 17, name: "Base King", price: 580.00, category: "Bases" },
-        { id: 18, name: "Alfombra", price: 185.00, category: "Alfombras", isByArea: true }
-    ];
-
-    // ==========================================
-    // 2. CONFIGURACIÓN Y ESTADO
-    // ==========================================
-    let quoteItems = [];
-    let itemIdCounter = 0;
-    const IVA_RATE_DEFAULT = 0.16;
-
-    // ==========================================
-    // 3. SELECTORES DEL DOM
-    // ==========================================
-    const productSelect = document.getElementById('productSelect');
-    const unitPrice = document.getElementById('unitPrice');
-    const productQty = document.getElementById('productQty');
-    const productForm = document.getElementById('productForm');
-    const quoteTableBody = document.querySelector('#quoteTable tbody');
-    const discountToggle = document.getElementById('discountToggle');
-    const discountWrapper = document.getElementById('discountWrapper');
-    const discountInput = document.getElementById('discountInput');
-    const ivaToggleMaster = document.getElementById('ivaToggleMaster');
-    const ivaWrapper = document.getElementById('ivaWrapper');
-    const ivaInput = document.getElementById('ivaInput');
-    const carpetDimensions = document.getElementById('carpetDimensions');
-    const carpetWidth = document.getElementById('carpetWidth');
-    const carpetLength = document.getElementById('carpetLength');
-
-    // ==========================================
-    // 4. LÓGICA DE NEGOCIO
-    // ==========================================
-    function init() {
-        products.forEach(p => {
-            const option = document.createElement('option');
-            option.value = p.id;
-            option.textContent = p.name;
-            productSelect.appendChild(option);
-        });
-
-        productSelect.addEventListener('change', (e) => {
-            const product = products.find(p => p.id === parseInt(e.target.value));
-            if (product) {
-                unitPrice.value = product.price;
-                carpetDimensions.classList.toggle('d-none', !product.isByArea);
+    <script>
+        // ==========================================
+        // 1. BASE DE DATOS DE PRODUCTOS
+        // ==========================================
+        const products = [{
+                id: 1,
+                name: "Silla (Modelo A)",
+                price: 100.00,
+                category: "Sillas"
+            },
+            {
+                id: 2,
+                name: "Silla (Modelo B)",
+                price: 85.00,
+                category: "Sillas"
+            },
+            {
+                id: 3,
+                name: "Sillón Individual",
+                price: 275.00,
+                category: "Sillones"
+            },
+            {
+                id: 4,
+                name: "Sillón Doble",
+                price: 450.00,
+                category: "Sillones"
+            },
+            {
+                id: 5,
+                name: "Sillón Triple",
+                price: 550.00,
+                category: "Sillones"
+            },
+            {
+                id: 6,
+                name: "Sala L",
+                price: 900.00,
+                category: "Sillones"
+            },
+            {
+                id: 7,
+                name: "Colchón Individual",
+                price: 600.00,
+                category: "Descanso"
+            },
+            {
+                id: 8,
+                name: "Colchón Matrimonial",
+                price: 700.00,
+                category: "Descanso"
+            },
+            {
+                id: 9,
+                name: "Colchón Queen",
+                price: 800.00,
+                category: "Descanso"
+            },
+            {
+                id: 10,
+                name: "Colchón King",
+                price: 900.00,
+                category: "Descanso"
+            },
+            {
+                id: 11,
+                name: "Cabecera Individual",
+                price: 400.00,
+                category: "Cabeceras"
+            },
+            {
+                id: 12,
+                name: "Cabecera Matrimonial",
+                price: 450.00,
+                category: "Cabeceras"
+            },
+            {
+                id: 13,
+                name: "Cabecera Queen",
+                price: 500.00,
+                category: "Cabeceras"
+            },
+            {
+                id: 14,
+                name: "Cabecera King",
+                price: 550.00,
+                category: "Cabeceras"
+            },
+            {
+                id: 15,
+                name: "Base Individual",
+                price: 380.00,
+                category: "Bases"
+            },
+            {
+                id: 16,
+                name: "Base Matrimonial",
+                price: 480.00,
+                category: "Bases"
+            },
+            {
+                id: 17,
+                name: "Base Queen",
+                price: 480.00,
+                category: "Bases"
+            },
+            {
+                id: 18,
+                name: "Base King",
+                price: 580.00,
+                category: "Bases"
+            },
+            {
+                id: 19,
+                name: "Alfombra",
+                price: 185.00,
+                category: "Alfombras",
+                isByArea: true
             }
-        });
+        ];
 
-        // Toggle Descuento
-        discountToggle.addEventListener('change', (e) => {
-            discountWrapper.style.display = e.target.checked ? 'block' : 'none';
-            if (!e.target.checked) discountInput.value = 0;
-            calculateTotals();
-        });
+        // ==========================================
+        // 2. CONFIGURACIÓN Y ESTADO
+        // ==========================================
+        let quoteItems = [];
+        let itemIdCounter = 0;
+        const IVA_RATE_DEFAULT = 0.16;
 
-        // Toggle IVA
-        ivaToggleMaster.addEventListener('change', (e) => {
-            ivaWrapper.style.display = e.target.checked ? 'block' : 'none';
-            if (!e.target.checked) ivaInput.value = 0;
-            else if (ivaInput.value == 0) ivaInput.value = 16;
-            calculateTotals();
-        });
+        // ==========================================
+        // 3. SELECTORES DEL DOM
+        // ==========================================
+        const productSelect = document.getElementById('productSelect');
+        const unitPrice = document.getElementById('unitPrice');
+        const productQty = document.getElementById('productQty');
+        const productForm = document.getElementById('productForm');
+        const quoteTableBody = document.querySelector('#quoteTable tbody');
+        const discountToggle = document.getElementById('discountToggle');
+        const discountWrapper = document.getElementById('discountWrapper');
+        const discountInput = document.getElementById('discountInput');
+        const ivaToggleMaster = document.getElementById('ivaToggleMaster');
+        const ivaWrapper = document.getElementById('ivaWrapper');
+        const ivaInput = document.getElementById('ivaInput');
+        const carpetDimensions = document.getElementById('carpetDimensions');
+        const carpetWidth = document.getElementById('carpetWidth');
+        const carpetLength = document.getElementById('carpetLength');
 
-        productForm.addEventListener('submit', handleAddProduct);
-        discountInput.addEventListener('input', calculateTotals);
-        ivaInput.addEventListener('input', calculateTotals);
-    }
+        // ==========================================
+        // 4. LÓGICA DE NEGOCIO
+        // ==========================================
+        function init() {
+            products.forEach(p => {
+                const option = document.createElement('option');
+                option.value = p.id;
+                option.textContent = p.name;
+                productSelect.appendChild(option);
+            });
 
-    function handleAddProduct(e) {
-        e.preventDefault();
-        const productId = parseInt(productSelect.value);
-        const customPrice = parseFloat(unitPrice.value);
-        const quantity = parseInt(productQty.value);
-        const product = products.find(p => p.id === productId);
-        if (!product) return;
+            productSelect.addEventListener('change', (e) => {
+                const product = products.find(p => p.id === parseInt(e.target.value));
+                if (product) {
+                    unitPrice.value = product.price;
+                    carpetDimensions.classList.toggle('d-none', !product.isByArea);
+                }
+            });
 
-        let newItem = { ...product, quantity, uniqueId: itemIdCounter++ };
+            // Toggle Descuento
+            discountToggle.addEventListener('change', (e) => {
+                discountWrapper.style.display = e.target.checked ? 'block' : 'none';
+                if (!e.target.checked) discountInput.value = 0;
+                calculateTotals();
+            });
 
-        if (product.isByArea) {
-            const area = (parseFloat(carpetWidth.value) || 0) * (parseFloat(carpetLength.value) || 0);
-            newItem.width = carpetWidth.value;
-            newItem.length = carpetLength.value;
-            newItem.area = area;
-            newItem.unitPriceUsed = customPrice;
-            newItem.calculatedPrice = area * customPrice; 
-        } else {
-            newItem.unitPriceUsed = customPrice;
-            newItem.calculatedPrice = customPrice;
+            // Toggle IVA
+            ivaToggleMaster.addEventListener('change', (e) => {
+                ivaWrapper.style.display = e.target.checked ? 'block' : 'none';
+                if (!e.target.checked) ivaInput.value = 0;
+                else if (ivaInput.value == 0) ivaInput.value = 16;
+                calculateTotals();
+            });
+
+            productForm.addEventListener('submit', handleAddProduct);
+            discountInput.addEventListener('input', calculateTotals);
+            ivaInput.addEventListener('input', calculateTotals);
         }
 
-        quoteItems.push(newItem);
-        updateUI();
-        productForm.reset();
-        carpetDimensions.classList.add('d-none');
-    }
+        function handleAddProduct(e) {
+            e.preventDefault();
+            const productId = parseInt(productSelect.value);
+            const customPrice = parseFloat(unitPrice.value);
+            const quantity = parseInt(productQty.value);
+            const product = products.find(p => p.id === productId);
+            if (!product) return;
 
-    function removeProduct(uniqueId) {
-        quoteItems = quoteItems.filter(item => item.uniqueId !== uniqueId);
-        updateUI();
-    }
+            let newItem = {
+                ...product,
+                quantity,
+                uniqueId: itemIdCounter++
+            };
 
-    function clearQuote() {
-        if(confirm('¿Vaciar cotización?')) {
-            quoteItems = [];
+            if (product.isByArea) {
+                const area = (parseFloat(carpetWidth.value) || 0) * (parseFloat(carpetLength.value) || 0);
+                newItem.width = carpetWidth.value;
+                newItem.length = carpetLength.value;
+                newItem.area = area;
+                newItem.unitPriceUsed = customPrice;
+                newItem.calculatedPrice = area * customPrice;
+            } else {
+                newItem.unitPriceUsed = customPrice;
+                newItem.calculatedPrice = customPrice;
+            }
+
+            quoteItems.push(newItem);
+            updateUI();
+            productForm.reset();
+            carpetDimensions.classList.add('d-none');
+        }
+
+        function removeProduct(uniqueId) {
+            quoteItems = quoteItems.filter(item => item.uniqueId !== uniqueId);
             updateUI();
         }
-    }
 
-    function calculateTotals() {
-        const subtotalBruto = quoteItems.reduce((acc, item) => acc + (item.calculatedPrice * item.quantity), 0);
-        
-        const discRate = discountToggle.checked ? (parseFloat(discountInput.value) || 0) : 0;
-        const discountAmount = subtotalBruto * (discRate / 100);
-        
-        const baseImponible = subtotalBruto - discountAmount;
-        
-        const ivaRate = ivaToggleMaster.checked ? (parseFloat(ivaInput.value) || 0) : 0;
-        const ivaAmount = baseImponible * (ivaRate / 100);
-        
-        const totalFinal = baseImponible + ivaAmount;
+        function clearQuote() {
+            if (confirm('¿Vaciar cotización?')) {
+                quoteItems = [];
+                updateUI();
+            }
+        }
 
-        document.getElementById('displaySubtotal').textContent = formatCurrency(subtotalBruto);
-        document.getElementById('displayDiscount').textContent = `-${formatCurrency(discountAmount)}`;
-        document.getElementById('displayBase').textContent = formatCurrency(baseImponible);
-        document.getElementById('displayIvaLabel').textContent = `IVA (${ivaRate}%):`;
-        document.getElementById('displayIVA').textContent = formatCurrency(ivaAmount);
-        document.getElementById('displayTotal').textContent = formatCurrency(totalFinal);
-    }
+        function calculateTotals() {
+            const subtotalBruto = quoteItems.reduce((acc, item) => acc + (item.calculatedPrice * item.quantity), 0);
 
-    function updateUI() {
-        quoteTableBody.innerHTML = '';
-        if (quoteItems.length === 0) {
-            quoteTableBody.innerHTML = `<tr><td colspan="5" class="text-center py-5 text-muted">No hay productos agregados.</td></tr>`;
-        } else {
-            quoteItems.forEach(item => {
-                const row = document.createElement('tr');
-                let desc = `<div class="fw-bold">${item.name}</div><span class="product-badge">${item.category}</span>`;
-                if (item.isByArea) desc += `<div class="dimension-label mt-1"><i class="bi bi-rulers"></i> ${item.width}m x ${item.length}m (${item.area.toFixed(2)} m²)</div>`;
-                const prc = item.isByArea ? `$${item.unitPriceUsed.toLocaleString()} <small>/m²</small>` : `$${item.unitPriceUsed.toLocaleString()}`;
-                row.innerHTML = `
+            const discRate = discountToggle.checked ? (parseFloat(discountInput.value) || 0) : 0;
+            const discountAmount = subtotalBruto * (discRate / 100);
+
+            const baseImponible = subtotalBruto - discountAmount;
+
+            const ivaRate = ivaToggleMaster.checked ? (parseFloat(ivaInput.value) || 0) : 0;
+            const ivaAmount = baseImponible * (ivaRate / 100);
+
+            const totalFinal = baseImponible + ivaAmount;
+
+            document.getElementById('displaySubtotal').textContent = formatCurrency(subtotalBruto);
+            document.getElementById('displayDiscount').textContent = `-${formatCurrency(discountAmount)}`;
+            document.getElementById('displayBase').textContent = formatCurrency(baseImponible);
+            document.getElementById('displayIvaLabel').textContent = `IVA (${ivaRate}%):`;
+            document.getElementById('displayIVA').textContent = formatCurrency(ivaAmount);
+            document.getElementById('displayTotal').textContent = formatCurrency(totalFinal);
+        }
+
+        function updateUI() {
+            quoteTableBody.innerHTML = '';
+            if (quoteItems.length === 0) {
+                quoteTableBody.innerHTML = `<tr><td colspan="5" class="text-center py-5 text-muted">No hay productos agregados.</td></tr>`;
+            } else {
+                quoteItems.forEach(item => {
+                    const row = document.createElement('tr');
+                    let desc = `<div class="fw-bold">${item.name}</div><span class="product-badge">${item.category}</span>`;
+                    if (item.isByArea) desc += `<div class="dimension-label mt-1"><i class="bi bi-rulers"></i> ${item.width}m x ${item.length}m (${item.area.toFixed(2)} m²)</div>`;
+                    const prc = item.isByArea ? `$${item.unitPriceUsed.toLocaleString()} <small>/m²</small>` : `$${item.unitPriceUsed.toLocaleString()}`;
+                    row.innerHTML = `
                     <td class="ps-4">${desc}</td>
                     <td class="text-center">${item.quantity}</td>
                     <td class="text-end">${prc}</td>
@@ -414,19 +551,23 @@
                     <td class="text-end pe-4 no-print">
                         <button class="btn btn-link text-danger p-0" onclick="removeProduct(${item.uniqueId})"><i class="bi bi-x-circle-fill fs-5"></i></button>
                     </td>`;
-                quoteTableBody.appendChild(row);
-            });
+                    quoteTableBody.appendChild(row);
+                });
+            }
+            calculateTotals();
         }
-        calculateTotals();
-    }
 
-    function formatCurrency(amount) {
-        return new Intl.NumberFormat('es-MX', { style: 'currency', currency: 'MXN' }).format(amount);
-    }
+        function formatCurrency(amount) {
+            return new Intl.NumberFormat('es-MX', {
+                style: 'currency',
+                currency: 'MXN'
+            }).format(amount);
+        }
 
-    init();
-</script>
+        init();
+    </script>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
