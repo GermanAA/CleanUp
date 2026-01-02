@@ -19,7 +19,13 @@
         body {
             background-color: var(--bg-light);
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 9pt;
             color: var(--primary-color);
+        }
+
+        /* Ajuste para que los inputs no se vean gigantes */
+        .form-control, .form-select, .btn {
+            font-size: 11pt; 
         }
 
         .card {
