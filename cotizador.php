@@ -24,8 +24,10 @@
         }
 
         /* Ajuste para que los inputs no se vean gigantes */
-        .form-control, .form-select, .btn {
-            font-size: 11pt; 
+        .form-control,
+        .form-select,
+        .btn {
+            font-size: 11pt;
         }
 
         .card {
@@ -208,7 +210,7 @@
                         <h6 class="fw-bold mb-1">Notas Importantes:</h6>
                         <ul class="mb-0 ps-3">
                             <li><strong>En el caso de las alfombras, las medidas serán confirmadas por el técnico en sitio.</strong></li>
-                          
+
                             <li>Esta cotización tiene una vigencia de 15 días.</li>
                         </ul>
                     </div>
@@ -407,6 +409,24 @@
                 price: 185.00,
                 category: "Alfombras",
                 isByArea: true
+            },
+            {
+                id: 20,
+                name: "3 Plazas XL",
+                price: 750.00,
+                category: "Sillones"
+            },
+            {
+                id: 21,
+                name: "2 Plazas XL",
+                price: 650.00,
+                category: "Bases"
+            },
+            {
+                id: 22,
+                name: "Cojin Adicional",
+                price: 45.00,
+                category: "Cojines"
             }
         ];
 
