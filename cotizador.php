@@ -427,6 +427,13 @@
                 name: "Cojin Adicional",
                 price: 45.00,
                 category: "Cojines"
+            },
+            {
+                id: 23,
+                name: "Persianas",
+                price: 110.00,
+                category: "Alfombras",
+                isByArea: true
             }
         ];
 
