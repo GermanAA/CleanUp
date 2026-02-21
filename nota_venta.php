@@ -101,8 +101,8 @@
                     <img src="img/Logo_Clean.webp" alt="Logo" class="mb-2" style="max-height: 70px;">
                     <div class="sucursal-info">
                         <h5 class="fw-bold mb-0">MUEBLERÍA Y ALFOMBRAS PROFESIONAL</h5>
-                        <p class="mb-0 text-muted"><strong>SUCURSAL MATRIZ:</strong> Celaya Gto 301, Álamos</p>
-                        <p class="mb-0 text-muted small">Tel: (461) 123 4567 | Celaya, Guanajuato.</p>
+                        <p class="mb-0 text-muted"><strong>SUCURSAL MATRIZ:</strong>  Av Quetzalli 301, Álamos, Celaya Gto</p>
+                        <p class="mb-0 text-muted small">Tel: (461) 113 0928</p>
                     </div>
                 </div>
                 <div class="col-5">
